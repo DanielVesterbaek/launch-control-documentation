@@ -25,6 +25,9 @@ Dive straight in. Rig your Vehicle with :ref:`rigging`, Animate using :ref:`anim
 What you see is what you get - No baking, waiting, or guessing is required here.
 Use the :ref:`postfx` to fine-tune the look of the physics.
 
+.. image:: img/IMG_LC_CORE.png
+  :width: 400
+  :alt: Alternative text
 
 Manual Gearbox
 --------
