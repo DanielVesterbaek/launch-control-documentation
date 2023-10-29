@@ -11,18 +11,18 @@ The Interface is split into two sections making it both easy to use and fully cu
 Launch Control Core
 ---------
 
-Dive straight in. Rig your car with 1 click, Animate using Presets or your own Path, and enable real-time physics.
+Dive straight in. Rig your Vehicle with :ref:'rigging', Animate using :ref:'animation-presets' or :ref:'user-path', and enable :ref:'real-time-physics'.
 What you see is what you get - No baking, waiting, or guessing is required here.
-Use the PostFX to fine-tune the look of the physics.
+Use the :ref:'postfx' to fine-tune the look of the physics.
 
 
 Manual Gearbox
 --------
 
 Go deeper. Discover the expanded features that LC offers.
-Set up realistic headlight beams, generate skidmarks automatically, set up tracking and following cameras, calculate jump trajectories, and Quickly Export it all to Unreal Engine or any other DCC using 1 button.
+Set up Realistic :ref:'headlight-beams', generate :ref:'skidmarks' automatically, set up tracking and following :ref:'cameras', calculate :ref:'jump-trajectories', and use :ref:'qucik-export' to Unreal Engine or any other DCC using 1 button.
 
-Here you can also expend even more handles in the rig, direct the way the ground detection works, and much more.
+Here you can also reveal more :ref:'animation-handles' in the rig, direct the way the :ref:'ground-detection' works, and much more.
 
 
 Animation Handles
