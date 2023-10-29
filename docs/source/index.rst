@@ -8,6 +8,13 @@ The rig is fully supported in vanilla Blender. The add-on Interface speeds up yo
 
 The Interface is split into two sections making it both easy to use and fully customizable
 
+*Quick Start* (no text, but this is what the video should say!)
+.. raw:: HTML
+   <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+      <iframe src="https://www.youtube.com/embed/7IMdpqP5TEc" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+   </div>
+
+
 Launch Control Core
 ---------
 
