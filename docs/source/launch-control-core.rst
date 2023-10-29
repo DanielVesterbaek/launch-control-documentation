@@ -1,4 +1,4 @@
-LC Core
+Launch Control Core
 ===================================
 
 Rigging
