@@ -1,7 +1,7 @@
 Animating Cars should be Fun! 
 ===================================
 
-Launch Control (LC) is a developing Tool for Blender built to solve the problems 
+Launch Control (LC) is an Animation Tool for Blender built to solve the problems 
 we face when rigging and animating 4-wheeled cars.
 
 The rig is fully supported in vanilla Blender. The add-on interface speeds up your workflow by giving you nice presets and automated functions.
