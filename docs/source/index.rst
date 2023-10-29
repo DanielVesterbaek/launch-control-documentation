@@ -30,7 +30,7 @@ Manual Gearbox
 --------
 
 Go deeper. Discover the expanded features that LC offers.
-Set up Realistic :ref:`headlight-beams`, generate :ref:`skidmarks` automatically, set up tracking and following :ref:`cameras`, calculate :ref:`jump-trajectories`, and use :ref:`qucik-export` to Unreal Engine or any other DCC using 1 button.
+Set up Realistic :ref:`headlight-beams`, generate :ref:`skidmarks` automatically, set up tracking and following :ref:`cameras`, calculate :ref:`jump-trajectories`, and use :ref:`qucik-export` to Unreal Engine or any other DCC using One Click.
 
 Here you can also reveal more Animation Handles in the rig, direct the way the :ref:`ground-detection` works, and much more.
 
