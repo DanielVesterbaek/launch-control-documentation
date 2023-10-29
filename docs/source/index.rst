@@ -39,7 +39,7 @@ The floating UI keeps track of adjustments to the rig of the car. Here you can a
 Inside the Add-on Preferences, you can adjust global settings that will be saved across all your Blend files. Here you can alter the way LC behaves during rigging, animation, and how the Interface is shown.
 
 
-"HEEELP!"
+"Help!"
 --------
 
 If you are looking for tutorials, check out the growing Launch Control Tutorial Playlist on YouTube!
