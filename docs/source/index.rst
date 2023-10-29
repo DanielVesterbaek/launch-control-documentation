@@ -29,6 +29,8 @@ Use the :ref:`postfx` to fine-tune the look of the physics.
     :alt: Launch Control Core Interface
     :class: with-shadow
     :width: 350px
+    :align: middle
+
     **Launch Control Core Interface**    
 
 Manual Gearbox
@@ -43,6 +45,8 @@ Here you can also reveal more Animation Handles in the rig, direct the way the :
     :alt: Manual Gearbox Interface
     :class: with-shadow
     :width: 350px
+    :align: 
+
     **Manual Gearbox Interface**    
 
 Animation Handles
@@ -56,6 +60,8 @@ The floating UI keeps track of adjustments to the rig of the car. Here you can a
     :alt: Viewport Handles
     :class: with-shadow
     :width: 350px
+    :align: center
+
     **Viewport Handles shown above the Porsche GT2 RS Model**
 
 
@@ -68,6 +74,8 @@ Inside the Add-on Preferences, you can adjust global settings that will be saved
     :alt: User Preferences
     :class: with-shadow
     :width: 350px
+    :align: middle
+
     **User Preference Menu for LC from inside the global Add-on Preferences**
 
 Help!
