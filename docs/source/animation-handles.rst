@@ -1,2 +1,2 @@
-Animation Handles
+Viewport Handles
 ===================================
