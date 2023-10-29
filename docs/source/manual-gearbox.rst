@@ -1,2 +1,2 @@
-Manual Gearbox!
+Manual Gearbox
 ===================================
