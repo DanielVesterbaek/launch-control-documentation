@@ -2,7 +2,7 @@ Launch Control Core
 ===================================
 
 .. _rigging:
-Rigging
+One-Click Rigging
 ------
 
 .. _animation-presets:
