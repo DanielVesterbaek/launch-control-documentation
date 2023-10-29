@@ -2,13 +2,13 @@ Manual Gearbox
 ===================================
 
 View
------
+-----  
 
 Settings
 -----
 
 Ground Detection
-------
+^^^^^^
 
 Quick Export
 ------
