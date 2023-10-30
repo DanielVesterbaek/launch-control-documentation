@@ -103,6 +103,7 @@ Contents
  
 .. toctree::
 
+   installation
    launch-control-core
    manual-gearbox
    animation-handles
