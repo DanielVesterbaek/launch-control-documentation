@@ -42,14 +42,16 @@ Optional car parts:
 
 Multiple tags are being searched for when LC is detecting the objects. The full list for each object/location is:
 
-    * **Wheels:**   *["Tire", "Wheel", "Wheels", "Tires", "Rad", "Räder", "tire", "wheel", "wheels", "tires", "rad", "räder", "tyre", "Tyre", "tyres", "Tyres"]*
-    * **Body:**   *["Body", "body", "hull", "Hull"]*
+    * **Wheels:**   *["Tire", "Wheel", "Wheels", "Tires", "Rad", "Räder", "Tyre", "Tyres"]*
+    * **Body:**   *["Body", "Hull"]*
    |
-    * **Brake:**   *["Brake", "brake", "Brakes", "brakes", "Calliper", "calliper", "Caliper", "caliper", "Callipers", "callipers", "Calipers", "calipers", "Bremse", "bremse"]*
-    * **Headlight:**   *["headlight", "headlamp", "headbulb", "front_light", "front_lamp", "front_bulb", "front_emitter", "Headlight", "Headlamp", "Headbulb", "Front_light", "Front_lamp", "Front_bulb", "Front_emitter",]*
+
+    * **Brake:**   *["Brake","Brakes", "Calliper", "Caliper", "Callipers", "Calipers", "Bremse"]*
+    * **Headlight:**   *["Headlight", "Headlamp", "Headbulb", "Front_light", "Front_lamp", "Front_bulb", "Front_emitter"]*
    |
-    * **Rear, Left:**   *["RL", "RearLeft", "BkL", "Bk.L", "Bk_L"]*
-    * **Rear, Right:**   *[RR", "RearRight", "BkR", "Bk.R", "Bk_R"]*
+
+    * **Rear, Left:**   *["RL", "BL", "RearLeft", "BkL", "Bk.L", "Bk_L"]*
+    * **Rear, Right:**   *[RR", "BR", "RearRight", "BkR", "Bk.R", "Bk_R"]*
     * **Front, Right:**   *["FR", "FrontRight", "FtR", "Ft.R", "Ft_R"]*
     * **Front, Left:**   *["FL", "FrontLeft", "FtL", "Ft.L", "Ft_L"]*
 
