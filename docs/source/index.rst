@@ -49,7 +49,7 @@ Here you can also reveal more Animation Handles in the rig, direct the way the :
 
     **Manual Gearbox Interface**    
 
-Animation Handles
+Viewport Handles
 -------
 
 Outside the Add-in Interface, you will find interactive handles to control the animation of your vehicle. You can adjust or animate everything all the way down to the Camber/Toe for each wheel. - Or you can leave all this op to Launch Control if you prefer.
