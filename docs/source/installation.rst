@@ -1,13 +1,15 @@
-Installation:
+Installing
 ############
+
+
 
 Step 1: Inside Blender head to "Edit -> Preferences -> Add-ons -> Install..."
 
 Step 2: Locate the downloaded .zip and click "Install Add-on"!
 
 
-Uninstalling/Updating:
-##############
+Uninstalling/Updating
+^^^^^^^^^^
 
 Step 1: Inside Blender head to "Edit -> Preferences -> Add-ons".
 
