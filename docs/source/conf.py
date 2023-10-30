@@ -2,12 +2,12 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'Launch Control - Auto Car Rig'
+copyright = '2023, Daniel Vesterbaek'
+author = 'Daniel Vesterbaek Jensen'
 
-release = '0.1'
-version = '0.1.0'
+release = '1.0'
+version = '1.5.0'
 
 # -- General configuration
 
@@ -17,6 +17,7 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
+    'sphinxcontrib.video',
 ]
 
 intersphinx_mapping = {
