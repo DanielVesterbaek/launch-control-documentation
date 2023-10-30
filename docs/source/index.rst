@@ -62,7 +62,7 @@ The floating UI keeps track of adjustments to the rig of the car. Here you can a
     :width: 350px
     :align: center
 
-    *Viewport Handles shown above the Porsche GT2 RS Model*
+    *Viewport Handles shown above vehicle*
 
 
 User Preferences
@@ -76,7 +76,7 @@ Inside the Add-on Preferences, you can adjust global settings that will be saved
     :width: 350px
     :align: center
 
-    *User Preference Menu for LC from inside the global Add-on Preferences*
+    *User Preference Menu for LC*
 
 Help!
 --------
