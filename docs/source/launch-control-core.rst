@@ -45,8 +45,10 @@ Multiple tags are being searched for when LC is detecting the objects. The full 
     * **Wheels:**   *["Tire", "Wheel", "Wheels", "Tires", "Rad", "Räder", "tire", "wheel", "wheels", "tires", "rad", "räder", "tyre", "Tyre", "tyres", "Tyres"]*
     * **Body:**   *["Body", "body", "hull", "Hull"]*
 
+
     * **Brake:**   *["Brake", "brake", "Brakes", "brakes", "Calliper", "calliper", "Caliper", "caliper", "Callipers", "callipers", "Calipers", "calipers", "Bremse", "bremse"]*
     * **Headlight:**   *["headlight", "headlamp", "headbulb", "front_light", "front_lamp", "front_bulb", "front_emitter", "Headlight", "Headlamp", "Headbulb", "Front_light", "Front_lamp", "Front_bulb", "Front_emitter",]*
+
 
     * **Rear, Left:**   *["RL", "RearLeft", "BkL", "Bk.L", "Bk_L"]*
     * **Rear, Right:**   *[RR", "RearRight", "BkR", "Bk.R", "Bk_R"]*
