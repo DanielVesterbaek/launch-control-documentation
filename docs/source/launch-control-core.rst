@@ -78,19 +78,26 @@ You can quickly tag Car Parts that needs renaming to be compatible with LC using
     :width: 350px
     :align: center
 
-    **The Quick-Tag Tool in the Interface** 
+    *The Quick-Tag Tool in the Interface* 
 
 |
 
 .. _native_lc_support:
-Asset Packs natively supported by LC:
+Asset Packs for LC
 ^^^^^^^^^^
 
-Many Vehicle models will have a supported naming convention out of the box. Some Asset Packs that are natively supported are:
+Many Vehicle models have supported naming conventions out of the box. Some Asset Packs that are natively supported are:
     * `Car Transportation <https://blendermarket.com/products/transportation>`_
     * `Car Teleporter <https://blendermarket.com/products/car-teleporter>`_
     * `Traffiq Car <https://blendermarket.com/products/car-library-traffiq-vehicles-for-blender>`_
 
+
+.. _troubleshoot_rigging:
+Troubleshoot Rigging
+^^^^^^^^^^
+
+
+Custom rigging and parenting can be done using the :ref:`rig-setup-mode`
 
 .. _animation-presets:
 Animation Presets
