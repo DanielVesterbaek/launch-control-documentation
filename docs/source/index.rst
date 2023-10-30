@@ -24,6 +24,7 @@ Launch Control Core
 Dive straight in. Rig your Vehicle with :ref:`rigging`, Animate using :ref:`animation-presets` or :ref:`user-path`, and enable :ref:`real-time-physics`.
 What you see is what you get - No baking, waiting, or guessing is required here.
 Use the :ref:`postfx` to fine-tune the look of the physics.
+Take a closer look at :doc:`launch-control-core' 
 
 ..  figure:: img/IMG_LC_CORE.jpg
     :alt: Launch Control Core Interface
@@ -41,6 +42,8 @@ Set up Realistic :ref:`headlight-beams`, generate :ref:`skidmarks` automatically
 
 Here you can also reveal more Animation Handles in the rig, direct the way the :ref:`ground-detection` works, and much more.
 
+Take a closer look at :doc:`manual-gearbox' 
+
 ..  figure:: img/IMG_MANUAL_GEARBOX.jpg
     :alt: Manual Gearbox Interface
     :class: with-shadow
@@ -56,6 +59,8 @@ Outside the Add-in Interface, you will find interactive handles to control the a
 
 The floating UI keeps track of adjustments to the rig of the car. Here you can adjust the maximum steering angle, suspension length, shock "bottom-out" distance, and even adjust the rig to use a "single rear axle" or 4-wheel steering if you so desire.
 
+Take a closer look at :doc:`animation-handles' 
+
 ..  figure:: img/IMG_VIEWPORT_HANDLES.jpg
     :alt: Viewport Handles
     :class: with-shadow
@@ -69,6 +74,8 @@ User Preferences
 --------
 
 Inside the Add-on Preferences, you can adjust global settings that will be saved across all your Blend files. Here you can alter the way LC behaves during rigging, animation, and how the Interface is shown.
+
+Take a closer look at :doc:`user-preferences' 
 
 ..  figure:: img/IMG_USER_PREF.jpg
     :alt: User Preferences
