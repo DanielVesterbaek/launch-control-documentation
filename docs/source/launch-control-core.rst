@@ -13,13 +13,11 @@ LC uses :ref:`rigging-tags` to detect the parts of the vehicle. If the naming co
 
 :ref:`custom-tags` can be used to optimize LC for your own naming convention.
 
-|
 
 .. _rigging-tags:
 Rigging Tags
 ^^^^^^^^^^
 
-|
 
 If all required car parts are found, LC can rig the car.
 
@@ -30,8 +28,6 @@ Required car parts:
     * *Rear Right Wheel*
     * *Rear Left Wheel*
 
-|
-|
 
 If any of the optional car parts are found they will be rigged - If not, they will be ignored. This behavior can be changed inside "User Preferences -> :ref:`rigging-preferences`"
 
@@ -43,27 +39,20 @@ Optional car parts:
     * *Right Headlight*
     * *Left Headlight*
 
-|
-|
 
 Multiple tags are being searched for when LC is detecting the objects. The full list for each object/location is:
 
     * **Wheels:**   *["Tire", "Wheel", "Wheels", "Tires", "Rad", "Räder", "tire", "wheel", "wheels", "tires", "rad", "räder", "tyre", "Tyre", "tyres", "Tyres"]*
     * **Body:**   *["Body", "body", "hull", "Hull"]*
 
-    |
-
     * **Brake:**   *["Brake", "brake", "Brakes", "brakes", "Calliper", "calliper", "Caliper", "caliper", "Callipers", "callipers", "Calipers", "calipers", "Bremse", "bremse"]*
     * **Headlight:**   *["headlight", "headlamp", "headbulb", "front_light", "front_lamp", "front_bulb", "front_emitter", "Headlight", "Headlamp", "Headbulb", "Front_light", "Front_lamp", "Front_bulb", "Front_emitter",]*
-
-    |
 
     * **Rear, Left:**   *["RL", "RearLeft", "BkL", "Bk.L", "Bk_L"]*
     * **Rear, Right:**   *[RR", "RearRight", "BkR", "Bk.R", "Bk_R"]*
     * **Front, Right:**   *["FR", "FrontRight", "FtR", "Ft.R", "Ft_R"]*
     * **Front, Left:**   *["FL", "FrontLeft", "FtL", "Ft.L", "Ft_L"]*
 
-|
 
 .. _quick-tag-tool:
 Quick-Tag Tool
@@ -80,7 +69,6 @@ You can quickly tag Car Parts that needs renaming to be compatible with LC using
 
     *The Quick-Tag Tool in the Interface* 
 
-|
 
 .. _native_lc_support:
 Asset Packs for LC
