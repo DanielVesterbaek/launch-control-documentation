@@ -1,7 +1,9 @@
 Installing
 ############
 
-
+.. video:: DOC_INSTALL.mp4
+    :nocontrols:
+    :loop:
 
 Step 1: Inside Blender head to "Edit -> Preferences -> Add-ons -> Install..."
 
