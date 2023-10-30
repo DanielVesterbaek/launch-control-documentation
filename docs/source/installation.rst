@@ -1,7 +1,7 @@
 Installing
 ############
 
-.. video:: DOC_INSTALL.mp4
+.. video:: vid/DOC_INSTALL.mp4
     :nocontrols:
     :loop:
 
