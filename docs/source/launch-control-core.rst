@@ -14,6 +14,13 @@ LC uses :ref:`rigging-tags` to detect the parts of the vehicle. If the naming co
 :ref:`custom-tags` can be used to optimize LC for your own naming convention.
 
 
+.. _vehicle-collection:
+Vehicle Collection
+^^^^^^^^^^
+
+The Vehicle Collection field allows a multi-car workflow in LC and keeps track of the Active Car.
+
+
 .. _rigging-tags:
 Rigging Tags
 ^^^^^^^^^^
@@ -54,6 +61,9 @@ Multiple tags are being searched for when LC is detecting the objects. The full 
     * **Rear, Right:**   *[RR", "BR", "RearRight", "BkR", "Bk.R", "Bk_R"]*
     * **Front, Right:**   *["FR", "FrontRight", "FtR", "Ft.R", "Ft_R"]*
     * **Front, Left:**   *["FL", "FrontLeft", "FtL", "Ft.L", "Ft_L"]*
+
+.. note::
+   All Tags are case-insensitive.
 
 
 .. _quick-tag-tool:
