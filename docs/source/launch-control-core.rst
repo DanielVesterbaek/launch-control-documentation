@@ -59,18 +59,18 @@ Optional car parts:
 
 Multiple tags are being searched for when LC is detecting the objects. The full list for each object/location is:
 
-    * **Wheels:**   *["Tire", "Wheel", "Wheels", "Tires", "Rad", "Räder", "Tyre", "Tyres"]*
-    * **Body:**   *["Body", "Hull"]*
+    * *Wheels:   ["Tire", "Wheel", "Wheels", "Tires", "Rad", "Räder", "Tyre", "Tyres"]*
+    * *Body:   ["Body", "Hull"]*
    |
 
-    * **Brake:**   *["Brake","Brakes", "Calliper", "Caliper", "Callipers", "Calipers", "Bremse"]*
-    * **Headlight:**   *["Headlight", "Headlamp", "Headbulb", "Front_light", "Front_lamp", "Front_bulb", "Front_emitter"]*
+    * *Brake:   *["Brake","Brakes", "Calliper", "Caliper", "Callipers", "Calipers", "Bremse"]*
+    * *Headlight:   *["Headlight", "Headlamp", "Headbulb", "Front_light", "Front_lamp", "Front_bulb", "Front_emitter"]*
    |
 
-    * **Rear, Left:**   *["RL", "BL", "RearLeft", "BkL", "Bk.L", "Bk_L"]*
-    * **Rear, Right:**   *[RR", "BR", "RearRight", "BkR", "Bk.R", "Bk_R"]*
-    * **Front, Right:**   *["FR", "FrontRight", "FtR", "Ft.R", "Ft_R"]*
-    * **Front, Left:**   *["FL", "FrontLeft", "FtL", "Ft.L", "Ft_L"]*
+    * *Rear, Left:   *["RL", "BL", "RearLeft", "BkL", "Bk.L", "Bk_L"]*
+    * *Rear, Right:   *[RR", "BR", "RearRight", "BkR", "Bk.R", "Bk_R"]*
+    * *Front, Right:   *["FR", "FrontRight", "FtR", "Ft.R", "Ft_R"]*
+    * *Front, Left:   *["FL", "FrontLeft", "FtL", "Ft.L", "Ft_L"]*
 
 .. note::
    All Tags are case-insensitive.
@@ -121,7 +121,7 @@ Custom rigging and parenting can be done using the :ref:`rig-setup-mode`
 .. _animation
 Animation
 ------
-LC uses a curve based animation workflow to give you full creative control over the movement. :ref:`user-animation` is acting on top of the automatically calculated animations [such as Steering, Wheel Rotation, Suspension, Camber/Castor], allowing the user full customization of the animation.
+LC uses a curve based animation workflow to give you full creative control over the movement. :ref:`user-animation` is acting on top of the automatically calculated animations, allowing the user full customization of the animation.
 
 
 .. _animation-presets:
@@ -150,8 +150,8 @@ Click "Update Driving Path" in the LC interface. - This resolved any offsets to 
 .. _user-animation:
 User Animation
 ^^^^^^
-Much of the movement is calculated automatically by LC as the vehicle is following the path.
-User Animation is the animation that the user needs to animate to get the desired vehicle motion. Handles in the viewport are used to animate this.
+Much of the movement is calculated automatically by LC as the vehicle is following the path - This includes: Steering, Wheel Rotation, Suspension, Camber/Castor.
+User Animation is what the user needs to animate to make the vehicle move like desired. Handles in the viewport are used to animate this.
 
 ..  figure:: img/IMG_UserAnim.png
     :alt: UserAnim
