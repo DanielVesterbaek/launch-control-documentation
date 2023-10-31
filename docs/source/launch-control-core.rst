@@ -183,6 +183,51 @@ Animating the movement/speed of the Vehicle can easily be done with a Graph Edit
 Real-Time Physics
 ------
 
+Physics are used in LC to add secondary motion to the vehicle, which is tedious to animate by hand.
+The Physics are layed on top of the Automatic and User Animation and are fully non-destructive to the User Animation.
+
+To use the Physics, click "Enable Physics".
+
+..  image:: img/IMG_EnablePhysics.png
+    :alt: Enable Physics
+    :class: with-shadow
+    :width: 350px
+    :align: center
+
+Presets can be used to get different results, or use the :ref:`physics-customize` checkbox to adjust the Physics settings in detail.
+
+The Physics always has one of four states:
+    * LIVE
+    * BAKED
+    * MUTED
+    * OUTDATED
+
+When the Physics are LIVE, they are simulated in real-time when Blender is playing forward.
+
+.. note::
+Physics cannot be calculated LIVE when playing backward
+
+.. info::
+LIVE Physics will cache when playing back. To ensure you are seeing the latest result, revert the timeline back to frame 0 or hit the 'Reset Physics'-button.
+
+When the Physics are BAKED, changes to the animation will not affect the physics. The Physics are locked and are ready to be rendered.
+
+.. warning::
+Due to a bug in Blender, BAKED physics do not load correctly when re-opening the file. After reopening, you would need to bake the physics again.
+
+When the Physics are MUTED, the baked physics motion is kept, but disabled temporarily. The vehicle will only have the motion from the animation. Hit the Unmute button to show the baked physics motion again.
+
+When the Physics are OUTDATED, they have been baked, but changes in the scene or the physics settings have made the bake invalid or outdated. Please bake the physics again if this is the case.
+
+
+.. _physics-customize:
+Customize
+^^^^^^
+
+
+
+
+
 .. _postfx:
 PostFX
 ^^^^^^
