@@ -153,6 +153,7 @@ User Animation
 Much of the movement is calculated automatically by LC as the vehicle is following the path - This includes: Steering, Wheel Rotation, Suspension, Camber/Castor.
 User Animation is what the user needs to animate to make the vehicle move like desired. Handles in the viewport are used to animate this.
 
+
 ..  figure:: img/IMG_UserAnim.png
     :alt: UserAnim
     :class: with-shadow
