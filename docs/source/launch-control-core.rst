@@ -25,10 +25,10 @@ Select a Collection, which holds the vehicle you want to rig by dragging the col
 ..  figure:: gif/DOC_Select_Car_GIF.gif
     :alt: Select Car GIF
     :class: with-shadow
-    :width: 350px
+    :width: 600px
     :align: center
-
-   *Selecting a Vehicle Collection* 
+    
+    *Selecting a Vehicle Collection* 
 
 
 .. _rigging-tags:
