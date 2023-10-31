@@ -106,15 +106,53 @@ Many Vehicle models have supported naming conventions out of the box. Some Asset
 Troubleshoot Rigging
 ^^^^^^^^^^
 
+If any issues were found during rigging, LC will promt you with a message about which body part was missing.
+The objects tagged as "Wheels" need to be the tire meshes of the vehicle. The objects tagged as "Body" and "Brakes" can be empties.
+
+In some cases, the rigging is succesful, but inacurate, which can cause shaking or wobbly wheels.
+This is usually due to one of 3 things:
+    * The Rear or Front wheels are not properly alligned
+    * Any of the wheels had a rotation offset or the geometry was not straightned before rigging
+    * The Tire Mesh does not have evenly distributed geometry (See :ref:`force-pivot`)
+
 Custom rigging and parenting can be done using the :ref:`rig-setup-mode`
+
+
+.. _animation
+Animation
+------
+LC uses a curve based animation workflow to give you full creative control over the movement. :ref:`user-animation` is acting on top of the automatically calculated animations [such as Steering, Wheel Rotation, Suspension, Camber/Castor], allowing the user full customization of the animation.
+
 
 .. _animation-presets:
 Animation Presets
-------
+^^^^^^
+To quickly try out animations use the presets. Select a Preset from the Gallery and hit "Animate Vehicle".
 
 .. _user-path:
 User Path
-------
+^^^^^^
+To use your own "Bezier Curve" or "Nurbs Path" to animate the car along, use the "User Path" field.
+Click the field to browse for your desired path or drag-n-drop the path into the field. Hit "Animate Vehicle".
+
+The Vehicle will automatically be animated to drive along the length of the path over the scene time. (See :ref:`auto-animate`)
+
+.. note::
+If a "User Path" is selected, it will overrule/gray out the animation presets.
+
+.. _update-driving-path:
+Update Driving Path
+^^^^^^
+While adjusting the control points of the Driving Path, the total length of the path might change.
+When this happens, LC will prompt you to "Update Driving Path" before adjusting any animation.
+Click "Update Driving Path" in the LC interface. - This resolved any offsets to the animation due to the changed Driving Path.
+
+.. _user-animation:
+User Animation
+^^^^^^
+Much of the movement is calculated automatically by LC as the vehicle is following the path.
+User Animation or Custom Animation can be added on top of this to art direct the motion of the vehicle. 
+
 
 .. _real-time-physics:
 Real-Time Physics
@@ -122,4 +160,4 @@ Real-Time Physics
 
 .. _postfx:
 PostFX
-------
+^^^^^^
