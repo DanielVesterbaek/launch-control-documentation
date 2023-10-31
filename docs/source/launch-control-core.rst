@@ -190,20 +190,20 @@ PostFX
 To make it easier to art direct the Physics, use the PostFX to adjust the influence of the Physics on each Axis of Rotation and Location. PostFX can be animated as well.
 
 Body Forces:
-    * *Turns, sudden speed-changes and jumps have an impact on the "Body Forces"*
+*Turns, sudden speed-changes and jumps have an impact on the "Body Forces"*
 
-Pitch, Yaw, Roll:
-    * *The physics influence on the body of the car in each of the 3 rotation axis.*
+    * Pitch, Yaw, Roll:
+        * *The physics influence on the body of the car in each of the 3 rotation axis.*
 
-Up/Down: 
-    * *The physics influence on the up/down movement of the body of the car.*
+    * Up/Down: 
+        * *The physics influence on the up/down movement of the body of the car.*
 |
 Wheel Forces:
-    * *Impact when the wheels hit the ground because of a jump or a bump.*
+*Impact when the wheels hit the ground because of a jump or a bump.*
 
-Up/Down:
-    * *How much an impact with the ground affects the wheels up/down movement.*
+    * Up/Down:
+        * *How much an impact with the ground affects the wheels up/down movement.*
        
-Tire Pressure:
-    * *How much the tires are allowed to clip through the floor (To simulate low pressure inside the tires when they have a hard impact with the ground).*
+    * Tire Pressure:
+        * *How much the tires are allowed to clip through the floor (To simulate low pressure inside the tires when they have a hard impact with the ground).*
 
