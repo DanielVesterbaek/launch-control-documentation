@@ -2,6 +2,10 @@ Installing
 ############
 
 .. image:: gif/DOC_INSTALL_GIF.gif
+    :alt: Installation Gif
+    :class: with-shadow
+    :width: 800px
+    :align: center
 
 Step 1: Inside Blender head to "Edit -> Preferences -> Add-ons -> Install..."
 
@@ -12,6 +16,10 @@ Uninstalling/Updating
 ^^^^^^^^^^
 
 .. image:: gif/DOC_UNINSTALL_GIF.gif
+    :alt: Uninstallation Gif
+    :class: with-shadow
+    :width: 800px
+    :align: center
 
 Step 1: Inside Blender head to "Edit -> Preferences -> Add-ons".
 
