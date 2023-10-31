@@ -151,8 +151,27 @@ Click "Update Driving Path" in the LC interface. - This resolved any offsets to 
 User Animation
 ^^^^^^
 Much of the movement is calculated automatically by LC as the vehicle is following the path.
-User Animation or Custom Animation can be added on top of this to art direct the motion of the vehicle. 
+User Animation is the animation that the user needs to animate to get the desired vehicle motion. Handles in the viewport are used to animate this.
 
+..  figure:: img/IMG_UserAnim.png
+    :alt: UserAnim
+    :class: with-shadow
+    :width: 350px
+    :align: center
+
+   *Handles for User Animation* 
+
+.. info::
+Animating the movement/speed of the Vehicle can easily be done with a Graph Editor open. The inclination of the slope at any point determines the speed at the given time.
+
+
+
+Go into "Pose Mode" to adjust any of the Handles.
+After adjusting a Handle hit "I" on the keyboard and pick "Location" or "Rotation" depending on which Handle you are animating.
+
+Movement Handle: Rotation
+Mass Handle: Location
+Drift Handle: Rotation
 
 .. _real-time-physics:
 Real-Time Physics
