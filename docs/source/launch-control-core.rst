@@ -22,7 +22,13 @@ The Vehicle Collection field allows a multi-car workflow in LC and keeps track o
 
 Select a Collection, which holds the vehicle you want to rig by dragging the collection from the outliner into the field or by browsing the available options by clicking the field
 
-The toggles
+..  figure:: gif/DOC_Select_Car_GIF.gif
+    :alt: Select Car GIF
+    :class: with-shadow
+    :width: 350px
+    :align: center
+
+   *Selecting a Vehicle Collection* 
 
 
 .. _rigging-tags:
@@ -99,7 +105,6 @@ Many Vehicle models have supported naming conventions out of the box. Some Asset
 .. _troubleshoot_rigging:
 Troubleshoot Rigging
 ^^^^^^^^^^
-
 
 Custom rigging and parenting can be done using the :ref:`rig-setup-mode`
 
