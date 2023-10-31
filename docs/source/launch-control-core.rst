@@ -161,17 +161,23 @@ User Animation is the animation that the user needs to animate to get the desire
 
    *Handles for User Animation* 
 
-.. info::
-Animating the movement/speed of the Vehicle can easily be done with a Graph Editor open. The inclination of the slope at any point determines the speed at the given time.
-
-
-
 Go into "Pose Mode" to adjust any of the Handles.
 After adjusting a Handle hit "I" on the keyboard and pick "Location" or "Rotation" depending on which Handle you are animating.
 
 Movement Handle: Rotation
 Mass Handle: Location
 Drift Handle: Rotation
+
+.. info::
+Animating the movement/speed of the Vehicle can easily be done with a Graph Editor open. The inclination of the animation curve at any point determines the speed at the given time.
+
+..  figure:: img/IMG_speed.png
+    :alt: Speed Animation
+    :class: with-shadow
+    :width: 350px
+    :align: center
+
+   *The Inclination determines the Speed* 
 
 .. _real-time-physics:
 Real-Time Physics
@@ -180,3 +186,24 @@ Real-Time Physics
 .. _postfx:
 PostFX
 ^^^^^^
+
+To make it easier to art direct the Physics, use the PostFX to adjust the influence of the Physics on each Axis of Rotation and Location. PostFX can be animated as well.
+
+Body Forces:
+    * *Turns, sudden speed-changes and jumps have an impact on the "Body Forces"*
+
+Pitch, Yaw, Roll:
+    * *The physics influence on the body of the car in each of the 3 rotation axis.*
+
+Up/Down: 
+    * *The physics influence on the up/down movement of the body of the car.*
+|
+Wheel Forces:
+    * *Impact when the wheels hit the ground because of a jump or a bump.*
+
+Up/Down:
+    * *How much an impact with the ground affects the wheels up/down movement.*
+       
+Tire Pressure:
+    * *How much the tires are allowed to clip through the floor (To simulate low pressure inside the tires when they have a hard impact with the ground).*
+
