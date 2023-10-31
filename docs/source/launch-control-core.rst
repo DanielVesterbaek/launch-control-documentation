@@ -20,6 +20,10 @@ Vehicle Collection
 
 The Vehicle Collection field allows a multi-car workflow in LC and keeps track of the Active Car.
 
+Select a Collection, which holds the vehicle you want to rig by dragging the collection from the outliner into the field or by browsing the available options by clicking the field
+
+The toggles
+
 
 .. _rigging-tags:
 Rigging Tags
