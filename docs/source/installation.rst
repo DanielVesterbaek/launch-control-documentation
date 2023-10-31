@@ -6,6 +6,7 @@ Installing
     :class: with-shadow
     :width: 800px
     :align: center
+|
 
 Step 1: Inside Blender head to "Edit -> Preferences -> Add-ons -> Install..."
 
@@ -20,6 +21,7 @@ Uninstalling/Updating
     :class: with-shadow
     :width: 800px
     :align: center
+|
 
 Step 1: Inside Blender head to "Edit -> Preferences -> Add-ons".
 
