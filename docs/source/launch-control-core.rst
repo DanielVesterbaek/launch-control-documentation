@@ -88,7 +88,7 @@ You can quickly tag Car Parts that needs renaming to be compatible with LC using
     :class: with-shadow
     :width: 350px
     :align: center
-
+    
     *The Quick-Tag Tool in the Interface* 
 
 
@@ -153,14 +153,13 @@ User Animation
 Much of the movement is calculated automatically by LC as the vehicle is following the path - This includes: Steering, Wheel Rotation, Suspension, Camber/Castor.
 User Animation is what the user needs to animate to make the vehicle move like desired. Handles in the viewport are used to animate this.
 
-
 ..  figure:: img/IMG_UserAnim.png
-    :alt: UserAnim
+    :alt: Speed Animation
     :class: with-shadow
     :width: 350px
     :align: center
-
-   *Handles for User Animation* 
+    
+    *Handles for User Animation* 
 
 Go into "Pose Mode" to adjust any of the Handles.
 After adjusting a Handle hit "I" on the keyboard and pick "Location" or "Rotation" depending on which Handle you are animating.
@@ -177,8 +176,8 @@ Animating the movement/speed of the Vehicle can easily be done with a Graph Edit
     :class: with-shadow
     :width: 350px
     :align: center
-
-   *The Inclination determines the Speed* 
+    
+    *The Inclination determines the Speed* 
 
 .. _real-time-physics:
 Real-Time Physics
