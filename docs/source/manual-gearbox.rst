@@ -151,17 +151,6 @@ This is especially useful when importing to Unreal Engine, where the "Only Anima
     "Rebase bones" are exported with the rig, which can be used inside UE5 to bind static meshes to the exported LC rig.
 
 
-FBX:
-Exports an FBX for general used in DCCs. Only important "deforming" bones are exported with baked animations - other bones are ignored.
-
-FBX for UE5:
-Exports an FBX optimized for UE5 from LC. Requires the user to manually set the "current frame" to 0 as this is used as the bind pose inside Unreal Engine.
-Specifically for UE5, rebase bones have been added in the rig. These can be used when linking exisiting static meshes to the imported LC car rig from inside Unreal Engine. 
-
-Datasmith Scene:
-Export for use in Unreal Engine. It handles dense meshes and materials better than FBX export. On import a sequence is automatically set up in Unreal. To use it, please install and enable the "Blender Datasmith" add-on (FREE). https://github.com/0xafbf/blender-datasmith-export 
-
-
 
 .. _headlights:
 Headlights
