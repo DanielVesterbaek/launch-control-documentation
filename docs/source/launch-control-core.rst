@@ -58,6 +58,8 @@ Optional car parts:
 
 
 Multiple tags are being searched for when LC is detecting the objects. 
+
+
 The full list for each object is:
     * *Wheels:   ["Tire", "Wheel", "Wheels", "Tires", "Rad", "Räder", "Tyre", "Tyres"]*
     * *Body:   ["Body", "Hull"]*
