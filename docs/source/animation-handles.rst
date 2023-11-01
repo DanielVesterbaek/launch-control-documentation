@@ -94,7 +94,7 @@ Airbourne Mode:
 
 
 .. _extra_animation_handles:
-Extra Animation Handles
+Extra Animation Controls
 ------
 
 Extra Animation Handles can be revealed giving the user more flexibility when animating. Inside the Manual Gearbox, the :ref:`enable_extra_handles` can be enabled.
