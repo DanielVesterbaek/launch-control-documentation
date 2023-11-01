@@ -186,23 +186,26 @@ Real-Time Physics
 Physics are used in LC to add secondary motion to the vehicle, which is tedious to animate by hand.
 The Physics are layed on top of the Automatic and User Animation and are fully non-destructive to the User Animation.
 
-To use the Physics, click "Enable Physics".
-
-..  image:: img/IMG_EnablePhysics.png
-    :alt: Enable Physics
-    :class: with-shadow
-    :width: 350px
-    :align: center
-
 Presets can be used to get different results, or use the :ref:`physics-customize` checkbox to adjust the Physics settings in detail.
 
+.. info::
 The Physics always has one of four states:
     * LIVE
     * BAKED
     * MUTED
     * OUTDATED
 
+.. _live-physics:
+Live Physics
+^^^^^^
+
 When the Physics are LIVE, they are simulated in real-time when Blender is playing forward.
+
+..  image:: img/IMG_LivePhysics.jpg
+    :alt: Enable Physics
+    :class: with-shadow
+    :width: 300px
+    :align: center
 
 .. note::
 Physics cannot be calculated LIVE when playing backward
@@ -210,12 +213,30 @@ Physics cannot be calculated LIVE when playing backward
 .. info::
 LIVE Physics will cache when playing back. To ensure you are seeing the latest result, revert the timeline back to frame 0 or hit the 'Reset Physics'-button.
 
+.. _baked-physics:
+Baked Physics
+^^^^^^
+
 When the Physics are BAKED, changes to the animation will not affect the physics. The Physics are locked and are ready to be rendered.
+
+..  image:: img/IMG_BakedPhysics.jpg
+    :alt: Enable Physics
+    :class: with-shadow
+    :width: 300px
+    :align: center
 
 .. warning::
 Due to a bug in Blender, BAKED physics do not load correctly when re-opening the file. After reopening, you would need to bake the physics again.
 
+.. _muted-physics:
+Muted Physics
+^^^^^^
+
 When the Physics are MUTED, the baked physics motion is kept, but disabled temporarily. The vehicle will only have the motion from the animation. Hit the Unmute button to show the baked physics motion again.
+
+.. _outdated-physics:
+Outdated Physics
+^^^^^^
 
 When the Physics are OUTDATED, they have been baked, but changes in the scene or the physics settings have made the bake invalid or outdated. Please bake the physics again if this is the case.
 
@@ -223,6 +244,41 @@ When the Physics are OUTDATED, they have been baked, but changes in the scene or
 .. _physics-customize:
 Customize
 ^^^^^^
+
+By checking to "Customize" box, a list of sliders will be revealed.
+These sliders can be used to adjust the parameters used when simulating the physics. If the Physics are Baked, you would need to re-bake to see the result of the change. 
+
+..  figure:: img/IMG_PhysicsCustom.jpg
+    :alt: Custom Physics
+    :class: with-shadow
+    :width: 350px
+    :align: center
+    
+    *Physics can be customized in the Interface* 
+
+Spring Hardness:
+*The 'Tightness/Hardness' of the Spring. Increase this to have the Spring be harder and respond faster (Feeling of a light vehicle or road/track vehicle), decrease this to make the Spring respond slower and feel softer (Feeling of a heavy offroad vehicle).*
+
+Spring Damping:
+| *How quickly the spring stops moving after an impact. A low value makes the spring wobble for a long time after an impulse.*
+
+Smoothing:
+| *Adds extra smoothing to the ride. Makes the response slower and dampens more of the forces. Equivilant to Decreasing 'Hardness' and Increasing 'Dampening' at the same time.*
+
+Simulate Gravity:
+| *Let the physics take care of the Gravity when the vehicle is in the air. When 'ON' the vehicle might deviate more from the Driving Path during jumps. When 'OFF' the car will stick 'tightly' to the path, even if it would be physically impossible - This is useful for making the car do loops or running over a bumpy road in a controlled manner*
+
+Auto Level:
+| *During airtime, the vehicle can start to nose-dive or pitch backwards. Using Auto Level, you can bias the physics toward keeping the vehicle level rather than pitching or rolling.*
+
+Vehicle Mass:
+| *Similar to 'Spring Hardness', affects how much the car is affected by impacts from the road. Increase this to make the bumps and landings have less impact on the body motion of the vehicle and vice-versa.*
+
+Spring Offset:
+| *Fine-tune the physics Suspension Height. This is only affecting the car when physics are turned on.*
+
+.. warning::
+    When set too high, the car will keep bouncing. 
 
 
 
