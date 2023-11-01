@@ -60,10 +60,10 @@ Animation Handles are used to control the animation of the vehicle.
 Movement Handle: (Wheel Icon)
     Is used to offset the vehicle along the Driving Path. Rotating the wheel clockwise will make the vehicle move. See :ref:`user-animation` for more details.
 
-Mass Handle: (Axis Handle)
+Mass Handle: (Axis Icon)
     Controls the visual weight of the vehicle - Up/Down, Front/Back and Left/Right. This can also be calculated automatically using the :ref:`real-time-physics` or added on top of it.
 
-Drift Handle: (Curved Arrow Handle)
+Drift Handle: (Curved Arrow Icon)
     Controls the amount the tail of the vehicle is swinging/drifting. The Drift will pivot around the front axle of the vehicle. Can be combined with the :ref:`drift-offset` handle for more control.
 
 
