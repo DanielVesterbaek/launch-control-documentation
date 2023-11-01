@@ -87,7 +87,7 @@ Enter a Setup Mode for the Active Vehicle where the sizes of the rig can be adju
     
     *Rig Setup Mode controls in the 3D View* 
 
-Body, Wheel, Brake, Headlight and Steering Wheel attachment bones and setup controls for wheel-base length, track-width length, wheel radii, and roll center can be found in this mode.
+Body, Wheel, Brake, Headlight and Steering Wheel attachment bones and setup controls for wheel-base length, track-width length, wheel radii, and roll center can be found in this mode. Enter "Pose Mode" and select and move the handles to start adjusting.
 You can manually parent your meshes, nulls and armatures to the body or wheels. 
 
 .. note::
