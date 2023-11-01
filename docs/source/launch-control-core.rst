@@ -210,7 +210,7 @@ When the Physics are LIVE, they are simulated in real-time when Blender is playi
 
 .. note::
     Physics cannot be calculated LIVE when playing backward.
-    LIVE Physics will cache when playing back. To ensure you are seeing the latest result, revert the timeline back to frame 0 or hit the 'Reset Physics'-button.
+    LIVE Physics will cache when playing forward. To ensure you are seeing the latest result, revert the timeline back to frame 0 or hit the 'Reset Physics'-button.
 
 .. _baked-physics:
 Baked Physics
@@ -278,8 +278,8 @@ These sliders can be used to adjust the parameters used when simulating the phys
 **Spring Offset:**
     * *Fine-tune the physics Suspension Height. This is only affecting the car when physics are turned on.*
 
-.. warning::
-    When set too high, the car will keep bouncing. 
+    .. warning::
+        When set too high, the car will keep bouncing. 
 
 
 
