@@ -97,7 +97,10 @@ You can quickly tag Car Parts that needs renaming to be compatible with LC using
 Asset Packs for LC
 ^^^^^^^^^^
 Many Vehicle models have supported naming conventions out of the box.
-| **Some Asset Packs that are natively supported are:**
+
+| 
+
+**Some Asset Packs that are natively supported are:**
     * `Car Transportation <https://blendermarket.com/products/transportation>`_
     * `Car Teleporter <https://blendermarket.com/products/car-teleporter>`_
     * `Traffiq Car <https://blendermarket.com/products/car-library-traffiq-vehicles-for-blender>`_
