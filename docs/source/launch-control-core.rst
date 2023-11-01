@@ -63,7 +63,7 @@ Multiple tags are being searched for when LC is detecting the objects. The full 
     * *Body:   ["Body", "Hull"]*
    |
 
-    * *Brake:   *["Brake","Brakes", "Calliper", "Caliper", "Callipers", "Calipers", "Bremse"]*
+    * *Brake:   ["Brake","Brakes", "Calliper", "Caliper", "Callipers", "Calipers", "Bremse"]*
     * *Headlight:   *["Headlight", "Headlamp", "Headbulb", "Front_light", "Front_lamp", "Front_bulb", "Front_emitter"]*
    |
 
@@ -95,8 +95,8 @@ You can quickly tag Car Parts that needs renaming to be compatible with LC using
 .. _native_lc_support:
 Asset Packs for LC
 ^^^^^^^^^^
-
-Many Vehicle models have supported naming conventions out of the box. Some Asset Packs that are natively supported are:
+Many Vehicle models have supported naming conventions out of the box.
+Some Asset Packs that are natively supported are:
     * `Car Transportation <https://blendermarket.com/products/transportation>`_
     * `Car Teleporter <https://blendermarket.com/products/car-teleporter>`_
     * `Traffiq Car <https://blendermarket.com/products/car-library-traffiq-vehicles-for-blender>`_
@@ -138,7 +138,7 @@ Click the field to browse for your desired path or drag-n-drop the path into the
 The Vehicle will automatically be animated to drive along the length of the path over the scene time. (See :ref:`auto-animate`)
 
 .. note::
-If a "User Path" is selected, it will overrule/gray out the animation presets.
+    If a "User Path" is selected, it will overrule/gray out the animation presets.
 
 .. _update-driving-path:
 Update Driving Path
@@ -168,8 +168,8 @@ Movement Handle: Rotation
 Mass Handle: Location
 Drift Handle: Rotation
 
-.. info::
-Animating the movement/speed of the Vehicle can easily be done with a Graph Editor open. The inclination of the animation curve at any point determines the speed at the given time.
+.. note::
+    Animating the movement/speed of the Vehicle can easily be done with a Graph Editor open. The inclination of the animation curve at any point determines the speed at the given time.
 
 ..  figure:: img/IMG_speed.png
     :alt: Speed Animation
@@ -188,7 +188,7 @@ The Physics are layed on top of the Automatic and User Animation and are fully n
 
 Presets can be used to get different results, or use the :ref:`physics-customize` checkbox to adjust the Physics settings in detail.
 
-.. info::
+.. note::
 The Physics always has one of four states:
     * LIVE
     * BAKED
@@ -208,10 +208,8 @@ When the Physics are LIVE, they are simulated in real-time when Blender is playi
     :align: center
 
 .. note::
-Physics cannot be calculated LIVE when playing backward
-
-.. info::
-LIVE Physics will cache when playing back. To ensure you are seeing the latest result, revert the timeline back to frame 0 or hit the 'Reset Physics'-button.
+    Physics cannot be calculated LIVE when playing backward.
+    LIVE Physics will cache when playing back. To ensure you are seeing the latest result, revert the timeline back to frame 0 or hit the 'Reset Physics'-button.
 
 .. _baked-physics:
 Baked Physics
@@ -226,7 +224,7 @@ When the Physics are BAKED, changes to the animation will not affect the physics
     :align: center
 
 .. warning::
-Due to a bug in Blender, BAKED physics do not load correctly when re-opening the file. After reopening, you would need to bake the physics again.
+    Due to a bug in Blender, BAKED physics do not load correctly when re-opening the file. After reopening, you would need to bake the physics again.
 
 .. _muted-physics:
 Muted Physics
