@@ -11,14 +11,14 @@ Inside the Manual Gearbox you have a wide range of customization options to make
     
     *The Manual Gearbox in the N-Panel* 
 
-Reset all button:
+*Reset all!*
 Will reset all LC properties for the active vehicle to their default value.
 
 .. _view:
 View
 -----
 
-The View Panel has options for what will be shown in the 3D Viewport over and around the Vehicle.
+The View Panel has options for what will be shown in the 3D View over and around the Vehicle.
 
 ..  figure:: img/IMG_View.jpg
     :alt: View
@@ -44,9 +44,8 @@ The "Follow Cam" will track the general motion of the vehicle without taking the
 .. _enable_grid_viz:
 Detection Grid
 ^^^^^^^^
-Turn the visibility of the :ref:`ground-detection` debug grid ON/OFF
-
-When Detection Grid is on, you can change the :ref:`detection-resolution`
+Turn the visibility of the :ref:`ground-detection` debug grid ON/OFF.
+When Detection Grid is on, you can change the :ref:`detection-resolution`.
 
 
 .. _enable_acc_viz:
@@ -88,10 +87,10 @@ Enter a Setup Mode for the Active Vehicle where the sizes of the rig can be adju
     *Rig Setup Mode controls in the 3D View* 
 
 Body, Wheel, Brake, Headlight and Steering Wheel attachment bones and setup controls for wheel-base length, track-width length, wheel radii, and roll center can be found in this mode. Enter "Pose Mode" and select and move the handles to start adjusting.
-You can manually parent your meshes, nulls and armatures to the body or wheels. 
+You can manually parent meshes, nulls and armatures to the body or wheels. 
 
 .. note::
-    The car will temporarily be put back into the center of the scene and all animation handles hidden. All animation and setup sliders will be restored when "rig setup mode" is turned back off.
+    The vehicle will temporarily be put into the center of the scene and all animations disabled. All animations will be restored when "rig setup mode" is turned back off.
 
 
 Update Driving Path
@@ -110,12 +109,12 @@ Use the actual objects inside the collection 'GroundDetection', instead of a pro
 
 Detection Grid
 ^^^^^^^^
-See: :ref:`enable-grid-viz`
+See: :ref:`enable_grid_viz`
 
 .. _detection-resolution:
 Resolution
 ^^^^^^^^
-Change the resolution of the detection grid which is projected onto the geometry inside the "groundDetection" collection.
+Change the resolution of the detection grid which is projected onto the geometry inside the "Ground Detection" collection.
 
 
 .. _limit-sliders:
@@ -158,7 +157,6 @@ This is especially useful when importing to Unreal Engine, where the "Only Anima
 .. note::
     For Datasmoth Scene Export, the free "Blender Datasmith add-on" is needed: https://github.com/0xafbf/blender-datasmith-export 
 
-|
 
 .. note::
     "Rebase bones" are exported with the rig, which can be used inside UE5 to bind static meshes to the exported LC rig.
@@ -184,9 +182,7 @@ The Headlights Panel help you quickly adjust and render Headlight Beams in front
 
 Headlights will automatically be rigged if detected in the model. If not, you can manually parent them to the "body" of the vehicle.
 
-Different texture presets can be picked for the light beam
-
-Low Beam and High Beam can be toggled and more settings can be dialed in.
+Different texture presets can be picked for the light beam. Low Beam and High Beam can be toggled and more settings can be dialed in.
 
 
 .. _skidmarks:
