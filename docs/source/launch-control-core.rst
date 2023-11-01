@@ -178,6 +178,22 @@ Drift Handle: Rotation
     
     *The Inclination determines the Speed* 
 
+
+.. _speedometer:
+Speedometer
+^^^^^^
+
+Checking this box will show a Speedometer hovering over the vehicle in the 3D view. A Speedometer will also be shown in the Add-on UI.
+
+The Units can be changed inside the :ref:`user-preferences`.
+
+.. note::
+    The Speed is calculated temporally and can only be calculated correctly when the animation is playing forward in real-time. Use the "Refresh Speed" Button to force LC to calculate the correct speed at the current frame.
+
+.. warning::
+    The Speedometer in the Add-on UI is only working when the mouse is hovering over the panel. Otherwise this value does not update due to the way Blender works.
+
+
 .. _real-time-physics:
 Real-Time Physics
 ------
