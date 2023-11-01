@@ -207,6 +207,8 @@ When the Physics are LIVE, they are simulated in real-time when Blender is playi
     :width: 300px
     :align: center
 
+|
+
 .. note::
     Physics cannot be calculated LIVE when playing backward.
     LIVE Physics will cache when playing back. To ensure you are seeing the latest result, revert the timeline back to frame 0 or hit the 'Reset Physics'-button.
@@ -222,6 +224,8 @@ When the Physics are BAKED, changes to the animation will not affect the physics
     :class: with-shadow
     :width: 300px
     :align: center
+
+|
 
 .. warning::
     Due to a bug in Blender, BAKED physics do not load correctly when re-opening the file. After reopening, you would need to bake the physics again.
