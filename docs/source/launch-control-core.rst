@@ -62,13 +62,13 @@ The full list of accepted object names:
     * *Body:   ["Body", "Hull"]*
     * *Brake:   ["Brake","Brakes", "Calliper", "Caliper", "Callipers", "Calipers", "Bremse"]*
     * *Headlight:   *["Headlight", "Headlamp", "Headbulb", "Front_light", "Front_lamp", "Front_bulb", "Front_emitter"]*
-   |
+
 
 The full list of accepted locations names:
-    * *Rear, Left:   *["RL", "BL", "RearLeft", "BkL", "Bk.L", "Bk_L"]*
-    * *Rear, Right:   *[RR", "BR", "RearRight", "BkR", "Bk.R", "Bk_R"]*
-    * *Front, Right:   *["FR", "FrontRight", "FtR", "Ft.R", "Ft_R"]*
-    * *Front, Left:   *["FL", "FrontLeft", "FtL", "Ft.L", "Ft_L"]*
+    * *Rear, Left:   ["RL", "BL", "RearLeft", "BkL", "Bk.L", "Bk_L"]*
+    * *Rear, Right:   [RR", "BR", "RearRight", "BkR", "Bk.R", "Bk_R"]*
+    * *Front, Right:   ["FR", "FrontRight", "FtR", "Ft.R", "Ft_R"]*
+    * *Front, Left:   ["FL", "FrontLeft", "FtL", "Ft.L", "Ft_L"]*
 
 .. note::
    All Tags are case-insensitive.
