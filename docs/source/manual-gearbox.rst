@@ -28,6 +28,18 @@ The View Panel has options for what will be shown in the 3D Viewport over and ar
     
     *View Panel in the Manual Gearbox UI* 
 
+.. _enable_extra_handles:
+Extra Animation Handles
+^^^^^^^^
+Enables extra :ref:`animation-handles` and Sliders in the 3D view above and around the vehicle.
+
+
+.. _enable_camera_hooks:
+Camera Hooks
+^^^^^^^^
+Shows two Camera Hooks hovering above the active vehicle. Go into "Pose Mode" to select them and parent your camera to them.
+The "Follow Cam" will track the general motion of the vehicle without taking the suspension into account, while the "Mounted Cam" will be attached to the body of the vehicle, following its every move
+
 
 .. _settings:
 Settings
@@ -74,6 +86,13 @@ The Headlights Panel help you quickly adjust and render Headlight Beams in front
     :align: center
     
     *Headlights Panel in the Manual Gearbox UI* 
+
+Headlights will automatically be rigged if detected in the model. If not, you can manually parent them to the "body" of the vehicle.
+
+Different texture presets can be picked for the light beam
+
+Low Beam and High Beam can be toggled and more settings can be dialed in.
+
 
 .. _skidmarks:
 Skidmarks
@@ -122,3 +141,6 @@ The Cinematographer Panel will help you quickly set up Cameras for your Animatio
     :align: center
     
     *Cinematographer Panel in the Manual Gearbox UI* 
+
+Click the "Create Hooked Cameras" to generate two cameras from the 3D view hooked to the active vehicle.
+The "Follow Cam" will track the general motion of the vehicle without taking the suspension into account, while the "Mounted Cam" will be attached to the body of the vehicle, following its every move
