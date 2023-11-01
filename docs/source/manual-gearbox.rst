@@ -77,8 +77,21 @@ The Settings Panel controls how the :ref:`ground-detection`, :ref:`animation-han
 .. _rig-setup-mode:
 Rig Setup Mode
 ^^^^^^^^
-Reveal rig controls. Body, Wheel, Brake, Headlight and Steering Wheel attachment bones and setup controls for wheel-base length, track-width length, and wheel radii.
-Here you can manually parent your meshes to the body of the car, wheels or whatever you want. You can also rescale the rig, by pulling the wheel-base slider and other sliders. The wheel-base, track-width and wheel radii controls are located at the initial control point of the DrivingPath. The car will temporarily be put back into the center of the scene and all animation handles hidden. All animation and setup sliders will be restored when "rig setup mode" is turned back off.
+Enter a Setup Mode for the Active Vehicle where the sizes of the rig can be adjusted, new body parts added and the Roll Center adjusted.
+
+..  figure:: img/IMG_RigSetupMode.jpg
+    :alt: Rig Setup Mode
+    :class: with-shadow
+    :width: 350px
+    :align: center
+    
+    *Rig Setup Mode controls in the 3D View* 
+
+Body, Wheel, Brake, Headlight and Steering Wheel attachment bones and setup controls for wheel-base length, track-width length, wheel radii, and roll center can be found in this mode.
+You can manually parent your meshes, nulls and armatures to the body or wheels. 
+
+.. note::
+    The car will temporarily be put back into the center of the scene and all animation handles hidden. All animation and setup sliders will be restored when "rig setup mode" is turned back off.
 
 
 Update Driving Path
