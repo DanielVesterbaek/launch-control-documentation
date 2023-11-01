@@ -179,7 +179,7 @@ Pivot Offset:
     :width: 600px
     :align: center
     
-    *Offsetting the rig pivot can be helpful to achive tight drift and donuts* 
+    *Offsetting the rig pivot to achive tight drift and donuts. Left: Rear Axle Pivot, Right: Front Axle Pivot.* 
 
 
 
