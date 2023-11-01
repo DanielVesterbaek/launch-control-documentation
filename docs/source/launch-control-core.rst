@@ -317,17 +317,17 @@ To make it easier to art direct the Physics, use the PostFX to adjust the influe
 
 Body Forces:
 
-    * Pitch, Yaw, Roll:
+    Pitch, Yaw, Roll:
         * *The physics influence on the body of the car in each of the 3 rotation axis.*
 
-    * Up/Down: 
+    Up/Down: 
         * *The physics influence on the up/down movement of the body of the car.*
 |
 Wheel Forces:
 
-    * Up/Down:
+    Up/Down:
         * *How much an impact from the ground affects the wheels up/down movement. (During jumps or when running over bumps)*
        
-    * Tire Pressure:
+    Tire Pressure:
         * *How much the tires are allowed to clip through the floor (To simulate low pressure inside the tires when they have a hard impact with the ground).*
 
