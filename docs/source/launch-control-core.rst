@@ -145,13 +145,21 @@ While adjusting the control points of the Driving Path, the total length of the 
 When this happens, LC will prompt you to "Update Driving Path" before adjusting any animation.
 Click "Update Driving Path" in the LC interface. - This resolved any offsets to the animation due to the changed Driving Path.
 
+..  figure:: gif/DOC_Select_Car_GIF.gif
+    :alt: Select Car GIF
+    :class: with-shadow
+    :width: 350px
+    :align: center
+    
+    *Update Driving Path Message in 3D View* 
+
 .. _user-animation:
 User Animation
 ^^^^^^
 Much of the movement is calculated automatically by LC as the vehicle is following the path - This includes: Steering, Wheel Rotation, Suspension, Camber/Castor.
 User Animation is what the user needs to animate to make the vehicle move like desired. Handles in the viewport are used to animate this.
 
-..  figure:: img/IMG_UserAnim.png
+..  figure:: img/IMG_UpdateDrivingPath.jpg
     :alt: Speed Animation
     :class: with-shadow
     :width: 350px
