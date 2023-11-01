@@ -41,6 +41,25 @@ Shows two Camera Hooks hovering above the active vehicle. Go into "Pose Mode" to
 The "Follow Cam" will track the general motion of the vehicle without taking the suspension into account, while the "Mounted Cam" will be attached to the body of the vehicle, following its every move
 
 
+.. _enable_grid_viz:
+Detection Grid
+^^^^^^^^
+Turn the visibility of the :ref:`ground-detection` debug grid ON/OFF
+
+When Detection Grid is on, you can change the :ref:`detection-resolution`
+
+
+.. _enable_acc_viz:
+Acceleration Visualizer
+^^^^^^^^
+Enable an Acceleration Visualizer in the viewport to see the accelerations calculated and used by the :ref:`real-time-physics`.
+
+.. _enable_vel_viz:
+Velocity Visualizer
+^^^^^^^^
+Enable a Velocity Visualizer in the viewport to see the velocity calculated and used by the :ref:`real-time-physics`.
+
+
 .. _settings:
 Settings
 -----
@@ -55,6 +74,47 @@ The Settings Panel controls how the :ref:`ground-detection`, :ref:`animation-han
     
     *Settings Panel in the Manual Gearbox UI* 
 
+.. _rig-setup-mode:
+Rig Setup Mode
+^^^^^^^^
+Reveal rig controls. Body, Wheel, Brake, Headlight and Steering Wheel attachment bones and setup controls for wheel-base length, track-width length, and wheel radii.
+Here you can manually parent your meshes to the body of the car, wheels or whatever you want. You can also rescale the rig, by pulling the wheel-base slider and other sliders. The wheel-base, track-width and wheel radii controls are located at the initial control point of the DrivingPath. The car will temporarily be put back into the center of the scene and all animation handles hidden. All animation and setup sliders will be restored when "rig setup mode" is turned back off.
+
+
+Update Driving Path
+^^^^^^^^
+See: :ref:`update-driving-path`
+
+.. _snap-driving-path:
+Snap Driving Path
+^^^^^^^^
+Automatically snap the Control Points of the Driving Path to the Ground Detection Meshes.
+
+.. _use-true-ground:
+Use True Ground
+^^^^^^^^
+Use the actual objects inside the collection 'GroundDetection', instead of a projected grid. This can be useful for complex loops or twisting roads built of 1 solid mesh, but will generally give a visually worse result and can introduce 'flickering' detection on 'layered' surfaces.
+
+Detection Grid
+^^^^^^^^
+See: :ref:`enable-grid-viz`
+
+.. _detection-resolution:
+Resolution
+^^^^^^^^
+Change the resolution of the detection grid which is projected onto the geometry inside the "groundDetection" collection.
+
+
+.. _limit-sliders:
+Limit Animation Sliders
+^^^^^^^^
+To allow full control all the Viewport UI sliders can be "unlocked" so you can over-crank them and get whatever craziness you want.
+
+.. _wheel-shake-rate:
+Wheel Shake Rate
+^^^^^^^^
+How fast the body+wheel shake is. Higher value produces faster shake.
+
 .. _quick-export:
 Quick Export
 ------
@@ -68,6 +128,39 @@ The Quick Export handles export of the animation to other DCCs such a Unreal Eng
     :align: center
     
     *Quick Export Panel in the Manual Gearbox UI* 
+
+Export Path:
+    * Set the path as desired. Leaving it blank will export the file as "Launch_Control_Export.FORMAT" relative to the saved .blend file.
+
+Include Ground Detection for Selected Car:
+    * Includes the ground detection meshes in the exported FBX file for the Active Vehicle.
+
+Include Animations:
+    * When checked, LC will export the meshes, the rig and animations. When unchecked, LC will only export the meshes and the rig.
+
+Only Animations:
+    * When checked, LC will NOT export the meshes, which results in much faster export speeds. However, it will still export the rig and the animations. 
+This is especially useful when importing to Unreal Engine, where the "Only Animation FBX files" will be read as animation assets, which fit a previously exported "skeletal mesh" (an FBX with the meshes and the rig)
+
+.. note::
+    For Datasmoth Scene Export, the free "Blender Datasmith add-on" is needed: https://github.com/0xafbf/blender-datasmith-export 
+
+|
+
+.. note::
+    "Rebase bones" are exported with the rig, which can be used inside UE5 to bind static meshes to the exported LC rig.
+
+
+FBX:
+Exports an FBX for general used in DCCs. Only important "deforming" bones are exported with baked animations - other bones are ignored.
+
+FBX for UE5:
+Exports an FBX optimized for UE5 from LC. Requires the user to manually set the "current frame" to 0 as this is used as the bind pose inside Unreal Engine.
+Specifically for UE5, rebase bones have been added in the rig. These can be used when linking exisiting static meshes to the imported LC car rig from inside Unreal Engine. 
+
+Datasmith Scene:
+Export for use in Unreal Engine. It handles dense meshes and materials better than FBX export. On import a sequence is automatically set up in Unreal. To use it, please install and enable the "Blender Datasmith" add-on (FREE). https://github.com/0xafbf/blender-datasmith-export 
+
 
 
 .. _headlights:
@@ -126,6 +219,10 @@ With the Jump Trajectory Panel, you can generate a realistic jump path for your 
     :align: center
     
     *Jump Trajectory Panel in the Manual Gearbox UI* 
+
+Calculates spline-points of a realistic car jump depending on the input speed. 
+
+To use it, go into edit-mode on the "DrivingPath" and select the last point, which has to be the very end of the "ramp" the car is going to jump from. This last point needs to have a handle. The angle of the handle will be the take-off angle and the "Jump Speed" (Speed of the car at take-off point) must be defined in the Add-on UI. If you prefer Imperial Units, you can check the check-box in the Add-on UI. The calculation will always expect the end of the jump is on Z=0. 
 
 
 .. _cameras:
