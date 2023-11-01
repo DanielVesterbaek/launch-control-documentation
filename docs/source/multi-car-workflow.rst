@@ -85,7 +85,7 @@ Multi-Rigging [Experimental]
 
 It is possible to rig all Vehicles in the scene at once using the experimental "Multi-Rigging" function. 
 
-.. warning:
+.. warning::
     This only works if the scene has collections with LC-ready car models in them. If any other collections exist in the scene, the rigging will fail.
 
 .. figure:: gif/DOC_MultiRigging.gif
