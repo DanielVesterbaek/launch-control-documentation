@@ -40,6 +40,7 @@ Camera Hooks
 Shows two Camera Hooks hovering above the active vehicle. Go into "Pose Mode" to select them and parent your camera to them.
 The "Follow Cam" will track the general motion of the vehicle without taking the suspension into account, while the "Mounted Cam" will be attached to the body of the vehicle, following its every move
 
+Alternatively, you can create hooked cameras with 1 Click in the :ref:`cameras` section.
 
 .. _enable_grid_viz:
 Detection Grid
