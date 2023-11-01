@@ -57,16 +57,15 @@ Optional car parts:
     * *Left Headlight*
 
 
-Multiple tags are being searched for when LC is detecting the objects. The full list for each object/location is:
-
+Multiple tags are being searched for when LC is detecting the objects. 
+The full list for each object is:
     * *Wheels:   ["Tire", "Wheel", "Wheels", "Tires", "Rad", "Räder", "Tyre", "Tyres"]*
     * *Body:   ["Body", "Hull"]*
-   |
-
     * *Brake:   ["Brake","Brakes", "Calliper", "Caliper", "Callipers", "Calipers", "Bremse"]*
     * *Headlight:   *["Headlight", "Headlamp", "Headbulb", "Front_light", "Front_lamp", "Front_bulb", "Front_emitter"]*
    |
 
+The full list for each locations is:
     * *Rear, Left:   *["RL", "BL", "RearLeft", "BkL", "Bk.L", "Bk_L"]*
     * *Rear, Right:   *[RR", "BR", "RearRight", "BkR", "Bk.R", "Bk_R"]*
     * *Front, Right:   *["FR", "FrontRight", "FtR", "Ft.R", "Ft_R"]*
@@ -96,7 +95,7 @@ You can quickly tag Car Parts that needs renaming to be compatible with LC using
 Asset Packs for LC
 ^^^^^^^^^^
 Many Vehicle models have supported naming conventions out of the box.
-Some Asset Packs that are natively supported are:
+| **Some Asset Packs that are natively supported are:**
     * `Car Transportation <https://blendermarket.com/products/transportation>`_
     * `Car Teleporter <https://blendermarket.com/products/car-teleporter>`_
     * `Traffiq Car <https://blendermarket.com/products/car-library-traffiq-vehicles-for-blender>`_
@@ -259,31 +258,24 @@ These sliders can be used to adjust the parameters used when simulating the phys
     *Physics can be customized in the Interface* 
 
 **Spring Hardness:**
-
     * *The 'Tightness/Hardness' of the Spring. Increase this to have the Spring be harder and respond faster (Feeling of a light vehicle or road/track vehicle), decrease this to make the Spring respond slower and feel softer (Feeling of a heavy offroad vehicle).*
 
 **Spring Damping:**
-
     * *How quickly the spring stops moving after an impact. A low value makes the spring wobble for a long time after an impulse.*
 
 **Smoothing:**
-
     * *Adds extra smoothing to the ride. Makes the response slower and dampens more of the forces. Equivilant to Decreasing 'Hardness' and Increasing 'Dampening' at the same time.*
 
 **Simulate Gravity:**
-
     * *Let the physics take care of the Gravity when the vehicle is in the air. When 'ON' the vehicle might deviate more from the Driving Path during jumps. When 'OFF' the car will stick 'tightly' to the path, even if it would be physically impossible - This is useful for making the car do loops or running over a bumpy road in a controlled manner*
 
 **Auto Level:**
-
     * *During airtime, the vehicle can start to nose-dive or pitch backwards. Using Auto Level, you can bias the physics toward keeping the vehicle level rather than pitching or rolling.*
 
 **Vehicle Mass:**
-
     * *Similar to 'Spring Hardness', affects how much the car is affected by impacts from the road. Increase this to make the bumps and landings have less impact on the body motion of the vehicle and vice-versa.*
 
 **Spring Offset:**
-
     * *Fine-tune the physics Suspension Height. This is only affecting the car when physics are turned on.*
 
 .. warning::
