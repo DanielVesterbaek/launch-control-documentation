@@ -278,8 +278,8 @@ These sliders can be used to adjust the parameters used when simulating the phys
 **Spring Offset:**
     * *Fine-tune the physics Suspension Height. This is only affecting the car when physics are turned on.*
 
-    .. warning::
-        When set too high, the car will keep bouncing. 
+.. warning::
+    When "Spring Offset" is set too high, the car will keep bouncing. 
 
 
 
