@@ -30,7 +30,8 @@ Wheel Clipping:
     To add realism to car animations the wheels need to be pushed slightly through the floor plane and the body of the car dropped slightly. This simulates the weight of the car pushing it down. The slider adjusts the intensity of this effect.
 
 Wheel Count:
-    Pick either 2 wheel drive or 4 wheel drive (2 wheel drive has the best support)
+    Pick either 2 wheel steering or 4 wheel steering (2 wheel steering has the best support).
+    4 wheel steering does not work with the "Turn Limit".
 
 Max Suspension Travel:
   Changes the length of the spring. Determines how low the wheels are hanging, when the car is airbourne, or lifted.
