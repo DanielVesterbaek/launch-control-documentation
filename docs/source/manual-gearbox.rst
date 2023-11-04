@@ -145,8 +145,11 @@ The Quick Export handles export of the animation to other DCCs such a Unreal Eng
 Export Path:
     * Set the path as desired. Leaving it blank will export the file as "Launch_Control_Export.FORMAT" relative to the saved .blend file.
 
-Include Ground Detection for Selected Car:
-    * Includes the ground detection meshes in the exported FBX file for the Active Vehicle.
+Include Ground Colliders for Selected Car:
+    * Includes all the ground detection meshes in the exported FBX file for the Active Vehicle.
+
+Include Ground Colliders for All Cars:
+    * Includes all the ground detection meshes in each of the exported FBX files.
 
 Include Animations:
     * When checked, LC will export the meshes, the rig and animations. When unchecked, LC will only export the meshes and the rig.
