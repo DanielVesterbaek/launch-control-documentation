@@ -76,8 +76,10 @@ It will change it to whatever vehicle is selected in the 3D View if the selected
 .. _multi-export:
 Export with Multi-Car
 ------
-TODO
+Export to Datasmith works the same way for Multi-Car as for Single-Car. The file exported is a scene file and holds all vehicles in 1 file. 
 
+For FBX exports, the vehicles are split into separate files.
+Ground Colliders can be exported with each file or only once in the fbx-file of the active vehicle.
 
 .. _multi-rigging:
 Multi-Rigging [Experimental]
