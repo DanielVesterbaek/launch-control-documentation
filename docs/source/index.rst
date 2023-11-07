@@ -105,7 +105,8 @@ Contents
 
    installation
    launch-control-core
-   manual-gearbox
    animation-handles
+   multi-car-workflow
+   manual-gearbox
    user-preferences
    
