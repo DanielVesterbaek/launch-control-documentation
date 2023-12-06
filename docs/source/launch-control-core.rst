@@ -226,7 +226,7 @@ The Units can be changed inside the :ref:`user-preferences`.
 .. note::
     The Speed is calculated temporally and can only be calculated correctly when the animation is playing forward in real-time. Use the "Refresh Speed" Button to force LC to calculate the correct speed at the current frame.
 
-.. warning::
+.. note::
     The Speedometer in the Add-on UI is only working when the mouse is hovering over the panel. Otherwise this value does not update due to the way Blender works. The Speedometer in the 3D view is not affected by this.
 
 
