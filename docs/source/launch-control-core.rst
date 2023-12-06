@@ -293,7 +293,7 @@ LC will mark the area which will be baked in the timeline.
     :width: 500px
     :align: center
 
-    *Baking Menu, when bake is started*
+    *Baking Menu, when a bake has been started*
 
 When the bake finishes, click "Revert to Physics Menu".
 
@@ -341,7 +341,7 @@ When the Physics are INVALID, you will need to hit the "Reset Physics" button to
 G-Force Vizualiser
 ^^^^^^
 
-To make it easier to debug what the Physics are doing a G-Force Vizualiser is showing up above the vehicle. It can be disabled inside :ref:`view` in the :ref:`manual-gearbox`.
+To make it easier to debug what the Physics are doing a G-Force Vizualiser is showing up above the vehicle. It can be disabled inside :ref:`view` in the "Manual Gearbox".
 When the G-Force exceeds 1.8 g, the vizualiser turns red indicating that a big force is acting on the body. To decrease the magnitude of the force, decrease the acceleration of the vehicle or make turns smoother.
 
 ..  figure:: gif/GIF_G-Force.gif
