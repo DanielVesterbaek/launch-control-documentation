@@ -3,7 +3,6 @@ Launch Control Core
 The Main Features part is split into 3 segments: "Rigging, Animation, and Physics".
 Let's go over each of those here.
 
-
 .. _rigging:
 One-Click Rigging
 ------
@@ -30,6 +29,11 @@ Select a Collection, which holds the vehicle you want to rig by dragging the col
     
     *Selecting a Vehicle Collection* 
 
+.. warning::
+    Rigging vehicles across Blender Scenes is not supported. Please only use 1 scene for rigged Launch Control Vehicles in each file.
+
+.. note::
+    Avoid Copy/Pasting, Appending or Linking Vehicles that are rigged using Launch Control. If you want to move a vehicle to a new file, unrig the vehicle and rig it again in the destination file.
 
 .. _rigging-tags:
 Rigging Tags
@@ -100,6 +104,13 @@ Some Asset Packs that are natively supported are:
     * `Traffiq Car <https://blendermarket.com/products/car-library-traffiq-vehicles-for-blender>`_
 
 
+.. _library-override:
+Linked Vehicles with Library Override
+^^^^^^^^^^
+
+In Launch Control, you can rigged a vehicle linked from another file. To do so, add a Library Override to all the objects you have added :ref:`rigging-tags` to and hit "Rig Vehicle!"
+
+
 .. _troubleshoot_rigging:
 Troubleshoot Rigging
 ^^^^^^^^^^
@@ -122,6 +133,10 @@ Animation
 ------
 LC uses a curve based animation workflow to give you full creative control over the movement. :ref:`user-animation` is acting on top of the automatically calculated animations, allowing the user full customization of the animation.
 
+.. _driving-path:
+Driving Path
+
+The curve which the vehicle is following is called "Driving Path". It can be modified by selecting it and going into "Edit Mode". In Edit mode you can also use the "Draw" or "Curve Pen" to alter the Driving Path.
 
 .. _animation-presets:
 Animation Presets
@@ -142,9 +157,9 @@ The Vehicle will automatically be animated to drive along the length of the path
 .. _update-driving-path:
 Update Driving Path
 ^^^^^^
-While adjusting the control points of the Driving Path, the total length of the path might change.
+While adjusting the control points of the :ref:`driving-path`, the total length of the path might change.
 When this happens, LC will prompt you to "Update Driving Path" before adjusting any animation.
-Click "Update Driving Path" in the LC interface. - This resolved any offsets to the animation due to the changed Driving Path.
+Click "Update Driving Path" in the LC interface. - This resolved any offsets to the animation due to the changed :ref:`driving-path`.
 
 ..  figure:: img/IMG_UpdateDrivingPath.jpg
     :alt: Update Driving Path
@@ -186,6 +201,18 @@ Drift Handle: Rotation
     
     *The Inclination determines the Speed* 
 
+.. _ground-detection:
+Ground Detection
+^^^^^^
+
+The vehicle will automatically detect any ground objects which are added to the collection called "Ground Detection".
+To add additional objects which will act as ground detection move them into this collection.
+
+Using the :ref:`snap-driving-path` you can make the control points of the :ref:`driving-path` snap to the ground detection objects if they are within 4 m range. 
+
+.. note::
+    The threshold for the vehicle detecting the ground is 4 m. If the vehicle is further away than this, it will instead stick to the path.
+
 
 .. _speedometer:
 Speedometer
@@ -212,11 +239,15 @@ The Physics are layed on top of the Automatic and User Animation and are fully n
 Presets can be used to get different results, or use the :ref:`physics-customize` checkbox to adjust the Physics settings in detail.
 
 .. note::
-The Physics always has one of four states:
+    The Physics always has one of five states:
     * LIVE
     * BAKED
     * MUTED
     * OUTDATED
+    * INVALID
+
+.. note::
+    The Physics are framerate independent, but are optimized a framerate of 24 fps.
 
 .. _live-physics:
 Live Physics
@@ -253,6 +284,37 @@ When the Physics are BAKED, changes to the animation will not affect the physics
 .. warning::
     Due to a bug in Blender, BAKED physics do not load correctly when re-opening the file. After reopening, you would need to bake the physics again.
 
+To bake the physics, click "Bake Physics!". This will take you to the baking menu, where you can add :ref:`physics-warm-up` and start the bake with "Confirm Bake!".
+LC will mark the area which will be baked in the timeline.
+
+..  figure:: img/IMG_Physics_Baking.jpg
+    :alt: Physics Baking
+    :class: with-shadow
+    :width: 500px
+    :align: center
+
+    *Baking Menu, when bake is started*
+
+When the bake finishes, click "Revert to Physics Menu".
+
+..  figure:: img/IMG_Physics_Baking_02.jpg
+    :alt: Physics Baking
+    :class: with-shadow
+    :width: 500px
+    :align: center
+    
+    *When bake finishes, you can revert back to the main Physics Menu* 
+
+
+.. _physics-warm-up:
+Warm Up Frames
+******
+
+To avoid "popping" on the first frame of the physics you can add warm up frames before your animated section starts. During the baking process you have the option of enabling this and setting the amount of frames.
+
+.. note::
+    It's only possible to add warm up frames if your animation starts after frame 0 of the scene timeline. Warm up frames can not be negative frames.
+
 .. _muted-physics:
 Muted Physics
 ^^^^^^
@@ -264,6 +326,27 @@ Outdated Physics
 ^^^^^^
 
 When the Physics are OUTDATED, they have been baked, but changes in the scene or the physics settings have made the bake invalid or outdated. Please bake the physics again if this is the case.
+
+When the Physics are INVALID, you will need to hit the "Reset Physics" button to the right in the. If the Physics are BAKED, this will launch a re-bake, but if the Physics are LIVE, it will instead just clear the real-time cache, resolving the issue.
+
+
+.. _g-force-vizualiser:
+G-Force Vizualiser
+^^^^^^
+
+To make it easier to debug what the Physics are doing a G-Force Vizualiser is showing up above the vehicle. It can be disabled inside :ref:`view` in the :ref:`manual-gearbox`.
+When the G-Force exceeds 1.8 g, the vizualiser turns red indicating that a big force is acting on the body. To decrease the magnitude of the force, decrease the acceleration of the vehicle or make turns smoother.
+
+..  figure:: gif/GIF_G-Force.gif
+    :alt: Custom Physics
+    :class: with-shadow
+    :width: 350px
+    :align: center
+
+    *The G-Forces which are working on the vehicle*
+
+.. note::
+    LC does not have a physically correct simulation engine behind it so take the values with a grain of salt. It does however indicate the approximate value for you.
 
 
 .. _physics-customize:
