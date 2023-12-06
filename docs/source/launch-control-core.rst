@@ -104,6 +104,13 @@ Some Asset Packs that are natively supported are:
     * `Traffiq Car <https://blendermarket.com/products/car-library-traffiq-vehicles-for-blender>`_
 
 
+.. _library-override:
+Linked Vehicles with Library Override
+^^^^^^^^^^
+
+In Launch Control, you can rigged a vehicle linked from another file. To do so, add a Library Override to all the objects you have added :ref:`rigging-tags` to and hit "Rig Vehicle!"
+
+
 .. _troubleshoot_rigging:
 Troubleshoot Rigging
 ^^^^^^^^^^
