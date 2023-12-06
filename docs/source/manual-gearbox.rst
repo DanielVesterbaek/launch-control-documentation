@@ -33,7 +33,7 @@ Extra Animation Handles
 ^^^^^^^^
 Enables extra :ref:`animation-handles` and Sliders in the 3D view above and around the vehicle.
 
-..  figure:: img/IMG_ExtraAnimaHandles.jpg
+..  figure:: img/IMG_ExtraAnimHandlesOn.jpg
     :alt: View
     :class: with-shadow
     :width: 350px
@@ -185,7 +185,7 @@ Resolution
 ^^^^^^^^
 Change the resolution of the detection grid which is projected onto the geometry inside the "Ground Detection" collection.
 
-..  figure:: img/IMG_Res01.jpg
+..  figure:: img/IMG_Res_01.jpg
     :alt: View
     :class: with-shadow
     :width: 350px
@@ -193,7 +193,7 @@ Change the resolution of the detection grid which is projected onto the geometry
     
     *Detection Resolution 1 for smooth motion* 
 
-..  figure:: img/IMG_Res02.jpg
+..  figure:: img/IMG_Res_02.jpg
     :alt: View
     :class: with-shadow
     :width: 350px
@@ -206,7 +206,7 @@ Limit Animation Sliders
 ^^^^^^^^
 To allow full control all the Viewport UI sliders can be "unlocked" so you can over-crank them and get whatever craziness you want.
 
-..  figure:: img/IMG_LimitON.jpg
+..  figure:: img/IMG_LimitOn.jpg
     :alt: View
     :class: with-shadow
     :width: 350px
@@ -214,7 +214,7 @@ To allow full control all the Viewport UI sliders can be "unlocked" so you can o
     
     *Default: Locks the sliders inside the best range* 
 
-..  figure:: img/IMG_LimitOFF.jpg
+..  figure:: img/IMG_LimitOff.jpg
     :alt: View
     :class: with-shadow
     :width: 350px
@@ -356,11 +356,19 @@ Cinematographer
 
 The Cinematographer Panel will help you quickly set up Cameras for your Animation.
 
+..  figure:: img/IMG_CamSetup.jpg
+    :alt: Cam
+    :class: with-shadow
+    :width: 350px
+    :align: left
+    
+    *Cinematographer Panel in the Manual Gearbox UI* 
+
 ..  figure:: img/IMG_Cam.jpg
     :alt: Cam
     :class: with-shadow
     :width: 350px
-    :align: center
+    :align: right
     
     *Cinematographer Panel in the Manual Gearbox UI* 
 
