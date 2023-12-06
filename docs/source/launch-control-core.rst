@@ -284,12 +284,13 @@ When the Physics are BAKED, changes to the animation will not affect the physics
 .. warning::
     Due to a bug in Blender, BAKED physics do not load correctly when re-opening the file. After reopening, you would need to bake the physics again.
 
-To bake the physics, click "Bake Physics!". This will take you to the baking menu, where you can add :ref:`physics-warm-up` and start the bake with "Confirm Bake!"
+To bake the physics, click "Bake Physics!". This will take you to the baking menu, where you can add :ref:`physics-warm-up` and start the bake with "Confirm Bake!".
+LC will mark the area which will be baked in the timeline.
 
 ..  figure:: img/IMG_Physics_Baking.jpg
     :alt: Physics Baking
     :class: with-shadow
-    :width: 300px
+    :width: 500px
     :align: center
 
     *Baking Menu, when bake is started*
@@ -299,10 +300,10 @@ When the bake finishes, click "Revert to Physics Menu".
 ..  figure:: img/IMG_Physics_Baking_02.jpg
     :alt: Physics Baking
     :class: with-shadow
-    :width: 300px
+    :width: 500px
     :align: center
     
-    *Revert back to the main Physics Menu* 
+    *When bake finishes, you can revert back to the main Physics Menu* 
 
 
 .. _physics-warm-up:
