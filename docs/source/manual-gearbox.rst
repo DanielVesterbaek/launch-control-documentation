@@ -143,15 +143,15 @@ Automatically snap the Control Points of the Driving Path to the Ground Detectio
 ..  |pic1| image:: img/IMG_SnapOFF.jpg
     :alt: View
     :class: with-shadow
-    :width: 49%
+    :width: 48%
 
 
 ..  |pic2| image:: img/IMG_SnapON.jpg
     :alt: View
     :class: with-shadow
-    :width: 49%
+    :width: 48%
 
-|pic1||pic2|
+|pic1| |pic2|
 
 *Driving Path Snap OFF and ON. A quick way to match the path to the ground.* 
 
@@ -188,14 +188,14 @@ Change the resolution of the detection grid which is projected onto the geometry
 ..  |pic3| image:: img/IMG_Res_01.jpg
     :alt: View
     :class: with-shadow
-    :width: 49%
+    :width: 48%
 
 ..  |pic4| image:: img/IMG_Res_02.jpg
     :alt: View
     :class: with-shadow
-    :width: 49%
+    :width: 48%
 
-|pic3||pic4|
+|pic3| |pic4|
     
 *Detection Resolution 1 for smooth motion, 2+ for detailed motion* 
 
@@ -207,15 +207,15 @@ To allow full control all the Viewport UI sliders can be "unlocked" so you can o
 ..  |pic5| image:: img/IMG_LimitOn.jpg
     :alt: View
     :class: with-shadow
-    :width: 49%
+    :width: 48%
     
 
 ..  |pic6| image:: img/IMG_LimitOff.jpg
     :alt: View
     :class: with-shadow
-    :width: 49%
+    :width: 48%
 
-|pic5||pic6|
+|pic5| |pic6|
     
 *Default: Locks the sliders inside the best range, check to unlocks the sliders* 
 
@@ -275,14 +275,14 @@ The Headlights Panel help you quickly adjust and render Headlight Beams in front
 ..  |pic7| image:: gif/GIF_Headlights.gif
     :alt: Headlights
     :class: with-shadow
-    :width: 49%
+    :width: 48%
 
 ..  |pic8| image:: img/IMG_Headlights.jpg
     :alt: Headlights
     :class: with-shadow
-    :width: 49%
+    :width: 48%
 
-|pic7||pic8|
+|pic7| |pic8|
     
 *Headlights Panel in the Manual Gearbox UI* 
 
@@ -303,14 +303,14 @@ The Skidmarks Panel helps you generate skidmarks from the tires of the vehicle.
 ..  |pic9| image:: gif/GIF_Skidmarks.gif
     :alt: Skidmarks
     :class: with-shadow
-    :width: 49%
+    :width: 48%
 
 ..  |pic10| image:: img/IMG_Skidmarks.jpg
     :alt: Skidmarks
     :class: with-shadow
-    :width: 49%
+    :width: 48%
 
-|pic9||pic10|
+|pic9| |pic10|
     
 *Skidmarks Panel in the Manual Gearbox UI* 
 
@@ -325,14 +325,14 @@ With the Jump Trajectory Panel, you can generate a realistic jump path for your 
 ..  |pic11| image:: gif/GIF_Jump.gif
     :alt: Jump
     :class: with-shadow
-    :width: 49%
+    :width: 48%
 
 ..  |pic12| image:: img/IMG_JumpGenerator.jpg
     :alt: Jump
     :class: with-shadow
-    :width: 49%
+    :width: 48%
 
-|pic11||pic12|
+|pic11| |pic12|
     
 *Jump Trajectory Panel in the Manual Gearbox UI* 
 
@@ -350,14 +350,14 @@ The Cinematographer Panel will help you quickly set up Cameras for your Animatio
 ..  |pic13| image:: img/IMG_CamSetup.jpg
     :alt: Cam
     :class: with-shadow
-    :width: 49%
+    :width: 48%
 
 ..  |pic14| image:: img/IMG_Cam.jpg
     :alt: Cam
     :class: with-shadow
-    :width: 49%
+    :width: 48%
 
-|pic13||pic14|
+|pic13| |pic14|
 
 *Cinematographer Panel in the Manual Gearbox UI* 
 
