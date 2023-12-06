@@ -143,15 +143,17 @@ Automatically snap the Control Points of the Driving Path to the Ground Detectio
 ..  |pic1| image:: img/IMG_SnapOFF.jpg
     :alt: View
     :class: with-shadow
-    :width: 50%
+    :width: 47%
 
 
 ..  |pic2| image:: img/IMG_SnapON.jpg
     :alt: View
     :class: with-shadow
-    :width: 50%
+    :width: 47%
 
 |pic1| |pic2|
+
+*Driving Path Snap OFF and ON. A quick way to match the path to the ground.* 
 
 
 .. note::
@@ -183,42 +185,39 @@ Resolution
 ^^^^^^^^
 Change the resolution of the detection grid which is projected onto the geometry inside the "Ground Detection" collection.
 
-..  figure:: img/IMG_Res_01.jpg
+..  |pic1| image:: img/IMG_Res_01.jpg
     :alt: View
     :class: with-shadow
-    :width: 45%
-    :align: left
-    
-    *Detection Resolution 1 for smooth motion* 
+    :width: 47%
 
-..  figure:: img/IMG_Res_02.jpg
+..  |pic2| image:: img/IMG_Res_02.jpg
     :alt: View
     :class: with-shadow
-    :width: 45%
-    :align: right
+    :width: 47%
+
+|pic1| |pic2|
     
-    *Detection Resolution 2 for detailed motion* 
+*Detection Resolution 1 for smooth motion, 2+ for detailed motion* 
 
 .. _limit-sliders:
 Limit Animation Sliders
 ^^^^^^^^
 To allow full control all the Viewport UI sliders can be "unlocked" so you can over-crank them and get whatever craziness you want.
 
-..  figure:: img/IMG_LimitOn.jpg
+..  |pic1| image:: img/IMG_LimitOn.jpg
     :alt: View
     :class: with-shadow
-    :width: 45%
-    :align: left
+    :width: 47%
     
-    *Default: Locks the sliders inside the best range* 
 
-..  figure:: img/IMG_LimitOff.jpg
+..  |pic2| image:: img/IMG_LimitOff.jpg
     :alt: View
     :class: with-shadow
-    :width: 45%
-    :align: right
+    :width: 47%
+
+|pic1| |pic2|
     
-    *Unlocks the sliders* 
+*Default: Locks the sliders inside the best range, check to unlocks the sliders* 
 
 .. _wheel-shake-rate:
 Wheel Shake Rate
@@ -273,21 +272,19 @@ The Headlights Panel help you quickly adjust and render Headlight Beams in front
 .. note::
   Only Beams are set up here, not any emitting lamps or meshes inside the headlight geometry.
 
-..  figure:: gif/GIF_Headlights.gif
+..  |pic1| image:: gif/GIF_Headlights.gif
     :alt: Headlights
     :class: with-shadow
-    :width: 45%
-    :align: left
-    
-    *Headlights in action!* 
+    :width: 47%
 
-..  figure:: img/IMG_Headlights.jpg
+..  |pic2| image:: img/IMG_Headlights.jpg
     :alt: Headlights
     :class: with-shadow
-    :width: 45%
-    :align: right
+    :width: 47%
+
+|pic1| |pic2|
     
-    *Headlights Panel in the Manual Gearbox UI* 
+*Headlights Panel in the Manual Gearbox UI* 
 
 Headlights will automatically be rigged if detected in the model. If not, you can manually parent them to the "body" of the vehicle.
 
@@ -303,21 +300,19 @@ The Skidmarks Panel helps you generate skidmarks from the tires of the vehicle.
 .. note::
   Skidmarks currently only support pressure to calculate the intensity. Wheel-spin or Wheel-locking does not currently affect the generated Skidmarks
 
-..  figure:: gif/GIF_Skidmarks.gif
+..  |pic1| image:: gif/GIF_Skidmarks.gif
     :alt: Skidmarks
     :class: with-shadow
-    :width: 45%
-    :align: left
-    
-    *Skidmarks in Action!* 
+    :width: 47%
 
-..  figure:: img/IMG_Skidmarks.jpg
+..  |pic2| image:: img/IMG_Skidmarks.jpg
     :alt: Skidmarks
     :class: with-shadow
-    :width: 45%
-    :align: right
+    :width: 47%
+
+|pic1| |pic2|
     
-    *Skidmarks Panel in the Manual Gearbox UI* 
+*Skidmarks Panel in the Manual Gearbox UI* 
 
 
 
@@ -327,21 +322,19 @@ Jump Trajectory
 
 With the Jump Trajectory Panel, you can generate a realistic jump path for your vehicle.
 
-..  figure:: gif/GIF_Jump.gif
+..  |pic1| image:: gif/GIF_Jump.gif
     :alt: Jump
     :class: with-shadow
-    :width: 45%
-    :align: left
-    
-    *Jump in Action!* 
+    :width: 47%
 
-..  figure:: img/IMG_JumpGenerator.jpg
+..  |pic2| image:: img/IMG_JumpGenerator.jpg
     :alt: Jump
     :class: with-shadow
-    :width: 45%
-    :align: right
+    :width: 47%
+
+|pic1| |pic2|
     
-    *Jump Trajectory Panel in the Manual Gearbox UI* 
+*Jump Trajectory Panel in the Manual Gearbox UI* 
 
 Calculates spline-points of a realistic car jump depending on the input speed. 
 
@@ -354,21 +347,17 @@ Cinematographer
 
 The Cinematographer Panel will help you quickly set up Cameras for your Animation.
 
-..  figure:: img/IMG_CamSetup.jpg
+..  |pic1| image:: img/IMG_CamSetup.jpg
     :alt: Cam
     :class: with-shadow
-    :width: 45%
-    :align: left
-    
-    *Cinematographer Panel in the Manual Gearbox UI* 
+    :width: 47%
 
-..  figure:: img/IMG_Cam.jpg
+..  |pic1| image:: img/IMG_Cam.jpg
     :alt: Cam
     :class: with-shadow
-    :width: 45%
-    :align: right
+    :width: 47%
     
-    *Cinematographer Panel in the Manual Gearbox UI* 
+*Cinematographer Panel in the Manual Gearbox UI* 
 
 Click the "Create Hooked Cameras" to generate two cameras from the 3D view hooked to the active vehicle.
 The "Follow Cam" will track the general motion of the vehicle without taking the suspension into account, while the "Mounted Cam" will be attached to the body of the vehicle, following its every move
