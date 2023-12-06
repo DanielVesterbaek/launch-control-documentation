@@ -14,6 +14,7 @@ Inside the Manual Gearbox you have a wide range of customization options to make
 *Reset all!*
 Will reset all LC properties for the active vehicle to their default value.
 
+|
 .. _view:
 View
 -----
@@ -28,6 +29,7 @@ The View Panel has options for what will be shown in the 3D View over and around
     
     *View Panel in the Manual Gearbox UI* 
 
+|
 .. _enable_extra_handles:
 Extra Animation Handles
 ^^^^^^^^
@@ -41,6 +43,7 @@ Enables extra :ref:`animation-handles` and Sliders in the 3D view above and arou
     
     *Add Extra Handles to control more things!* 
 
+|
 .. _enable_camera_hooks:
 Camera Hooks
 ^^^^^^^^
@@ -57,6 +60,7 @@ Alternatively, you can create hooked cameras with 1 Click in the :ref:`cameras` 
     
     *Attach your 3D Cams here* 
 
+|
 .. _enable_grid_viz:
 Detection Grid
 ^^^^^^^^
@@ -71,6 +75,7 @@ When Detection Grid is on, you can change the :ref:`detection-resolution`.
     
     *Useful for Debugging the :ref:`ground-detection`* 
 
+|
 .. _enable_acc_viz:
 G-Force Visualizer
 ^^^^^^^^
@@ -84,6 +89,7 @@ Enable an G-Force Visualizer in the viewport to see the force calculated and use
 
     *The G-Forces which are working on the vehicle*
 
+|
 .. _enable_vel_viz:
 Velocity Visualizer
 ^^^^^^^^
@@ -97,6 +103,7 @@ Enable a Velocity Visualizer in the viewport to see the velocity calculated and 
     
     *Useful for Debugging the :ref:`ground-detection`* 
 
+|
 .. _settings:
 Settings
 -----
@@ -111,6 +118,7 @@ The Settings Panel controls how the :ref:`ground-detection`, :ref:`animation-han
     
     *Settings Panel in the Manual Gearbox UI* 
 
+|
 .. _rig-setup-mode:
 Rig Setup Mode
 ^^^^^^^^
@@ -131,6 +139,7 @@ You can manually parent meshes, nulls and armatures to the body or wheels.
     The vehicle will temporarily be put into the center of the scene and all animations disabled. All animations will be restored when "rig setup mode" is turned back off.
 
 
+|
 Update Driving Path
 ^^^^^^^^
 See: :ref:`update-driving-path`
@@ -160,6 +169,7 @@ Automatically snap the Control Points of the Driving Path to the Ground Detectio
     The threshold for the vehicle detecting the ground is 4 m. If the vehicle is further away than this, it will instead stick to the path.
 
 
+|
 .. _use-true-ground:
 Use True Ground
 ^^^^^^^^
@@ -176,10 +186,13 @@ Use the actual objects inside the collection 'GroundDetection', instead of a pro
 .. warning::
     Will generally give a visually worse result and can introduce 'flickering' in the detection on 'layered' surfaces.
 
+|
+.. _detection-grid:
 Detection Grid
 ^^^^^^^^
 See: :ref:`enable_grid_viz`
 
+|
 .. _detection-resolution:
 Resolution
 ^^^^^^^^
@@ -199,6 +212,7 @@ Change the resolution of the detection grid which is projected onto the geometry
     
 *Detection Resolution 1 for smooth motion, 2+ for detailed motion* 
 
+|
 .. _limit-sliders:
 Limit Animation Sliders
 ^^^^^^^^
@@ -219,11 +233,13 @@ To allow full control all the Viewport UI sliders can be "unlocked" so you can o
     
 *Default: Locks the sliders inside the best range, check to unlocks the sliders* 
 
+|
 .. _wheel-shake-rate:
 Wheel Shake Rate
 ^^^^^^^^
 How fast the body+wheel shake is. Higher value produces faster shake.
 
+|
 .. _quick-export:
 Quick Export
 ------
@@ -262,7 +278,7 @@ This is especially useful when importing to Unreal Engine, where the "Only Anima
     "Rebase bones" are exported with the rig, which can be used inside UE5 to bind static meshes to the exported LC rig.
 
 
-
+|
 .. _headlights:
 Headlights
 -----
@@ -291,6 +307,7 @@ Headlights will automatically be rigged if detected in the model. If not, you ca
 Different texture presets can be picked for the light beam. Low Beam and High Beam can be toggled and more settings can be dialed in.
 
 
+|
 .. _skidmarks:
 Skidmarks
 -----
@@ -316,6 +333,7 @@ The Skidmarks Panel helps you generate skidmarks from the tires of the vehicle.
 
 
 
+|
 .. _jump-trajectories:
 Jump Trajectory
 -----
@@ -341,6 +359,7 @@ Calculates spline-points of a realistic car jump depending on the input speed.
 To use it, go into edit-mode on the "DrivingPath" and select the last point, which has to be the very end of the "ramp" the car is going to jump from. This last point needs to have a handle. The angle of the handle will be the take-off angle and the "Jump Speed" (Speed of the car at take-off point) must be defined in the Add-on UI. If you prefer Imperial Units, you can check the check-box in the Add-on UI. The calculation will always expect the end of the jump is on Z=0. 
 
 
+|
 .. _cameras:
 Cinematographer
 -----
