@@ -140,19 +140,19 @@ Snap Driving Path
 ^^^^^^^^
 Automatically snap the Control Points of the Driving Path to the Ground Detection Meshes.
 
-..  figure:: img/IMG_SnapOFF.jpg
+|pic1| any text |pic2|
+
+..  |pic1| figure:: img/IMG_SnapOFF.jpg
     :alt: View
     :class: with-shadow
-    :width: 300px
-    :align: left
+    :width: 45%
     
     *Driving Path with Snapping OFF* 
 
-..  figure:: img/IMG_SnapON.jpg
+..  |pic2| figure:: img/IMG_SnapON.jpg
     :alt: View
     :class: with-shadow
-    :width: 300px
-    :align: right
+    :width: 45%
     
     *Driving Path with Snapping ON* 
 
@@ -188,7 +188,7 @@ Change the resolution of the detection grid which is projected onto the geometry
 ..  figure:: img/IMG_Res_01.jpg
     :alt: View
     :class: with-shadow
-    :width: 300px
+    :width: 45%
     :align: left
     
     *Detection Resolution 1 for smooth motion* 
@@ -196,7 +196,7 @@ Change the resolution of the detection grid which is projected onto the geometry
 ..  figure:: img/IMG_Res_02.jpg
     :alt: View
     :class: with-shadow
-    :width: 300px
+    :width: 45%
     :align: right
     
     *Detection Resolution 2 for detailed motion* 
@@ -209,7 +209,7 @@ To allow full control all the Viewport UI sliders can be "unlocked" so you can o
 ..  figure:: img/IMG_LimitOn.jpg
     :alt: View
     :class: with-shadow
-    :width: 300px
+    :width: 45%
     :align: left
     
     *Default: Locks the sliders inside the best range* 
@@ -217,7 +217,7 @@ To allow full control all the Viewport UI sliders can be "unlocked" so you can o
 ..  figure:: img/IMG_LimitOff.jpg
     :alt: View
     :class: with-shadow
-    :width: 300px
+    :width: 45%
     :align: right
     
     *Unlocks the sliders* 
@@ -278,7 +278,7 @@ The Headlights Panel help you quickly adjust and render Headlight Beams in front
 ..  figure:: gif/GIF_Headlights.gif
     :alt: Headlights
     :class: with-shadow
-    :width: 300px
+    :width: 45%
     :align: left
     
     *Headlights in action!* 
@@ -286,7 +286,7 @@ The Headlights Panel help you quickly adjust and render Headlight Beams in front
 ..  figure:: img/IMG_Headlights.jpg
     :alt: Headlights
     :class: with-shadow
-    :width: 300px
+    :width: 45%
     :align: right
     
     *Headlights Panel in the Manual Gearbox UI* 
@@ -308,7 +308,7 @@ The Skidmarks Panel helps you generate skidmarks from the tires of the vehicle.
 ..  figure:: gif/GIF_Skidmarks.gif
     :alt: Skidmarks
     :class: with-shadow
-    :width: 300px
+    :width: 45%
     :align: left
     
     *Skidmarks in Action!* 
@@ -316,7 +316,7 @@ The Skidmarks Panel helps you generate skidmarks from the tires of the vehicle.
 ..  figure:: img/IMG_Skidmarks.jpg
     :alt: Skidmarks
     :class: with-shadow
-    :width: 300px
+    :width: 45%
     :align: right
     
     *Skidmarks Panel in the Manual Gearbox UI* 
@@ -332,7 +332,7 @@ With the Jump Trajectory Panel, you can generate a realistic jump path for your 
 ..  figure:: gif/GIF_Jump.gif
     :alt: Jump
     :class: with-shadow
-    :width: 300px
+    :width: 45%
     :align: left
     
     *Jump in Action!* 
@@ -340,7 +340,7 @@ With the Jump Trajectory Panel, you can generate a realistic jump path for your 
 ..  figure:: img/IMG_JumpGenerator.jpg
     :alt: Jump
     :class: with-shadow
-    :width: 300px
+    :width: 45%
     :align: right
     
     *Jump Trajectory Panel in the Manual Gearbox UI* 
@@ -359,7 +359,7 @@ The Cinematographer Panel will help you quickly set up Cameras for your Animatio
 ..  figure:: img/IMG_CamSetup.jpg
     :alt: Cam
     :class: with-shadow
-    :width: 300px
+    :width: 45%
     :align: left
     
     *Cinematographer Panel in the Manual Gearbox UI* 
@@ -367,7 +367,7 @@ The Cinematographer Panel will help you quickly set up Cameras for your Animatio
 ..  figure:: img/IMG_Cam.jpg
     :alt: Cam
     :class: with-shadow
-    :width: 300px
+    :width: 45%
     :align: right
     
     *Cinematographer Panel in the Manual Gearbox UI* 
