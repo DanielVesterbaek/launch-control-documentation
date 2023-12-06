@@ -143,23 +143,15 @@ Automatically snap the Control Points of the Driving Path to the Ground Detectio
 ..  |pic1| image:: img/IMG_SnapOFF.jpg
     :alt: View
     :class: with-shadow
-    :width: 45%
+    :width: 50%
 
 
 ..  |pic2| image:: img/IMG_SnapON.jpg
     :alt: View
     :class: with-shadow
-    :width: 45%
+    :width: 50%
 
 |pic1| |pic2|
-
-* - .. figure:: img/IMG_SnapOFF.jpg
-
-       Fig 1. Representations
-
-  - .. figure:: img/IMG_SnapON.jpg
-
-       Fig 2. Transparency
 
 
 .. note::
