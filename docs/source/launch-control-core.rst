@@ -129,9 +129,10 @@ This is usually due to one of 3 things:
 
 
 .. _animation
+.. _driving-path:
 Animation
 ------
-LC uses a curve based animation workflow to give you full creative control over the movement. :ref:`user-animation` is acting on top of the automatically calculated animations, allowing the user full customization of the animation.
+LC uses a curve based animation workflow to give you full creative control over the movement. The curve which the vehicle is following is called "Driving Path". :ref:`user-animation` is acting on top of the automatically calculated animations, allowing the user full customization of the animation.
 
 
 .. _animation-presets:
@@ -153,9 +154,9 @@ The Vehicle will automatically be animated to drive along the length of the path
 .. _update-driving-path:
 Update Driving Path
 ^^^^^^
-While adjusting the control points of the Driving Path, the total length of the path might change.
+While adjusting the control points of the :ref:'driving-path', the total length of the path might change.
 When this happens, LC will prompt you to "Update Driving Path" before adjusting any animation.
-Click "Update Driving Path" in the LC interface. - This resolved any offsets to the animation due to the changed Driving Path.
+Click "Update Driving Path" in the LC interface. - This resolved any offsets to the animation due to the changed :ref:'driving-path'.
 
 ..  figure:: img/IMG_UpdateDrivingPath.jpg
     :alt: Update Driving Path
@@ -197,6 +198,15 @@ Drift Handle: Rotation
     
     *The Inclination determines the Speed* 
 
+.. _ground-detection:
+Ground Detection
+^^^^^^
+
+The vehicle will automatically detect any ground objects which are added to the collection called "Ground Detection".
+To add additional objects which will act as ground detection move them into this collection.
+
+Using the :ref:`snap-driving-path` you can make the :ref:'driving-path'
+
 
 .. _speedometer:
 Speedometer
@@ -223,11 +233,15 @@ The Physics are layed on top of the Automatic and User Animation and are fully n
 Presets can be used to get different results, or use the :ref:`physics-customize` checkbox to adjust the Physics settings in detail.
 
 .. note::
-The Physics always has one of four states:
+    The Physics always has one of five states:
     * LIVE
     * BAKED
     * MUTED
     * OUTDATED
+    * INVALID
+
+.. note::
+    The Physics are framerate independent, but are optimized a framerate of 24 fps.
 
 .. _live-physics:
 Live Physics
@@ -275,6 +289,8 @@ Outdated Physics
 ^^^^^^
 
 When the Physics are OUTDATED, they have been baked, but changes in the scene or the physics settings have made the bake invalid or outdated. Please bake the physics again if this is the case.
+
+When the Physics are INVALID, you will need to hit the "Reset Physics" button to the right in the. If the Physics are BAKED, this will launch a re-bake, but if the Physics are LIVE, it will instead just clear the real-time cache, resolving the issue.
 
 
 .. _physics-customize:
