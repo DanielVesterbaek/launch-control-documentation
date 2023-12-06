@@ -150,7 +150,7 @@ User Path
 To use your own "Bezier Curve" or "Nurbs Path" to animate the car along, use the "User Path" field.
 Click the field to browse for your desired path or drag-n-drop the path into the field. Hit "Animate Vehicle".
 
-The Vehicle will automatically be animated to drive along the length of the path over the scene time. (See :ref:`auto-animate`)
+The Vehicle will automatically be animated to drive along the length of the path over the scene time.
 
 .. note::
     If a "User Path" is selected, it will overrule/gray out the animation presets.
