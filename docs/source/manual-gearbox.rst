@@ -20,7 +20,7 @@ View
 
 The View Panel has options for what will be shown in the 3D View over and around the Vehicle.
 
-..  figure:: img/IMG_View.jpg
+..  figure:: img/IMG_View_02.jpg
     :alt: View
     :class: with-shadow
     :width: 350px
@@ -50,9 +50,17 @@ When Detection Grid is on, you can change the :ref:`detection-resolution`.
 
 
 .. _enable_acc_viz:
-Acceleration Visualizer
+G-Force Visualizer
 ^^^^^^^^
-Enable an Acceleration Visualizer in the viewport to see the accelerations calculated and used by the :ref:`real-time-physics`.
+Enable an G-Force Visualizer in the viewport to see the force calculated and used by the :ref:`real-time-physics`.
+
+..  figure:: gif/GIF_G-Force.gif
+    :alt: Custom Physics
+    :class: with-shadow
+    :width: 350px
+    :align: center
+
+    *The G-Forces which are working on the vehicle*
 
 .. _enable_vel_viz:
 Velocity Visualizer
@@ -102,6 +110,10 @@ See: :ref:`update-driving-path`
 Snap Driving Path
 ^^^^^^^^
 Automatically snap the Control Points of the Driving Path to the Ground Detection Meshes.
+
+.. note::
+    The threshold for the vehicle detecting the ground is 4 m. If the vehicle is further away than this, it will instead stick to the path.
+
 
 .. _use-true-ground:
 Use True Ground
