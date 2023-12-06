@@ -135,6 +135,7 @@ LC uses a curve based animation workflow to give you full creative control over 
 
 .. _driving-path:
 Driving Path
+^^^^^^^^
 
 The curve which the vehicle is following is called "Driving Path". It can be modified by selecting it and going into "Edit Mode". In Edit mode you can also use the "Draw" or "Curve Pen" to alter the Driving Path.
 
