@@ -140,21 +140,27 @@ Snap Driving Path
 ^^^^^^^^
 Automatically snap the Control Points of the Driving Path to the Ground Detection Meshes.
 
-..  |pic1| figure:: img/IMG_SnapOFF.jpg
+..  |pic1| image:: img/IMG_SnapOFF.jpg
     :alt: View
     :class: with-shadow
     :width: 45%
 
-    *Driving Path with Snapping OFF
 
-..  |pic2| figure:: img/IMG_SnapON.jpg
+..  |pic2| image:: img/IMG_SnapON.jpg
     :alt: View
     :class: with-shadow
     :width: 45%
-
-    *Driving Path with Snapping ON
 
 |pic1| |pic2|
+
+* - .. figure:: img/IMG_SnapOFF.jpg
+
+       Fig 1. Representations
+
+  - .. figure:: img/IMG_SnapON.jpg
+
+       Fig 2. Transparency
+
 
 .. note::
     The threshold for the vehicle detecting the ground is 4 m. If the vehicle is further away than this, it will instead stick to the path.
