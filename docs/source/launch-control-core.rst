@@ -332,6 +332,9 @@ Invalid Physics
 
 When the Physics are INVALID, you will need to hit the "Reset Physics" button to the right in the. If the Physics are BAKED, this will launch a re-bake, but if the Physics are LIVE, it will instead just clear the real-time cache, resolving the issue.
 
+|
+|
+|
 
 .. _g-force-vizualiser:
 G-Force Vizualiser
