@@ -129,11 +129,14 @@ This is usually due to one of 3 things:
 
 
 .. _animation
-.. _driving-path:
 Animation
 ------
-LC uses a curve based animation workflow to give you full creative control over the movement. The curve which the vehicle is following is called "Driving Path". :ref:`user-animation` is acting on top of the automatically calculated animations, allowing the user full customization of the animation.
+LC uses a curve based animation workflow to give you full creative control over the movement. :ref:`user-animation` is acting on top of the automatically calculated animations, allowing the user full customization of the animation.
 
+.. _driving-path:
+Driving Path
+
+The curve which the vehicle is following is called "Driving Path". It can be modified by selecting it and going into "Edit Mode". In Edit mode you can also use the "Draw" or "Curve Pen" to alter the Driving Path.
 
 .. _animation-presets:
 Animation Presets
