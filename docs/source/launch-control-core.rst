@@ -3,7 +3,6 @@ Launch Control Core
 The Main Features part is split into 3 segments: "Rigging, Animation, and Physics".
 Let's go over each of those here.
 
-
 .. _rigging:
 One-Click Rigging
 ------
@@ -30,6 +29,8 @@ Select a Collection, which holds the vehicle you want to rig by dragging the col
     
     *Selecting a Vehicle Collection* 
 
+.. warning::
+    Rigging vehicles across Blender Scenes is not supported. Please only use 1 scene for rigged Launch Control Vehicles in each file.
 
 .. _rigging-tags:
 Rigging Tags
