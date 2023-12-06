@@ -286,7 +286,7 @@ When the Physics are BAKED, changes to the animation will not affect the physics
 
 To bake the physics, click "Bake Physics!". This will take you to the baking menu, where you can add :ref:`physics-warm-up` and start the bake with "Confirm Bake!"
 
-..  image:: img/IMG_Physics_Baking.jpg
+..  figure:: img/IMG_Physics_Baking.jpg
     :alt: Physics Baking
     :class: with-shadow
     :width: 300px
@@ -296,7 +296,7 @@ To bake the physics, click "Bake Physics!". This will take you to the baking men
 
 When the bake finishes, click "Revert to Physics Menu".
 
-..  image:: img/IMG_Physics_Baking_02.jpg
+..  figure:: img/IMG_Physics_Baking_02.jpg
     :alt: Physics Baking
     :class: with-shadow
     :width: 300px
