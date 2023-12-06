@@ -32,6 +32,9 @@ Select a Collection, which holds the vehicle you want to rig by dragging the col
 .. warning::
     Rigging vehicles across Blender Scenes is not supported. Please only use 1 scene for rigged Launch Control Vehicles in each file.
 
+.. info::
+    Avoid Copy/Pasting, Appending or Linking Vehicles that are rigged using Launch Control. If you want to move a vehicle to a new file, unrig the vehicle and rig it again in the destination file.
+
 .. _rigging-tags:
 Rigging Tags
 ^^^^^^^^^^
