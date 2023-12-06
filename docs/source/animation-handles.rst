@@ -40,12 +40,14 @@ Bottom-out Height (Suspension Clamp):
      Alters the height at which the spring will be fully compressed, making the wheels and the body unable to come closer to each other. "Clipping Warning Icons" will appear at the wheels of the vehicle when the spring is fully compressed.
 
 
+|
 .. _animation_handles:
 Animation Controls
 ------
 
 The Animation handles and sliders are made to be animated. Go into "Pose-Mode", Select a handle and hit "I"-> Location or Rotation to add a keyframe to it.
 
+|
 Handles:
 ^^^^^^^^
 Animation Handles are used to control the animation of the vehicle.
@@ -68,6 +70,7 @@ Drift Handle: (Curved Arrow Icon)
     Controls the amount the tail of the vehicle is swinging/drifting. The Drift will pivot around the front axle of the vehicle. Can be combined with the :ref:`drift-offset` handle for more control.
 
 
+|
 Sliders:
 ^^^^^^^^
 The Animation Sliders are used to control features of the rig which can be animated throughout the time of the animation.
@@ -94,6 +97,7 @@ Airbourne Mode:
 
 
 
+|
 .. _extra_animation_handles:
 Extra Animation Controls
 ------
@@ -101,6 +105,7 @@ Extra Animation Controls
 Extra Animation Handles can be revealed giving the user more flexibility when animating. Inside the Manual Gearbox, the :ref:`enable_extra_handles` can be enabled.
 
 
+|
 Handles:
 ^^^^^^^^
 ..  figure:: img/IMG_ExtraAnimationHandles02.jpg
@@ -147,6 +152,7 @@ Drift Offset:
     *Example of using the Drift Offset Handle* 
 
 
+|
 Sliders:
 ^^^^^^^^
 ..  figure:: img/IMG_ExtraAnimationHandles.jpg
