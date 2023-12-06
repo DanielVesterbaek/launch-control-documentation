@@ -238,13 +238,12 @@ The Physics are layed on top of the Automatic and User Animation and are fully n
 
 Presets can be used to get different results, or use the :ref:`physics-customize` checkbox to adjust the Physics settings in detail.
 
-.. note::
-    The Physics always has one of five states:
-    * LIVE
-    * BAKED
-    * MUTED
-    * OUTDATED
-    * INVALID
+The Physics always has one of five states:
+    * :ref:`live-physics`
+    * :ref:`baked-physics`
+    * :ref:`muted-physics`
+    * :ref:`outdated-physics`
+    * :ref:`invalid-physics`
 
 .. note::
     The Physics are framerate independent, but are optimized a framerate of 24 fps.
@@ -326,6 +325,10 @@ Outdated Physics
 ^^^^^^
 
 When the Physics are OUTDATED, they have been baked, but changes in the scene or the physics settings have made the bake invalid or outdated. Please bake the physics again if this is the case.
+
+.. _invalid-physics:
+Invalid Physics
+^^^^^^
 
 When the Physics are INVALID, you will need to hit the "Reset Physics" button to the right in the. If the Physics are BAKED, this will launch a re-bake, but if the Physics are LIVE, it will instead just clear the real-time cache, resolving the issue.
 
