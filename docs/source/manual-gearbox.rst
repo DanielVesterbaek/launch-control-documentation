@@ -143,15 +143,15 @@ Automatically snap the Control Points of the Driving Path to the Ground Detectio
 ..  |pic1| image:: img/IMG_SnapOFF.jpg
     :alt: View
     :class: with-shadow
-    :width: 47%
+    :width: 49%
 
 
 ..  |pic2| image:: img/IMG_SnapON.jpg
     :alt: View
     :class: with-shadow
-    :width: 47%
+    :width: 49%
 
-|pic1| |pic2|
+|pic1||pic2|
 
 *Driving Path Snap OFF and ON. A quick way to match the path to the ground.* 
 
@@ -185,17 +185,17 @@ Resolution
 ^^^^^^^^
 Change the resolution of the detection grid which is projected onto the geometry inside the "Ground Detection" collection.
 
-..  |pic1| image:: img/IMG_Res_01.jpg
+..  |pic3| image:: img/IMG_Res_01.jpg
     :alt: View
     :class: with-shadow
-    :width: 47%
+    :width: 49%
 
-..  |pic2| image:: img/IMG_Res_02.jpg
+..  |pic4| image:: img/IMG_Res_02.jpg
     :alt: View
     :class: with-shadow
-    :width: 47%
+    :width: 49%
 
-|pic1| |pic2|
+|pic3||pic4|
     
 *Detection Resolution 1 for smooth motion, 2+ for detailed motion* 
 
@@ -204,18 +204,18 @@ Limit Animation Sliders
 ^^^^^^^^
 To allow full control all the Viewport UI sliders can be "unlocked" so you can over-crank them and get whatever craziness you want.
 
-..  |pic1| image:: img/IMG_LimitOn.jpg
+..  |pic5| image:: img/IMG_LimitOn.jpg
     :alt: View
     :class: with-shadow
-    :width: 47%
+    :width: 49%
     
 
-..  |pic2| image:: img/IMG_LimitOff.jpg
+..  |pic6| image:: img/IMG_LimitOff.jpg
     :alt: View
     :class: with-shadow
-    :width: 47%
+    :width: 49%
 
-|pic1| |pic2|
+|pic5||pic6|
     
 *Default: Locks the sliders inside the best range, check to unlocks the sliders* 
 
@@ -272,17 +272,17 @@ The Headlights Panel help you quickly adjust and render Headlight Beams in front
 .. note::
   Only Beams are set up here, not any emitting lamps or meshes inside the headlight geometry.
 
-..  |pic1| image:: gif/GIF_Headlights.gif
+..  |pic7| image:: gif/GIF_Headlights.gif
     :alt: Headlights
     :class: with-shadow
-    :width: 47%
+    :width: 49%
 
-..  |pic2| image:: img/IMG_Headlights.jpg
+..  |pic8| image:: img/IMG_Headlights.jpg
     :alt: Headlights
     :class: with-shadow
-    :width: 47%
+    :width: 49%
 
-|pic1| |pic2|
+|pic7||pic8|
     
 *Headlights Panel in the Manual Gearbox UI* 
 
@@ -300,17 +300,17 @@ The Skidmarks Panel helps you generate skidmarks from the tires of the vehicle.
 .. note::
   Skidmarks currently only support pressure to calculate the intensity. Wheel-spin or Wheel-locking does not currently affect the generated Skidmarks
 
-..  |pic1| image:: gif/GIF_Skidmarks.gif
+..  |pic9| image:: gif/GIF_Skidmarks.gif
     :alt: Skidmarks
     :class: with-shadow
-    :width: 47%
+    :width: 49%
 
-..  |pic2| image:: img/IMG_Skidmarks.jpg
+..  |pic10| image:: img/IMG_Skidmarks.jpg
     :alt: Skidmarks
     :class: with-shadow
-    :width: 47%
+    :width: 49%
 
-|pic1| |pic2|
+|pic9||pic10|
     
 *Skidmarks Panel in the Manual Gearbox UI* 
 
@@ -322,17 +322,17 @@ Jump Trajectory
 
 With the Jump Trajectory Panel, you can generate a realistic jump path for your vehicle.
 
-..  |pic1| image:: gif/GIF_Jump.gif
+..  |pic11| image:: gif/GIF_Jump.gif
     :alt: Jump
     :class: with-shadow
-    :width: 47%
+    :width: 49%
 
-..  |pic2| image:: img/IMG_JumpGenerator.jpg
+..  |pic12| image:: img/IMG_JumpGenerator.jpg
     :alt: Jump
     :class: with-shadow
-    :width: 47%
+    :width: 49%
 
-|pic1| |pic2|
+|pic11||pic12|
     
 *Jump Trajectory Panel in the Manual Gearbox UI* 
 
@@ -347,16 +347,18 @@ Cinematographer
 
 The Cinematographer Panel will help you quickly set up Cameras for your Animation.
 
-..  |pic1| image:: img/IMG_CamSetup.jpg
+..  |pic13| image:: img/IMG_CamSetup.jpg
     :alt: Cam
     :class: with-shadow
-    :width: 47%
+    :width: 49%
 
-..  |pic1| image:: img/IMG_Cam.jpg
+..  |pic14| image:: img/IMG_Cam.jpg
     :alt: Cam
     :class: with-shadow
-    :width: 47%
-    
+    :width: 49%
+
+|pic13||pic14|
+
 *Cinematographer Panel in the Manual Gearbox UI* 
 
 Click the "Create Hooked Cameras" to generate two cameras from the 3D view hooked to the active vehicle.
