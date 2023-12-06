@@ -154,9 +154,9 @@ The Vehicle will automatically be animated to drive along the length of the path
 .. _update-driving-path:
 Update Driving Path
 ^^^^^^
-While adjusting the control points of the :ref:'driving-path', the total length of the path might change.
+While adjusting the control points of the :ref:`driving-path`, the total length of the path might change.
 When this happens, LC will prompt you to "Update Driving Path" before adjusting any animation.
-Click "Update Driving Path" in the LC interface. - This resolved any offsets to the animation due to the changed :ref:'driving-path'.
+Click "Update Driving Path" in the LC interface. - This resolved any offsets to the animation due to the changed :ref:`driving-path`.
 
 ..  figure:: img/IMG_UpdateDrivingPath.jpg
     :alt: Update Driving Path
@@ -205,7 +205,10 @@ Ground Detection
 The vehicle will automatically detect any ground objects which are added to the collection called "Ground Detection".
 To add additional objects which will act as ground detection move them into this collection.
 
-Using the :ref:`snap-driving-path` you can make the :ref:'driving-path'
+Using the :ref:`snap-driving-path` you can make the control points of the :ref:`driving-path` snap to the ground detection objects if they are within 4 m range. 
+
+.. note::
+    The threshold for the vehicle detecting the ground is 4 m. If the vehicle is further away than this, it will instead stick to the path.
 
 
 .. _speedometer:
@@ -278,6 +281,36 @@ When the Physics are BAKED, changes to the animation will not affect the physics
 .. warning::
     Due to a bug in Blender, BAKED physics do not load correctly when re-opening the file. After reopening, you would need to bake the physics again.
 
+To bake the physics, click "Bake Physics!". This will take you to the baking menu, where you can add :ref:`physics-warm-up` and start the bake with "Confirm Bake!"
+
+..  image:: img/IMG_Physics_Baking.jpg
+    :alt: Physics Baking
+    :class: with-shadow
+    :width: 300px
+    :align: center
+
+    *Baking Menu, when bake is started*
+
+When the bake finishes, click "Revert to Physics Menu".
+
+..  image:: img/IMG_Physics_Baking_02.jpg
+    :alt: Physics Baking
+    :class: with-shadow
+    :width: 300px
+    :align: center
+    
+    *Revert back to the main Physics Menu* 
+
+
+.. _physics-warm-up:
+Warm Up Frames
+******
+
+To avoid "popping" on the first frame of the physics you can add warm up frames before your animated section starts. During the baking process you have the option of enabling this and setting the amount of frames.
+
+.. note::
+    It's only possible to add warm up frames if your animation starts after frame 0 of the scene timeline. Warm up frames can not be negative frames.
+
 .. _muted-physics:
 Muted Physics
 ^^^^^^
@@ -291,6 +324,25 @@ Outdated Physics
 When the Physics are OUTDATED, they have been baked, but changes in the scene or the physics settings have made the bake invalid or outdated. Please bake the physics again if this is the case.
 
 When the Physics are INVALID, you will need to hit the "Reset Physics" button to the right in the. If the Physics are BAKED, this will launch a re-bake, but if the Physics are LIVE, it will instead just clear the real-time cache, resolving the issue.
+
+
+.. _g-force-vizualiser:
+G-Force Vizualiser
+^^^^^^
+
+To make it easier to debug what the Physics are doing a G-Force Vizualiser is showing up above the vehicle. It can be disabled inside :ref:`view` in the :ref:`manual-gearbox`.
+When the G-Force exceeds 1.8 g, the vizualiser turns red indicating that a big force is acting on the body. To decrease the magnitude of the force, decrease the acceleration of the vehicle or make turns smoother.
+
+..  figure:: gif/GIF_G-Force.gif
+    :alt: Custom Physics
+    :class: with-shadow
+    :width: 350px
+    :align: center
+
+    *The G-Forces which are working on the vehicle*
+
+.. note::
+    LC does not have a physically correct simulation engine behind it so take the values with a grain of salt. It does however indicate the approximate value for you.
 
 
 .. _physics-customize:
