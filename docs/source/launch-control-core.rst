@@ -3,6 +3,7 @@ Launch Control Core
 The Main Features part is split into 3 segments: "Rigging, Animation, and Physics".
 Let's go over each of those here.
 
+|
 .. _rigging:
 One-Click Rigging
 ------
@@ -12,7 +13,7 @@ LC uses :ref:`rigging-tags` to detect the parts of the vehicle. If the naming co
 
 :ref:`custom-tags` can be used to optimize LC for your own naming convention.
 
-
+|
 .. _vehicle-collection:
 Vehicle Collection
 ^^^^^^^^^^
@@ -35,6 +36,7 @@ Select a Collection, which holds the vehicle you want to rig by dragging the col
 .. note::
     Avoid Copy/Pasting, Appending or Linking Vehicles that are rigged using Launch Control. If you want to move a vehicle to a new file, unrig the vehicle and rig it again in the destination file.
 
+|
 .. _rigging-tags:
 Rigging Tags
 ^^^^^^^^^^
@@ -78,6 +80,7 @@ The full list of accepted locations names:
    All Tags are case-insensitive.
 
 
+|
 .. _quick-tag-tool:
 Quick-Tag Tool
 ^^^^^^^^^^
@@ -94,6 +97,7 @@ You can quickly tag Car Parts that needs renaming to be compatible with LC using
     *The Quick-Tag Tool in the Interface* 
 
 
+|
 .. _native_lc_support:
 Asset Packs for LC
 ^^^^^^^^^^
@@ -104,6 +108,7 @@ Some Asset Packs that are natively supported are:
     * `Traffiq Car <https://blendermarket.com/products/car-library-traffiq-vehicles-for-blender>`_
 
 
+|
 .. _library-override:
 Linked Vehicles with Library Override
 ^^^^^^^^^^
@@ -111,6 +116,7 @@ Linked Vehicles with Library Override
 In Launch Control, you can rigged a vehicle linked from another file. To do so, add a Library Override to all the objects you have added :ref:`rigging-tags` to and hit "Rig Vehicle!"
 
 
+|
 .. _troubleshoot_rigging:
 Troubleshoot Rigging
 ^^^^^^^^^^
@@ -128,22 +134,26 @@ This is usually due to one of 3 things:
     Custom rigging and parenting can be done using the :ref:`rig-setup-mode`
 
 
+|
 .. _animation
 Animation
 ------
 LC uses a curve based animation workflow to give you full creative control over the movement. :ref:`user-animation` is acting on top of the automatically calculated animations, allowing the user full customization of the animation.
 
+|
 .. _driving-path:
 Driving Path
 ^^^^^^^^
 
 The curve which the vehicle is following is called "Driving Path". It can be modified by selecting it and going into "Edit Mode". In Edit mode you can also use the "Draw" or "Curve Pen" to alter the Driving Path.
 
+|
 .. _animation-presets:
 Animation Presets
 ^^^^^^
 To quickly try out animations use the presets. Select a Preset from the Gallery and hit "Animate Vehicle".
 
+|
 .. _user-path:
 User Path
 ^^^^^^
@@ -170,6 +180,7 @@ Click "Update Driving Path" in the LC interface. - This resolved any offsets to 
     
     *Update Driving Path Message in 3D View* 
 
+|
 .. _user-animation:
 User Animation
 ^^^^^^
@@ -202,6 +213,7 @@ Drift Handle: Rotation
     
     *The Inclination determines the Speed* 
 
+|
 .. _ground-detection:
 Ground Detection
 ^^^^^^
@@ -215,6 +227,7 @@ Using the :ref:`snap-driving-path` you can make the control points of the :ref:`
     The threshold for the vehicle detecting the ground is 4 m. If the vehicle is further away than this, it will instead stick to the path.
 
 
+|
 .. _speedometer:
 Speedometer
 ^^^^^^
@@ -230,6 +243,7 @@ The Units can be changed inside the :ref:`user-preferences`.
     The Speedometer in the Add-on UI is only working when the mouse is hovering over the panel. Otherwise this value does not update due to the way Blender works. The Speedometer in the 3D view is not affected by this.
 
 
+|
 .. _real-time-physics:
 Real-Time Physics
 ------
@@ -249,6 +263,7 @@ The Physics always has one of five states:
 .. note::
     The Physics are framerate independent, but are optimized a framerate of 24 fps.
 
+|
 .. _live-physics:
 Live Physics
 ^^^^^^
@@ -267,6 +282,7 @@ When the Physics are LIVE, they are simulated in real-time when Blender is playi
     Physics cannot be calculated LIVE when playing backward.
     LIVE Physics will cache when playing forward. To ensure you are seeing the latest result, revert the timeline back to frame 0 or hit the 'Reset Physics'-button.
 
+|
 .. _baked-physics:
 Baked Physics
 ^^^^^^
@@ -306,6 +322,7 @@ When the bake finishes, click "Revert to Physics Menu".
     *When bake finishes, you can revert back to the main Physics Menu* 
 
 
+|
 .. _physics-warm-up:
 Warm Up Frames
 ******
@@ -315,18 +332,21 @@ To avoid "popping" on the first frame of the physics you can add warm up frames 
 .. note::
     It's only possible to add warm up frames if your animation starts after frame 0 of the scene timeline. Warm up frames can not be negative frames.
 
+|
 .. _muted-physics:
 Muted Physics
 ^^^^^^
 
 When the Physics are MUTED, the baked physics motion is kept, but disabled temporarily. The vehicle will only have the motion from the animation. Hit the Unmute button to show the baked physics motion again.
 
+|
 .. _outdated-physics:
 Outdated Physics
 ^^^^^^
 
 When the Physics are OUTDATED, they have been baked, but changes in the scene or the physics settings have made the bake invalid or outdated. Please bake the physics again if this is the case.
 
+|
 .. _invalid-physics:
 Invalid Physics
 ^^^^^^
@@ -356,6 +376,7 @@ When the G-Force exceeds 1.8 g, the vizualiser turns red indicating that a big f
     LC does not have a physically correct simulation engine behind it so take the values with a grain of salt. It does however indicate the approximate value for you.
 
 
+|
 .. _physics-customize:
 Customize
 ^^^^^^
@@ -398,7 +419,7 @@ These sliders can be used to adjust the parameters used when simulating the phys
 
 
 
-
+|
 .. _postfx:
 PostFX
 ^^^^^^
