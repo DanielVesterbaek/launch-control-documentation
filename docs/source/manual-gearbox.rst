@@ -33,6 +33,13 @@ Extra Animation Handles
 ^^^^^^^^
 Enables extra :ref:`animation-handles` and Sliders in the 3D view above and around the vehicle.
 
+..  figure:: img/IMG_ExtraAnimHandlesOn.jpg
+    :alt: View
+    :class: with-shadow
+    :width: 350px
+    :align: center
+    
+    *Add Extra Handles to control more things!* 
 
 .. _enable_camera_hooks:
 Camera Hooks
@@ -42,12 +49,27 @@ The "Follow Cam" will track the general motion of the vehicle without taking the
 
 Alternatively, you can create hooked cameras with 1 Click in the :ref:`cameras` section.
 
+..  figure:: img/IMG_CamHooks.jpg
+    :alt: View
+    :class: with-shadow
+    :width: 350px
+    :align: center
+    
+    *Attach your 3D Cams here* 
+
 .. _enable_grid_viz:
 Detection Grid
 ^^^^^^^^
 Turn the visibility of the :ref:`ground-detection` debug grid ON/OFF.
 When Detection Grid is on, you can change the :ref:`detection-resolution`.
 
+..  figure:: img/IMG_DetectionGrid.jpg
+    :alt: View
+    :class: with-shadow
+    :width: 350px
+    :align: center
+    
+    *Useful for Debugging the :ref:`ground-detection`* 
 
 .. _enable_acc_viz:
 G-Force Visualizer
@@ -67,6 +89,13 @@ Velocity Visualizer
 ^^^^^^^^
 Enable a Velocity Visualizer in the viewport to see the velocity calculated and used by the :ref:`real-time-physics`.
 
+..  figure:: img/IMG_VelViz.jpg
+    :alt: View
+    :class: with-shadow
+    :width: 350px
+    :align: center
+    
+    *Useful for Debugging the :ref:`ground-detection`* 
 
 .. _settings:
 Settings
@@ -111,6 +140,22 @@ Snap Driving Path
 ^^^^^^^^
 Automatically snap the Control Points of the Driving Path to the Ground Detection Meshes.
 
+..  figure:: img/IMG_SnapOFF.jpg
+    :alt: View
+    :class: with-shadow
+    :width: 350px
+    :align: left
+    
+    *Driving Path with Snapping OFF* 
+
+..  figure:: img/IMG_SnapON.jpg
+    :alt: View
+    :class: with-shadow
+    :width: 350px
+    :align: right
+    
+    *Driving Path with Snapping ON* 
+
 .. note::
     The threshold for the vehicle detecting the ground is 4 m. If the vehicle is further away than this, it will instead stick to the path.
 
@@ -118,7 +163,18 @@ Automatically snap the Control Points of the Driving Path to the Ground Detectio
 .. _use-true-ground:
 Use True Ground
 ^^^^^^^^
-Use the actual objects inside the collection 'GroundDetection', instead of a projected grid. This can be useful for complex loops or twisting roads built of 1 solid mesh, but will generally give a visually worse result and can introduce 'flickering' detection on 'layered' surfaces.
+Use the actual objects inside the collection 'GroundDetection', instead of a projected grid. This can be useful for complex loops or twisting roads built of 1 solid mesh.
+
+..  figure:: img/IMG_TrueGround.jpg
+    :alt: View
+    :class: with-shadow
+    :width: 350px
+    :align: center
+    
+    *Use actual meshes for Ground detection* 
+
+.. warning::
+    Will generally give a visually worse result and can introduce 'flickering' in the detection on 'layered' surfaces.
 
 Detection Grid
 ^^^^^^^^
@@ -129,11 +185,42 @@ Resolution
 ^^^^^^^^
 Change the resolution of the detection grid which is projected onto the geometry inside the "Ground Detection" collection.
 
+..  figure:: img/IMG_Res_01.jpg
+    :alt: View
+    :class: with-shadow
+    :width: 350px
+    :align: left
+    
+    *Detection Resolution 1 for smooth motion* 
+
+..  figure:: img/IMG_Res_02.jpg
+    :alt: View
+    :class: with-shadow
+    :width: 350px
+    :align: right
+    
+    *Detection Resolution 2 for detailed motion* 
 
 .. _limit-sliders:
 Limit Animation Sliders
 ^^^^^^^^
 To allow full control all the Viewport UI sliders can be "unlocked" so you can over-crank them and get whatever craziness you want.
+
+..  figure:: img/IMG_LimitOn.jpg
+    :alt: View
+    :class: with-shadow
+    :width: 350px
+    :align: left
+    
+    *Default: Locks the sliders inside the best range* 
+
+..  figure:: img/IMG_LimitOff.jpg
+    :alt: View
+    :class: with-shadow
+    :width: 350px
+    :align: right
+    
+    *Unlocks the sliders* 
 
 .. _wheel-shake-rate:
 Wheel Shake Rate
@@ -188,11 +275,19 @@ The Headlights Panel help you quickly adjust and render Headlight Beams in front
 .. note::
   Only Beams are set up here, not any emitting lamps or meshes inside the headlight geometry.
 
+..  figure:: gif/GIF_Headlights.gif
+    :alt: Headlights
+    :class: with-shadow
+    :width: 350px
+    :align: left
+    
+    *Headlights in action!* 
+
 ..  figure:: img/IMG_Headlights.jpg
     :alt: Headlights
     :class: with-shadow
     :width: 350px
-    :align: center
+    :align: right
     
     *Headlights Panel in the Manual Gearbox UI* 
 
@@ -210,11 +305,19 @@ The Skidmarks Panel helps you generate skidmarks from the tires of the vehicle.
 .. note::
   Skidmarks currently only support pressure to calculate the intensity. Wheel-spin or Wheel-locking does not currently affect the generated Skidmarks
 
+..  figure:: gif/GIF_Skidmarks.gif
+    :alt: Skidmarks
+    :class: with-shadow
+    :width: 350px
+    :align: left
+    
+    *Skidmarks in Action!* 
+
 ..  figure:: img/IMG_Skidmarks.jpg
     :alt: Skidmarks
     :class: with-shadow
     :width: 350px
-    :align: center
+    :align: right
     
     *Skidmarks Panel in the Manual Gearbox UI* 
 
@@ -226,11 +329,19 @@ Jump Trajectory
 
 With the Jump Trajectory Panel, you can generate a realistic jump path for your vehicle.
 
+..  figure:: gif/GIF_Jump.gif
+    :alt: Jump
+    :class: with-shadow
+    :width: 350px
+    :align: left
+    
+    *Jump in Action!* 
+
 ..  figure:: img/IMG_JumpGenerator.jpg
     :alt: Jump
     :class: with-shadow
     :width: 350px
-    :align: center
+    :align: right
     
     *Jump Trajectory Panel in the Manual Gearbox UI* 
 
@@ -245,11 +356,19 @@ Cinematographer
 
 The Cinematographer Panel will help you quickly set up Cameras for your Animation.
 
+..  figure:: img/IMG_CamSetup.jpg
+    :alt: Cam
+    :class: with-shadow
+    :width: 350px
+    :align: left
+    
+    *Cinematographer Panel in the Manual Gearbox UI* 
+
 ..  figure:: img/IMG_Cam.jpg
     :alt: Cam
     :class: with-shadow
     :width: 350px
-    :align: center
+    :align: right
     
     *Cinematographer Panel in the Manual Gearbox UI* 
 
