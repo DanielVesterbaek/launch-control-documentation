@@ -167,6 +167,9 @@ The Vehicle will automatically be animated to drive along the length of the path
 .. note::
     If a "User Path" is selected, it will overrule/gray out the animation presets.
 
+.. warning::
+    Do not delete the :ref:`driving-path` object. Instead create your new path and use the new path in the User Path Field.
+
 |
 .. _update-driving-path:
 Update Driving Path
