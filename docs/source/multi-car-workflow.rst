@@ -1,3 +1,4 @@
+.. _multi-car-workflow:
 Multi-Car Workflow
 ===================================
 To animate multiple vehicles with Launch Control, the Multi-Car Workflow can be used.
