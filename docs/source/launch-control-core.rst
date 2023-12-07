@@ -137,7 +137,7 @@ This is usually due to one of 3 things:
 
 
 |
-.. _animation
+.. _animation:
 Animation
 ------
 LC uses a curve based animation workflow to give you full creative control over the movement. :ref:`user-animation` is acting on top of the automatically calculated animations, allowing the user full customization of the animation.
