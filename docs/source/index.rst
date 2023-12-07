@@ -39,9 +39,9 @@ Manual Gearbox
 --------
 
 Go deeper. Discover the expanded features that LC offers.
-Set up Realistic :ref:`headlight-beams`, generate :ref:`skidmarks` automatically, set up tracking and following :ref:`cameras`, calculate :ref:`jump-trajectories`, and use :ref:`qucik-export` to Unreal Engine or any other DCC using One Click.
+Set up Realistic :ref:`headlight-beams`, generate :ref:`skidmarks` automatically, set up tracking and following :ref:`cameras`, calculate :ref:`jump-trajectories`, and use :ref:`quick-export` to Unreal Engine or any other DCC using One Click.
 
-Here you can also reveal more Animation Handles in the rig, direct the way the :ref:`ground-detection` works, and much more.
+Here you can also reveal more :ref:`animation-controls` in the rig, direct the way the :ref:`ground-detection` works, and much more.
 
 Check out: :doc:`manual-gearbox`
 
@@ -56,9 +56,9 @@ Check out: :doc:`manual-gearbox`
 Viewport Handles
 -------
 
-Outside the Add-in Interface, you will find interactive handles to control the animation of your vehicle. You can adjust or animate everything all the way down to the Camber/Toe for each wheel. - Or you can leave all this op to Launch Control if you prefer.
+Outside the Add-in Interface, you will find interactive handles to control the animation of your vehicle. You can adjust or animate everything all the way down to the Camber/Toe for each wheel. - Or you can leave all this up to Launch Control if you prefer.
 
-The floating UI keeps track of adjustments to the rig of the car. Here you can adjust the maximum steering angle, suspension length, shock "bottom-out" distance, and even adjust the rig to use a "single rear axle" or 4-wheel steering if you so desire.
+The floating UI keeps track of adjustments to the rig of the car. Here you can adjust the maximum steering angle, suspension length, shock "bottom-out" distance, and adjust the rig to use a "single rear axle" or 4-wheel steering if you so desire.
 
 Check out: :doc:`animation-handles`
 
