@@ -1,7 +1,9 @@
 Launch Control Core
 ===================================
 The Main Features part is split into 3 segments: ":ref:`rigging`, :ref:`animation`, and :ref:`real-time-physics`".
+
 |
+
 Let's go over each of those here.
 
 |
