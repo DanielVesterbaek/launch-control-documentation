@@ -1,11 +1,12 @@
 Launch Control Core
 ===================================
-The Main Features part is split into 3 segments: "Rigging, Animation, and Physics".
+The Main Features part is split into 3 segments: ":ref:`rigging`, :ref:`animation`, and :ref:`real-time-physics`".
+|
 Let's go over each of those here.
 
 |
 .. _rigging:
-One-Click Rigging
+Rigging
 ------
 LC uses :ref:`rigging-tags` to detect the parts of the vehicle. If the naming convention of the 3D model is supported by LC, the rigging can be done with one click. 
 
