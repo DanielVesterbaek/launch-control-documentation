@@ -40,7 +40,7 @@ Colorize Driving Paths
 
 Rigging
 -------------
-.. _auto_tire_pivot:
+.. _auto-tire-pivot:
 Automatic Tire Pivot:
   Let LC automatically create new pivots for the tire meshes used for rigging. The new pivots will override any user set pivots. Uncheck to keep user pivots.
 
