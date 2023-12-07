@@ -27,6 +27,7 @@ Show Slider Labels:
 Animation
 -------------
 
+.. _use-impertial-units:
 Use Imperial Units:
   Uses "MPH" instead of "KMH" for the :ref:`speedometer` and the :ref:`jump-trajectories`.
 
