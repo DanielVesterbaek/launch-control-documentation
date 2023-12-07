@@ -19,7 +19,7 @@ LC uses :ref:`rigging-tags` to detect the parts of the vehicle. If the naming co
 Vehicle Collection
 ^^^^^^^^^^
 
-The Vehicle Collection field allows a multi-car workflow in LC and keeps track of the Active Car.
+The Vehicle Collection field allows a :ref:`multi-car-workflow` in LC and keeps track of the Active Car.
 
 Select a Collection, which holds the vehicle you want to rig by dragging the collection from the outliner into the field or by browsing the available options by clicking the field
 
@@ -43,7 +43,7 @@ Rigging Tags
 ^^^^^^^^^^
 
 
-If all required car parts are found, LC can rig the car.
+If all required car parts are found, LC can rig the vehicle.
 
 Required car parts:
     * *Car Body*
@@ -69,6 +69,7 @@ The full list of accepted object names:
     * *Body:   ["Body", "Hull"]*
     * *Brake:   ["Brake","Brakes", "Calliper", "Caliper", "Callipers", "Calipers", "Bremse"]*
     * *Headlight:   ["Headlight", "Headlamp", "Headbulb", "Front_light", "Front_lamp", "Front_bulb", "Front_emitter"]*
+    * *Wheel Covers:   ["wheel_cover", "wheelcover", "skirt", "wheel_skirt", "wheelskirt"]*
 
 
 The full list of accepted locations names:
@@ -114,7 +115,7 @@ Some Asset Packs that are natively supported are:
 Linked Vehicles with Library Override
 ^^^^^^^^^^
 
-In Launch Control, you can rigged a vehicle linked from another file. To do so, add a Library Override to all the objects you have added :ref:`rigging-tags` to and hit "Rig Vehicle!"
+In Launch Control, you can rig a vehicle linked from another file. To do so, add a Library Override to all the objects you have added :ref:`rigging-tags` to and hit "Rig Vehicle!"
 
 
 |
@@ -127,9 +128,9 @@ The objects tagged as "Wheels" need to be the tire meshes of the vehicle. The ob
 
 In some cases, the rigging is succesful, but inacurate, which can cause shaking or wobbly wheels.
 This is usually due to one of 3 things:
-    * The Rear or Front wheels are not properly alligned
+    * The L/R Rear or L/R Front wheels are not properly alligned in pairs
     * Any of the wheels had a rotation offset or the geometry was not straightned before rigging
-    * The Tire Mesh does not have evenly distributed geometry (See :ref:`force-pivot`)
+    * The Tire Mesh does not have evenly distributed geometry (See :ref:`auto-tire-pivot`)
 
 .. note::
     Custom rigging and parenting can be done using the :ref:`rig-setup-mode`
@@ -146,7 +147,7 @@ LC uses a curve based animation workflow to give you full creative control over 
 Driving Path
 ^^^^^^^^
 
-The curve which the vehicle is following is called "Driving Path". It can be modified by selecting it and going into "Edit Mode". In Edit mode you can also use the "Draw" or "Curve Pen" to alter the Driving Path.
+The curve which the vehicle is following is called "Driving Path". It can be modified by selecting it and going into "Edit Mode". In Edit mode you can also use the "Draw" or "Curve Pen" tool on the left sidebar to alter the Driving Path.
 
 |
 .. _animation-presets:
@@ -158,7 +159,7 @@ To quickly try out animations use the presets. Select a Preset from the Gallery 
 .. _user-path:
 User Path
 ^^^^^^
-To use your own "Bezier Curve" or "Nurbs Path" to animate the car along, use the "User Path" field.
+To use your own "Bezier Curve" or "Nurbs Path" to animate the vehicle along, use the "User Path" field.
 Click the field to browse for your desired path or drag-n-drop the path into the field. Hit "Animate Vehicle".
 
 The Vehicle will automatically be animated to drive along the length of the path over the scene time.
@@ -166,12 +167,13 @@ The Vehicle will automatically be animated to drive along the length of the path
 .. note::
     If a "User Path" is selected, it will overrule/gray out the animation presets.
 
+|
 .. _update-driving-path:
 Update Driving Path
 ^^^^^^
 While adjusting the control points of the :ref:`driving-path`, the total length of the path might change.
 When this happens, LC will prompt you to "Update Driving Path" before adjusting any animation.
-Click "Update Driving Path" in the LC interface. - This resolved any offsets to the animation due to the changed :ref:`driving-path`.
+Click "Update Driving Path" button in the LC interface. - This will resolve any offsets to the animation that might be due to the changed :ref:`driving-path`.
 
 ..  figure:: img/IMG_UpdateDrivingPath.jpg
     :alt: Update Driving Path
@@ -186,7 +188,7 @@ Click "Update Driving Path" in the LC interface. - This resolved any offsets to 
 User Animation
 ^^^^^^
 Much of the movement is calculated automatically by LC as the vehicle is following the path - This includes: Steering, Wheel Rotation, Suspension, Camber/Castor.
-User Animation is what the user needs to animate to make the vehicle move like desired. Handles in the viewport are used to animate this.
+User Animation is what the user optionally can change to make the vehicle move more uniquely. :ref:`animation_handles` in the viewport are used to animate this.
 
 ..  figure:: img/IMG_UserAnim.png
     :alt: User Animation
@@ -197,14 +199,15 @@ User Animation is what the user needs to animate to make the vehicle move like d
     *Handles for User Animation* 
 
 Go into "Pose Mode" to adjust any of the Handles.
-After adjusting a Handle hit "I" on the keyboard and pick "Location" or "Rotation" depending on which Handle you are animating.
+After adjusting a Handle hit "I" on the keyboard and pick "Location" or "Rotation" depending on which Handle you are animating to add a keyframe to it.
 
-Movement Handle: Rotation
-Mass Handle: Location
-Drift Handle: Rotation
+* Speed Handle needs keyframes on: Z-Rotation
+* Mass Handle needs keyframes on: Location
+* Drift Handle needs keyframes on: Y-Rotation
+
 
 .. note::
-    Animating the movement/speed of the Vehicle can easily be done with a Graph Editor open. The inclination of the animation curve at any point determines the speed at the given time.
+    Animating the movement/speed of the Vehicle can be done with a Graph Editor open. The inclination of the animation curve at any point determines the speed at the given time.
 
 ..  figure:: img/IMG_speed.png
     :alt: Speed Animation
@@ -222,7 +225,7 @@ Ground Detection
 The vehicle will automatically detect any ground objects which are added to the collection called "Ground Detection".
 To add additional objects which will act as ground detection move them into this collection.
 
-Using the :ref:`snap-driving-path` you can make the control points of the :ref:`driving-path` snap to the ground detection objects if they are within 4 m range. 
+Using the :ref:`snap-driving-path` you can make the control points of the :ref:`driving-path` snap to the ground detection objects. 
 
 .. note::
     The threshold for the vehicle detecting the ground is 4 m. If the vehicle is further away than this, it will instead stick to the path.
@@ -235,7 +238,7 @@ Speedometer
 
 Checking this box will show a Speedometer hovering over the vehicle in the 3D view. A Speedometer will also be shown in the Add-on UI.
 
-The Units can be changed inside the :ref:`user-preferences`.
+The Units can be changed using :ref:`use-impertial-units` inside the Add-on Preferences.
 
 .. note::
     The Speed is calculated temporally and can only be calculated correctly when the animation is playing forward in real-time. Use the "Refresh Speed" Button to force LC to calculate the correct speed at the current frame.
@@ -250,11 +253,11 @@ Real-Time Physics
 ------
 
 Physics are used in LC to add secondary motion to the vehicle, which is tedious to animate by hand.
-The Physics are layed on top of the Automatic and User Animation and are fully non-destructive to the User Animation.
+The Physics are layed on top of the Automatic and :ref:`user-animation` and are fully non-destructive to the :ref:`user-animation`.
 
 Presets can be used to get different results, or use the :ref:`physics-customize` checkbox to adjust the Physics settings in detail.
 
-The Physics always has one of five states:
+The Physics always have one of five states:
     * :ref:`live-physics`
     * :ref:`baked-physics`
     * :ref:`muted-physics`
@@ -352,17 +355,15 @@ When the Physics are OUTDATED, they have been baked, but changes in the scene or
 Invalid Physics
 ^^^^^^
 
-When the Physics are INVALID, you will need to hit the "Reset Physics" button to the right in the. If the Physics are BAKED, this will launch a re-bake, but if the Physics are LIVE, it will instead just clear the real-time cache, resolving the issue.
+When the Physics are INVALID, you will need to hit the "Reset Physics" button to update them. If the Physics are BAKED, this will launch a re-bake. If the Physics are LIVE, it will instead clear the real-time cache, resolving the issue.
 
-|
-|
 |
 
 .. _g-force-vizualiser:
 G-Force Vizualiser
 ^^^^^^
 
-To make it easier to debug what the Physics are doing a G-Force Vizualiser is showing up above the vehicle. It can be disabled inside :ref:`view` in the "Manual Gearbox".
+To make it easier to debug what the Physics are doing a G-Force Vizualiser is showing up above the vehicle when the physics are turned on. It can be disabled inside :ref:`view` in the "Manual Gearbox".
 When the G-Force exceeds 1.8 g, the vizualiser turns red indicating that a big force is acting on the body. To decrease the magnitude of the force, decrease the acceleration of the vehicle or make turns smoother.
 
 ..  figure:: gif/GIF_G-Force.gif
@@ -374,7 +375,7 @@ When the G-Force exceeds 1.8 g, the vizualiser turns red indicating that a big f
     *The G-Forces which are working on the vehicle*
 
 .. note::
-    LC does not have a physically correct simulation engine behind it so take the values with a grain of salt. It does however indicate the approximate value for you.
+    LC uses a physically plausible simulation engine, but take the values with a grain of salt. It only indicates the approximate value for you.
 
 
 |
@@ -425,7 +426,7 @@ These sliders can be used to adjust the parameters used when simulating the phys
 PostFX
 ^^^^^^
 
-To make it easier to art direct the Physics, use the PostFX to adjust the influence of the Physics on each Axis of Rotation and Location. PostFX can be animated as well.
+To make it easier to art direct the :ref:`real-time-physics`, use the PostFX to adjust the influence of the forces acting on each Axis of Rotation and Location. PostFX can be animated as well.
 
 Body Forces:
 
