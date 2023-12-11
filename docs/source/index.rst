@@ -92,11 +92,15 @@ Help!
 If you are looking for tutorials, check out the growing Launch Control Tutorial Playlist on YouTube!
 https://youtu.be/7IMdpqP5TEc?list=PLU1g4xp6lcpj-X3ZWywgsxZJYtiVwNQpW
 
+|
+
 Check the FAQ on our Discord Server:
 https://discord.com/channels/1064900074175479860/1080905417481261137
 
 Or the FAQ on BlenderMarket:
 https://blendermarket.com/products/launch-control--auto-rig-for-vehicles/faq
+
+|
 
 Meet up with us on the official Discord Server! 
 https://discord.gg/4styJSUNW9
