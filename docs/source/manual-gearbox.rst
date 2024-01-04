@@ -237,14 +237,14 @@ To allow full control all the Viewport UI sliders can be "unlocked" so you can o
 .. _wheel-shake-rate:
 Wheel Shake Rate
 ^^^^^^^^
-How fast the body+wheel shake is. Higher value produces faster shake.
+How fast the wheel shake is. Higher value produces faster shake.
 
 |
 .. _quick-export:
 Quick Export
 ------
 
-The Quick Export handles export of the animation to other DCCs such a Unreal Engine, Omniverse, Cinema 4D, Maya, and more.
+The Quick Export handles export of the animation to other DCCs such a Unreal Engine, Omniverse, Cinema 4D, Maya, and more. It can also export a baked Blend file for render farms.
 
 ..  figure:: img/IMG_QuickExport.jpg
     :alt: Quick Export
@@ -257,11 +257,8 @@ The Quick Export handles export of the animation to other DCCs such a Unreal Eng
 Export Path:
     * Set the path as desired. Leaving it blank will export the file as "Launch_Control_Export.FORMAT" relative to the saved .blend file.
 
-Include Ground Colliders for Selected Car:
-    * Includes all the ground detection meshes in the exported FBX file for the Active Vehicle.
-
-Include Ground Colliders for All Cars:
-    * Includes all the ground detection meshes in each of the exported FBX files.
+Include Ground Colliders:
+    * Includes all the ground detection meshes in each of the exported file.
 
 Include Animations:
     * When checked, LC will export the meshes, the rig and animations. When unchecked, LC will only export the meshes and the rig.
@@ -276,6 +273,10 @@ This is especially useful when importing to Unreal Engine, where the "Only Anima
 
 .. note::
     "Rebase bones" are exported with the rig, which can be used inside UE5 to bind static meshes to the exported LC rig.
+
+
+.. note::
+    When exporting "Blend File", LC will bake the motion to keyframes for each frame of the animation. Be aware that this can cause backward-spinning if the wheels are spinning too fast and the fps is too low.
 
 
 |
@@ -382,3 +383,25 @@ The Cinematographer Panel will help you quickly set up Cameras for your Animatio
 
 Click the "Create Hooked Cameras" to generate two cameras from the 3D view hooked to the active vehicle.
 The "Follow Cam" will track the general motion of the vehicle without taking the suspension into account, while the "Mounted Cam" will be attached to the body of the vehicle, following its every move
+
+
+|
+.. _rig-info:
+Rig Info
+-----
+
+The Rig Info Panel will show you if the rigged vehicle which is currently active is compatible with the version of the Launch Control Addon you have installed.
+
+..  figure:: img/IMG_RigInfo.jpg
+    :alt: Rig Info
+    :class: with-shadow
+    :width: 350px
+    :align: center
+    
+    *Rig Info Panel in the Manual Gearbox UI* 
+
+You can also "Update Vehicle Rig" to automatically unrig your 1.5+ vehicle and rig it with the rig armature that matches the installed version of LC. 
+In the process, LC will store the animtion data, driving path, ground detection, all the physics settings and rig setup settings and apply them after the re-rigging is done. 
+Depending on the versions some data might not be possible to apply, so expect loss of data if you are updating an old file.
+
+If you have a file with a "Legacy Rig" (Rigged in LC 1.0-1.3), you can try to "Update Vehicle Rig" too, but the successrate will be lower.
