@@ -1,4 +1,4 @@
-Animating Cars should be Fun! 
+Launch Control Documentation
 ===================================
 
 Launch Control (LC) is an Animation Tool for Blender built to solve the problems 
