@@ -64,8 +64,8 @@ Optional car parts:
     * *Rear Left Brake Caliper*
     * *Right Headlight*
     * *Left Headlight*
-    * *Front Right Wheel Covers:
-    * *Front Left Wheel Covers:
+    * *Front Right Wheel Covers*
+    * *Front Left Wheel Covers*
 
 
 The full list of accepted object names:
