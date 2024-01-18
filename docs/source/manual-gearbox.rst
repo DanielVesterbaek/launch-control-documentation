@@ -260,6 +260,11 @@ Export Path:
 Include Ground Colliders:
     * Includes all the ground detection meshes in each of the exported file.
 
+FBX Exclusive Settings:
+
+Animation Subframes:
+    * LC exports the amount of subframes per frame of animation indicated here. The fewer subframes, the faster. Too few subframes can cause reverse-spinning wheels.
+
 Include Animations:
     * When checked, LC will export the meshes, the rig and animations. When unchecked, LC will only export the meshes and the rig.
 
