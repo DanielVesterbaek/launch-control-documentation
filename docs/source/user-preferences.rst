@@ -47,7 +47,11 @@ Automatic Tire Pivot
 
 .. _custom-tags:
 Custom Tags
-  Allow the user to define custom search tags that LC will search for when rigging the car
+  Allow the user to define custom search tags that LC will search for when rigging the car.
+
+.. _cad-workflow_toggle:
+CAD Workflow in UI
+  Reveal a checkbox during the rigging process that optimizes the rigging process for manufactureres data-sets.
 
 Multi-Rigging (Experimental)
   Show the 'Multi-Edit' button when NO VEHICLES are rigged. This specifically allows you to rig all vehicles in your file at the same time. Please do not have any other collections, but collections containing cars inside the file to use this feature.

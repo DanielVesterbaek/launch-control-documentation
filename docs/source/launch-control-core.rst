@@ -104,6 +104,36 @@ You can quickly tag Car Parts that needs renaming to be compatible with LC using
 
 
 |
+.. _cad-data-setup:
+CAD Data Setup
+^^^^^^^^^^
+For manufactureres data-sets the CAD Setup can be used. This optimizes the rigging process for those types of data-sets. Drag and drop empties into the corrosponding assembly fields, input the 'Vehicle Data' and hit 'Rig Vehicle' to get started. 
+
+To reveal this process, head into "User Preferences -> :ref:`rigging-preferences`"
+
+Assemblies:
+    * Body: The overall empty holding the entire data-set. Origin/Pivot location is irrelevant
+    * Anim Rot XX: The empties holding the wheels. Anything that spins and rotates.
+    * No Rot XX: The empties holding the brake calipers or any other objects which do not spin (but still turns for front wheels)
+
+Vehicle Data:
+    * Tire Width: The width in Millimeters of the rear tires of the car
+    * Tire Aspect Ratio: The aspect ratio between width/height of the rear tires of the car
+    * Rim Diameter: The diameter in Inches of the rim in the rear of the car
+    * Wheel Diameter Rear: The diameter in Meters of the tire in the rear of the car. Calculate this value using the input fields above or input it manually
+    * Wheel Camber Amount: The amount of camber in degrees on the wheels in rest position
+    * Emulated Body Weight: Automatically drop the body of the vehicle slightly to immitate the weight of the car, which will compress the springs
+
+..  figure:: img/IMG_CAD_DATA_SETUP.jpg
+    :alt: CAD Data Setup Menu
+    :class: with-shadow
+    :width: 350px
+    :align: center
+    
+    *The CAD Data Setup menu can be used for rigging manufactureres data-sets* 
+
+
+|
 .. _native_lc_support:
 Asset Packs for LC
 ^^^^^^^^^^
