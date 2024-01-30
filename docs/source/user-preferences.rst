@@ -34,7 +34,7 @@ Use Imperial Units
 Override Animation Data
   Remove current animation data when a new 'User Path' is picked in the interface and 'Animate Vehicle' is pressed. Animation will be replaced by an automatically calculated offset animation.
 
-Colorize Driving Paths
+Colorize Driving Paths 
   Automatically color the Driving Paths the color of the collection which the corrosponding vehicle exists in when clicking 'Animate Vehicle'
 
 
