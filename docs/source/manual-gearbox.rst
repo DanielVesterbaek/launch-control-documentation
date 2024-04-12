@@ -11,6 +11,28 @@ Inside the Manual Gearbox you have a wide range of customization options to make
     
     *The Manual Gearbox in the N-Panel* 
 
+
+.. _rig-setup-mode:
+Garage Mode
+-----
+
+.. image:: gif/DOC_GARAGE_MODE.gif
+    :alt: Garage Mode Gif
+    :class: with-shadow
+    :width: 600px
+    :align: center
+|
+
+Changing the mode to Garage Mode will get your vehicle ready for new tires, change track width or other model changes.
+In the "Garage" all animations will be disabled temporarily and the vehicle is moved to the center of the scene. Blender also enters "Local View", so all other objects will be temporarily hidden until you go to "Race Mode" again.
+
+Body, Wheel, Brake, Headlight and Steering Wheel attachment bones and setup controls for wheel-base length, track-width length, wheel radii, and roll center can be found in this mode. Enter "Pose Mode" and select and move the handles to start adjusting.
+You can manually parent meshes, nulls and armatures to the body or wheels. 
+
+.. note::
+    The vehicle will temporarily be put into the center of the scene and all animations disabled. All animations will be restored when "Race Mode" is entered again.  
+
+|
 *Reset all!*
 Will reset all LC properties for the active vehicle to their default value.
 
@@ -117,27 +139,6 @@ The Settings Panel controls how the :ref:`ground-detection`, :ref:`animation-han
     :align: center
     
     *Settings Panel in the Manual Gearbox UI* 
-
-|
-.. _rig-setup-mode:
-Rig Setup Mode
-^^^^^^^^
-Enter a Setup Mode for the Active Vehicle where the sizes of the rig can be adjusted, new body parts added and the Roll Center adjusted.
-
-..  figure:: img/IMG_RigSetupMode.jpg
-    :alt: Rig Setup Mode
-    :class: with-shadow
-    :width: 350px
-    :align: center
-    
-    *Rig Setup Mode controls in the 3D View* 
-
-Body, Wheel, Brake, Headlight and Steering Wheel attachment bones and setup controls for wheel-base length, track-width length, wheel radii, and roll center can be found in this mode. Enter "Pose Mode" and select and move the handles to start adjusting.
-You can manually parent meshes, nulls and armatures to the body or wheels. 
-
-.. note::
-    The vehicle will temporarily be put into the center of the scene and all animations disabled. All animations will be restored when "rig setup mode" is turned back off.
-
 
 |
 Update Driving Path
@@ -410,3 +411,5 @@ In the process, LC will store the animtion data, driving path, ground detection,
 Depending on the versions some data might not be possible to apply, so expect loss of data if you are updating an old file.
 
 If you have a file with a "Legacy Rig" (Rigged in LC 1.0-1.3), you can try to "Update Vehicle Rig" too, but the successrate will be lower.
+
+If a new version of the Launch Control Add-on is available, a box will pop up here notifying you about this. You can either pick to "Ignore" and not get this notification anymore, or head "To Download Page" to update your version of the add-on. Make sure you are logged into the selected download page and that you picked the right page inside the Add-on Preferences for Launch Control.

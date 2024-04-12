@@ -59,3 +59,24 @@ Multi-Rigging (Experimental)
 
 .. note::
     Remember to "Save Preferences" before exiting. 
+
+
+
+Updates
+-------------
+
+Inside the Updates section, you can stay updated with the latest version of Launch Control. 
+
+.. _update_platform:
+Platform
+  Pick the platform you have bought Launch Control from. Make sure you are logged into the platform before going to the clicking any of the "To Download Page" buttons.
+
+.. _update_check_interval:
+Uppdate Check Interval
+  Enable auto check for updates and set the desired interval here. A notification will appear in the "Rig Info" section of the Launch Control UI and a pop up whenever a new version is found after a check.
+
+.. _update_button:
+Check for Updates/Go to Product Page
+  Run a check for any updates to Launch Control.
+
+
