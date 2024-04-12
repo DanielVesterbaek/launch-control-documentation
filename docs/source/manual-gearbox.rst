@@ -16,7 +16,7 @@ Inside the Manual Gearbox you have a wide range of customization options to make
 Garage Mode
 -----
 
-.. image:: gif/DOC_GARAGE_MODE.gif
+.. image:: gif/DOC_GarageMode.gif
     :alt: Garage Mode Gif
     :class: with-shadow
     :width: 600px
