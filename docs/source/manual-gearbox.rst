@@ -87,7 +87,6 @@ Alternatively, you can create hooked cameras with 1 Click in the :ref:`cameras` 
 Detection Grid
 ^^^^^^^^
 Turn the visibility of the :ref:`ground-detection` debug grid ON/OFF.
-When Detection Grid is on, you can change the :ref:`detection-resolution`.
 
 ..  figure:: img/IMG_DetectionGrid.jpg
     :alt: View
@@ -171,21 +170,22 @@ Automatically snap the Control Points of the Driving Path to the Ground Detectio
 
 
 |
-.. _use-true-ground:
-Use True Ground
+.. _ground-colliders:
+Ground Colliders
 ^^^^^^^^
-Use the actual objects inside the collection 'GroundDetection', instead of a projected grid. This can be useful for complex loops or twisting roads built of 1 solid mesh.
 
-..  figure:: img/IMG_TrueGround.jpg
-    :alt: View
+..  figure:: img/IMG_GroundColliders.jpg
+    :alt: Colliders
     :class: with-shadow
     :width: 350px
     :align: center
     
-    *Use actual meshes for Ground detection* 
+    *List of meshes contributing to the :ref:`ground-detection`* 
 
-.. warning::
-    Will generally give a visually worse result and can introduce 'flickering' in the detection on 'layered' surfaces.
+Launch Control uses automated :ref:`ground-detection`.
+To make any mesh contribute to the ground detection you can either add it to the collection "LaunchControl -> GroundDetection" or simply select it, and hit the "+ Add Selected" button.
+To remove a mesh, select it and hit the "- Remove Selected" button. 
+The "x" button removes all meshes from the Ground Collders list.
 
 |
 .. _detection-grid:
@@ -212,6 +212,23 @@ Change the resolution of the detection grid which is projected onto the geometry
 |pic3| |pic4|
     
 *Detection Resolution 1 for smooth motion, 2+ for detailed motion* 
+
+|
+.. _use-true-ground:
+Use True Ground
+^^^^^^^^
+Use the actual objects inside the collection 'GroundDetection', instead of a projected grid. This can be useful for complex loops or twisting roads built of 1 solid mesh.
+
+..  figure:: img/IMG_TrueGround.jpg
+    :alt: View
+    :class: with-shadow
+    :width: 350px
+    :align: center
+    
+    *Use actual meshes for Ground detection* 
+
+.. warning::
+    Will generally give a visually worse result and can introduce 'flickering' in the detection on 'layered' surfaces.
 
 |
 .. _limit-sliders:
