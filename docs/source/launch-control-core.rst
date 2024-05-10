@@ -1,13 +1,13 @@
 Launch Control Core
 ===================================
-The Main Features part is split into 3 segments: ":ref:`rigging`, :ref:`animation`, and :ref:`real-time-physics`".
+The Main Features part is split into 4 segments: ":ref:`_vehicle-collection`, :ref:`rigging`, :ref:`animation`, and :ref:`real-time-physics`".
 
 Let's go over each of those here.
 
 |
 .. _vehicle-collection:
 Vehicle Collection
-^^^^^^^^^^
+------
 
 The Vehicle Collection field allows a :ref:`multi-car-workflow` in LC and keeps track of the Active Car.
 
