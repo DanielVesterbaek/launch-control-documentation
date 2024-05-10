@@ -1,6 +1,6 @@
 Launch Control Core
 ===================================
-The Main Features part is split into 4 segments: ":ref:`_vehicle-collection`, :ref:`rigging`, :ref:`animation`, and :ref:`real-time-physics`".
+The Main Features part is split into 4 segments: ":ref:`vehicle-collection`, :ref:`rigging`, :ref:`animation`, and :ref:`real-time-physics`".
 
 Let's go over each of those here.
 
@@ -289,9 +289,9 @@ Using the :ref:`snap-driving-path` you can make the control points of the :ref:`
 Speed Segments
 ^^^^^^
 
-Using the Speed Segment tool can speed up the animation workflow by allowing you to adjust visual "Speed Keyframes" inside the 3D view instead of the postition keyframes inside the graph editor like in a traditional animation workflow.
+Using the Speed Segment tool can speed up the animation workflow by allowing you to adjust visual "Speed Keyframes" inside the 3D view instead of the postition keyframes inside the graph editor.
 
-The Speed Segments are still compatible with and can be used in combination with traditional keyframe animation. 
+The Speed Segments are still compatible with - and can be used in combination with - traditional keyframe animation. 
 
 ..  figure:: gif/DOC_SpeedSegments_GIF.gif
     :alt: Animating with Speed Segments
@@ -304,9 +304,10 @@ The Speed Segments are still compatible with and can be used in combination with
 .. warning::
     Auto-save in Blender will be temporarily blocked while the Speed Segment Tool is active. Make sure to turn off the tool when you don't need it anymore.
 
-The "Speed Keyframes" can be moved along the Driving Path, the speed of each key can be changed and the offset in time to the previous "Speed Keyframe" can be altered.
+The Speed Keyframes can be moved along the Driving Path, the speed of each key can be changed and the offset in time to the previous Speed Keyframe can be altered.
 
 All this is done in the 3D viewport using the Hotkeys:
+
 **Add Key:** 
     * *Ctrl + Alt + LMB on a Key*
     * (Will add a key between the pressed key and the previous key) *
@@ -340,8 +341,9 @@ Speed Segments Settings
 
 In the settings you can alter the way the Speed Segments are shown and how they work.
 
-..  image:: img/IMG_SpeedSegmentSettings.png
-    :alt: Speed Segment Settings
+
+..  figure:: img/IMG_SpeedSegmentSettings.png
+    :alt: Physics Baking
     :class: with-shadow
     :width: 300px
     :align: center
@@ -349,29 +351,34 @@ In the settings you can alter the way the Speed Segments are shown and how they 
     *Expose Speed Segment Settings* 
 
 **Controls**
-   * Max G-Force: *The tool estimates the G-Force the vehicle will be exposed to. Adjusting the Max G-Force will allow the tool to automatically increase the time inbetween 2 Speed Keyframes to make sure accelerations are not exeeding the desired amount. This only affects the time inbetween keyframes, not the distance*
+   * **Max G-Force:** *The tool estimates G-Forces. The tool will automatically increase the time inbetween 2 Speed Keyframes to make sure accelerations are not exeeding the Max G-Force. This only affects the time inbetween keyframes, not the distance*
 
-   * Auto-fit Range: *When enabled, the Speed Segments will automatically fit the scene frame range to the total length of the speed keyframe animation*
+
+   * **Auto-fit Range:** *When enabled, the Speed Segments will automatically fit the scene frame range to the total length of the speed keyframe animation*
 
 
 **Graph**
-   * Visible: *Enable/Disable the graph in the 3D view. (Disabling will improve viewport performance)*
+   * **Visible:** *Enable/Disable the graph in the 3D view. (Disabling will improve viewport performance)*
 
-   * Resolution: *Set the amount of interpolated speed points in between the Speed Keyframes. The more points, the bigger the viewport perfromance is impacted*
 
-   * Scale: *Change the height of the Graph to make small changes in speed more visible*
+   * **Resolution:** *Set the amount of interpolated speed points in between the Speed Keyframes. The more points, the bigger the viewport perfromance is impacted*
 
-   * Color: *Change the Color of the Graph to make it more visible*
+
+   * **Scale:** *Change the height of the Graph to make small changes in speed more visible*
+
+
+   * **Color:** *Change the Color of the Graph to make it more visible*
 
 
 **Units**
-   * Timecode: *Change the unit of the inbetween time shown on each Speed Keyframe*
+   * **Timecode:** *Change the unit of the inbetween time shown on each Speed Keyframe*
 
-   * Speed: *Change the unit of speed inside the add-on preferences (Edit -> Preferences - Add-ons -> Object: Launch Control -> Animation -> Use Imperial Units)*
+
+   * **Speed:** *Change the unit of speed inside the add-on preferences (Edit -> Preferences - Add-ons -> Object: Launch Control -> Animation -> Use Imperial Units)*
 
 
 **Expert Settings**
-   * Auto Interpolation: *Is ON by default. Turn on to avoid the Speed Segment Tool changing the keyframe tangents automatically. For more customizability of the animation interpolation turn this feature off and set the tangents like desired manually in the Graph Editor.*
+   * **Auto Interpolation:** *Is ON by default. Turn on to avoid the Speed Segment Tool changing the keyframe tangents automatically. For more customizability of the animation interpolation turn this feature off and set the tangents like desired manually in the Graph Editor.*
 
 |
 
