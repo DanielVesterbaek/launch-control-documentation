@@ -94,7 +94,7 @@ Turn the visibility of the :ref:`ground-detection` debug grid ON/OFF.
     :width: 350px
     :align: center
     
-    *Useful for Debugging the :ref:`ground-detection`* 
+    *Useful for Debugging the Ground Detection* 
 
 |
 .. _enable_acc_viz:
@@ -174,13 +174,13 @@ Automatically snap the Control Points of the Driving Path to the Ground Detectio
 Ground Colliders
 ^^^^^^^^
 
-..  figure:: img/IMG_GroundColliders.jpg
+..  figure:: img/IMG_GroundColliders.png
     :alt: Colliders
     :class: with-shadow
     :width: 350px
     :align: center
     
-    *List of meshes contributing to the :ref:`ground-detection`* 
+    *List of meshes contributing to the Ground Detection* 
 
 Launch Control uses automated :ref:`ground-detection`.
 To make any mesh contribute to the ground detection you can either add it to the collection "LaunchControl -> GroundDetection" or simply select it, and hit the "+ Add Selected" button.
