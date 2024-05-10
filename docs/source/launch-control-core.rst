@@ -334,7 +334,7 @@ All this is done in the 3D viewport using the Hotkeys:
 **Exit Tool:** 
     * *ESC*
 
-
+|
 
 Speed Segments Settings
 ^^^^^^
@@ -345,10 +345,10 @@ In the settings you can alter the way the Speed Segments are shown and how they 
 ..  figure:: img/IMG_SpeedSegmentSettings.png
     :alt: Physics Baking
     :class: with-shadow
-    :width: 300px
+    :width: 500px
     :align: center
 
-    *Expose Speed Segment Settings* 
+    *Exposed Speed Segment Settings* 
 
 **Controls**
    * **Max G-Force:** *The tool estimates G-Forces. The tool will automatically increase the time inbetween 2 Speed Keyframes to make sure accelerations are not exeeding the Max G-Force. This only affects the time inbetween keyframes, not the distance*
