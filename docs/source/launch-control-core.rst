@@ -2,19 +2,7 @@ Launch Control Core
 ===================================
 The Main Features part is split into 3 segments: ":ref:`rigging`, :ref:`animation`, and :ref:`real-time-physics`".
 
-|
-
 Let's go over each of those here.
-
-|
-.. _rigging:
-Rigging
-------
-LC uses :ref:`rigging-tags` to detect the parts of the vehicle. If the naming convention of the 3D model is supported by LC, the rigging can be done with one click. 
-
-:ref:`quick-tag-tool` can be used to prepare unsupported 3D models to work with LC with a few clicks.
-
-:ref:`custom-tags` can be used to optimize LC for your own naming convention.
 
 |
 .. _vehicle-collection:
@@ -38,6 +26,25 @@ Select a Collection, which holds the vehicle you want to rig by dragging the col
 
 .. note::
     Avoid Copy/Pasting, Appending or Linking Vehicles that are rigged using Launch Control. If you want to move a vehicle to a new file, unrig the vehicle and rig it again in the destination file.
+
+|
+.. _rigging:
+Rigging
+------
+LC uses :ref:`rigging-tags` to detect the parts of the vehicle. If the naming convention of the 3D model is supported by LC, the rigging can be done with one click. 
+
+:ref:`quick-tag-tool` can be used to prepare unsupported 3D models to work with LC with a few clicks.
+
+..  figure:: gif/DOC_Rigging_GIF.gif
+    :alt: Rigging With Quick-Tag Tool
+    :class: with-shadow
+    :width: 600px
+    :align: center
+    
+    *Rigging with Quick-Tag Tool* 
+
+
+:ref:`custom-tags` can be used to optimize LC for your own naming convention.
 
 |
 .. _rigging-tags:
@@ -176,6 +183,14 @@ Animation
 ------
 LC uses a curve based animation workflow to give you full creative control over the movement. :ref:`user-animation` is acting on top of the automatically calculated animations, allowing the user full customization of the animation.
 
+..  figure:: gif/DOC_Animation_GIF.gif
+    :alt: Animating with User Path
+    :class: with-shadow
+    :width: 600px
+    :align: center
+    
+    *Animating with a User Path* 
+
 |
 .. _driving-path:
 Driving Path
@@ -293,6 +308,17 @@ Physics are used in LC to add secondary motion to the vehicle, which is tedious 
 The Physics are layed on top of the Automatic and :ref:`user-animation` and are fully non-destructive to the :ref:`user-animation`.
 
 Presets can be used to get different results, or use the :ref:`physics-customize` checkbox to adjust the Physics settings in detail.
+
+
+..  figure:: gif/DOC_Physics_GIF.gif
+    :alt: Enabling and adjusting Physics in real time
+    :class: with-shadow
+    :width: 600px
+    :align: center
+    
+    *Enabling and adjusting Physics in real time* 
+
+
 
 The Physics always have one of five states:
     * :ref:`live-physics`
