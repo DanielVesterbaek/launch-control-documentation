@@ -122,7 +122,7 @@ Enable a Velocity Visualizer in the viewport to see the velocity calculated and 
     :width: 350px
     :align: center
     
-    *Useful for Debugging the :ref:`ground-detection`* 
+    *The Velocity of the vehicle*
 
 |
 .. _settings:
