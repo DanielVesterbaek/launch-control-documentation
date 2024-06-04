@@ -118,4 +118,5 @@ Contents
    multi-car-workflow
    manual-gearbox
    user-preferences
+   asset-packs
    
