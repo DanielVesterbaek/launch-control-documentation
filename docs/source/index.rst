@@ -45,7 +45,7 @@ Here you can also reveal more :ref:`animation-controls` in the rig, direct the w
 
 Check out: :doc:`manual-gearbox`
 
-..  figure:: img/IMG_MANUAL_GEARBOX.jpg
+..  figure:: img/IMG_ManualGearbox.jpg
     :alt: Manual Gearbox Interface
     :class: with-shadow
     :width: 350px
