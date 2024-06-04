@@ -6,12 +6,12 @@ Let's go over each of those here.
 
 |
 .. _vehicle-collection:
-Vehicle Collection
+Select Vehicle
 ------
 
-The Vehicle Collection field allows a :ref:`multi-car-workflow` in LC and keeps track of the Active Car.
+To get started, select the vehicle you want to animate.
 
-Select a Collection, which holds the vehicle you want to rig by dragging the collection from the outliner into the field or by browsing the available options by clicking the field
+This can be done in 3 different ways with the menu at the top of the LC interface.
 
 ..  figure:: gif/DOC_Select_Car_GIF.gif
     :alt: Select Car GIF
@@ -19,13 +19,52 @@ Select a Collection, which holds the vehicle you want to rig by dragging the col
     :width: 600px
     :align: center
     
-    *Selecting a Vehicle Collection* 
+    *Select a Vehicle to animate in 1 of the 3 different ways* 
+
+|
+
+After rigging the selected vehicle, more vehicles can be added by clicking the "+ icon" in the top, right corner. Alternatively, the Vehicle Collection Field can be cleared to bring back the Vehicle Selection menu.
+
+.. note::
+    The Vehicle Collection Field is also used for the :ref:`multi-car-workflow`. It keeps track of all rigged LC vehicles and you can at any time change the active LC vehicle from this field.
+
+|
+
+.. _local-vehicle:
+Local Vehicle
+^^^^^^^^^^
+
+Local Vehicles are vehicles that exist inside the open file. To use one of these for rigging, make sure all the tagged car parts (see :ref:`rigging-tags`) are contained inside 1 collection.
+Drag and drop that collection into the "Collection Field" and hit "Rig Vehicle".
+
+
+
+.. _gallery-vehicle:
+Gallery Vehicle
+^^^^^^^^^^
+
+Gallery Vehicles are vehicles that are included with Launch Control or are installed using an .lcl file. These vehicles are ready to be animate and can simply be selected from the gallery and added to the scene. 
+After a gallery vehicle has been added, click "Rig Vehicle" to prepare it for animation.
+
+More vehicles packs can be installed using the "Add More" icon in the gallery.
+
+
+
+.. _append-vehicle:
+Append Vehicle
+^^^^^^^^^^
+
+Appended Vehicles are vehicles that exist inside another .blend file on your harddrive. The vehicles inside that file needs to be already rigged with Launch Control. Locate the file you want to append LC rigged vehicles from and hit "Search in Blend File".
+If any compatible rigged LC vehicles were found in the file they will be available in a drop-down and can be added directly into your scene with the rig and animation set up already.
+
+When the Version Control is active, LC will check the selected appended vehicle for any version incompatability before adding it to your scene. Appending LC vehicles that were rigged in a version of LC that alters from your installed version can cause problems, so be careful when doing so.
+
 
 .. warning::
     Rigging vehicles across Blender Scenes is not supported. Please only use 1 scene for rigged Launch Control Vehicles in each file.
 
 .. note::
-    Avoid Copy/Pasting, Appending or Linking Vehicles that are rigged using Launch Control. If you want to move a vehicle to a new file, unrig the vehicle and rig it again in the destination file.
+    Avoid Copy/Pasting Vehicles that are rigged using Launch Control. If you want to move a vehicle to a new file, unrig the vehicle and rig it again in the destination file or use the :ref:`append-vehicles` function when selecting your vehicle.
 
 |
 .. _rigging:
@@ -197,6 +236,8 @@ Driving Path
 ^^^^^^^^
 
 The curve which the vehicle is following is called "Driving Path". It can be modified by selecting it and going into "Edit Mode". In Edit mode you can also use the "Draw" or "Curve Pen" tool on the left sidebar to alter the Driving Path.
+
+The "Select Driving Path" button next to "Animate Vehicle" will select the Driving Path of the active vehicle and enter edit mode for that path if the path is visible.
 
 |
 .. _animation-presets:
