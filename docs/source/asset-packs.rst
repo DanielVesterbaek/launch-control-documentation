@@ -39,4 +39,23 @@ The installation process might take up to few minutes depending on the size of t
 Where to find more Packs
 ===========
 
-.. button-link:: https://example.com/
+.. raw:: html
+
+    <div style="a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    }
+
+    a:hover, a:active {
+    background-color: red;
+    }">
+        <a href="http://dl.dropboxusercontent.com/scl/fi/6h1hj64t2vgf5uanp61j2/TMF_Vehicles_01.lcl?rlkey=qqmmwuspjbnombzs37zzrei4v&dl=0" target="_blank">Download Pack</a>
+    </div>
+
+|
+
+.. button-link:: https://example.com
