@@ -52,6 +52,6 @@ Download Vehicle Packs
           :width: 100%
           :target: http://dl.dropboxusercontent.com/scl/fi/6h1hj64t2vgf5uanp61j2/TMF_Vehicles_01.lcl?rlkey=qqmmwuspjbnombzs37zzrei4v&dl=0
 
-   * - 5 Launch Control models ready to rig.
-     - 4 models Sponsored by The Mega Fleet.
+   * - 5 Launch Control models ready to rig
+     - 4 models Sponsored by The Mega Fleet
      
