@@ -6,7 +6,7 @@ Launch Control Asset Packs
 Vehicle Asset Packs
 ^^^^^^^^^^
 
-Launch Control comes with a few vehicles included that are all ready to be rigged. 
+Launch Control comes with a vehicle included that is ready to be rigged. 
 If you want to expand the library, you can download more Launch Control Vehicle Packs and install them directly from the interface.
 
 
@@ -40,17 +40,31 @@ The installation process might take up to few minutes depending on the size of t
 Download Vehicle Packs
 ===========
 
+.. list-table::
+   :width: 100%
+   :class: borderless
+
+   * - .. image:: img/LC_Vehicles_01.webp
+          :width: 90%
+          :target: http://dl.dropboxusercontent.com/scl/fi/3brm5smwb0tes7n5gat0p/LC_Vehicles_01.lcl?rlkey=cp55lz7ts78ett5q7ozkfto5e&dl=0
+         
+     - .. image:: img/LC_Vehicles_01.webp
+          :width: 90%
+          :target: http://dl.dropboxusercontent.com/scl/fi/3brm5smwb0tes7n5gat0p/LC_Vehicles_01.lcl?rlkey=cp55lz7ts78ett5q7ozkfto5e&dl=0
+
+|
+
 ..  |pic1| image:: img/LC_Vehicles_01.webp
     :alt: View
     :class: with-shadow
-    :width: 44%
+    :width: 48%
     :target: http://dl.dropboxusercontent.com/scl/fi/3brm5smwb0tes7n5gat0p/LC_Vehicles_01.lcl?rlkey=cp55lz7ts78ett5q7ozkfto5e&dl=0
 
 
 ..  |pic2| image:: img/TMF_Vehicles_01.webp
     :alt: View
     :class: with-shadow
-    :width: 44%
+    :width: 48%
     :target: http://dl.dropboxusercontent.com/scl/fi/6h1hj64t2vgf5uanp61j2/TMF_Vehicles_01.lcl?rlkey=qqmmwuspjbnombzs37zzrei4v&dl=0
 
 |pic1| |pic2|
