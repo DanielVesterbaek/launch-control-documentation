@@ -39,4 +39,4 @@ The installation process might take up to few minutes depending on the size of t
 Where to find more Packs
 ===========
 
-Coming soon™
+.. button-link:: https://example.com/
