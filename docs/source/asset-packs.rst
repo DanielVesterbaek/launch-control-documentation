@@ -39,6 +39,8 @@ The installation process might take up to few minutes depending on the size of t
 Download Vehicle Packs
 ===========
 
+Click one of the pack images to start the Download.
+
 .. list-table::
    :width: 100%
    :class: borderless
