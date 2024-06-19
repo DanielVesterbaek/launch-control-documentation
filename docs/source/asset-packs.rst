@@ -32,6 +32,7 @@ The installation process might take up to few minutes depending on the size of t
     :class: with-shadow
     :width: 300px
     :align: center
+    :target: http://cnn.com
 |
 
 
@@ -42,10 +43,10 @@ Download Vehicle Packs
 .. raw:: html
 
     <div style="position: relative; padding-bottom: 56.25%; overflow: hidden; max-width: 100%; height: auto;">
-        <a href="http://dl.dropboxusercontent.com/scl/fi/6h1hj64t2vgf5uanp61j2/TMF_Vehicles_01.lcl?rlkey=qqmmwuspjbnombzs37zzrei4v&dl=0" target="_blank"><img src="/img/LC_Vehicles_01.webp" alt="LC Vehicle Pack" style="width:300px;height:200px;"></a>
+        <a href="http://dl.dropboxusercontent.com/scl/fi/6h1hj64t2vgf5uanp61j2/TMF_Vehicles_01.lcl?rlkey=qqmmwuspjbnombzs37zzrei4v&dl=0" target="_blank"><img src="https://launch-control-documentation.readthedocs.io/en/1.7.0/_images/LC_Vehicles_01.webp" alt="LC Vehicle Pack" style="width:300px;height:200px;"></a>
     </div>
     <div style="position: relative; padding-bottom: 56.25%; overflow: hidden; max-width: 100%; height: auto;">
-        <a href="http://dl.dropboxusercontent.com/scl/fi/6h1hj64t2vgf5uanp61j2/TMF_Vehicles_01.lcl?rlkey=qqmmwuspjbnombzs37zzrei4v&dl=0" target="_blank"><img src="/img/TMF_Vehicles_01.webp" alt="TMF Vehicle Pack" style="width:300px;height:200px;"></a>
+        <a href="http://dl.dropboxusercontent.com/scl/fi/6h1hj64t2vgf5uanp61j2/TMF_Vehicles_01.lcl?rlkey=qqmmwuspjbnombzs37zzrei4v&dl=0" target="_blank"><img src="https://launch-control-documentation.readthedocs.io/en/1.7.0/_images/TMF_Vehicles_01.webp" alt="TMF Vehicle Pack" style="width:300px;height:200px;"></a>
     </div>
     
 
