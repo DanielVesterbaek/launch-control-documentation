@@ -46,9 +46,13 @@ Download Vehicle Packs
    * - .. image:: img/LC_Vehicles_01.webp
           :width: 100%
           :target: http://dl.dropboxusercontent.com/scl/fi/3brm5smwb0tes7n5gat0p/LC_Vehicles_01.lcl?rlkey=cp55lz7ts78ett5q7ozkfto5e&dl=0
-        
-         
+          Includes: 5 Vehicles
+          Price: Free
+          The default Launch Control models, ready to be rigged!
+
      - .. image:: img/TMF_Vehicles_01.webp
           :width: 100%
           :target: http://dl.dropboxusercontent.com/scl/fi/6h1hj64t2vgf5uanp61j2/TMF_Vehicles_01.lcl?rlkey=qqmmwuspjbnombzs37zzrei4v&dl=0
-
+          Includes: 4 Vehicles
+          Price: Free
+          Sponsored by the Mega Fleet vehicle library, ready to be rigged!
