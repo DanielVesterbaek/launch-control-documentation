@@ -39,7 +39,7 @@ The installation process might take up to few minutes depending on the size of t
 Download Vehicle Packs
 ===========
 
-Click one of the pack images to start the Download.
+Click one of the pack images to head to the download page.
 
 .. list-table::
    :width: 100%
@@ -47,13 +47,16 @@ Click one of the pack images to start the Download.
 
    * - .. image:: img/LC_Vehicles_01.webp
           :width: 100%
-          :target: http://dl.dropboxusercontent.com/scl/fi/t2mnr036zlmnc1hc44jxb/LC_Vehicles_01.lcl?rlkey=dfhortfvu41w846y2alxmi4c8&dl=0
+          :target: https://blendermarket.com/account/orders_search?utf8=✓&orders_search%5Bq%5D=launch+control&button=
 
 
      - .. image:: img/TMF_Vehicles_01.webp
           :width: 100%
-          :target: http://dl.dropboxusercontent.com/scl/fi/lj8evuvc00swyrnlw94y2/TMF_Vehicles_01.lcl?rlkey=1vq6zf8lyezmkn25gzywe0jej&dl=0
+          :target: https://blendermarket.com/account/orders_search?utf8=✓&orders_search%5Bq%5D=launch+control&button=
 
    * - 4 Launch Control models ready to rig
      - 4 models sponsored by The Mega Fleet
+    
+   * - Download from BlenderMarket or GumRoad page
+     - Download from BlenderMarket or GumRoad page
      
