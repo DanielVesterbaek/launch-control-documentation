@@ -39,7 +39,8 @@ The installation process might take up to few minutes depending on the size of t
 Download Vehicle Packs
 ===========
 
-Click one of the pack images to head to the download page.
+Click one of the pack images to head to the BlenderMarket orders page. Please make sure you are logged into an account which owns Launch Control.
+For GumRoad, locate Launch Control in your Library to access the .lcl files.
 
 .. list-table::
    :width: 100%
