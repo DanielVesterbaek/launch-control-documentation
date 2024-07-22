@@ -345,7 +345,7 @@ The Speed Segments are still compatible with - and can be used in combination wi
 .. warning::
     Auto-save in Blender will be temporarily blocked while the Speed Segment Tool is active. Make sure to turn off the tool when you don't need it anymore.
 
-The Speed Keyframes can be moved along the Driving Path, the speed of each key can be changed and the offset in time to the previous Speed Keyframe can be altered.
+The Speed Keyframes can be moved along the Driving Path, the speed of each key can be changed. When "Auto Interpolation" is ON, LC will automatically calculate the offset in time between keyframes and set the keyframe tangents. Turn this OFF to get full control over the animation.
 
 All this is done in the 3D viewport using the Hotkeys:
 
@@ -364,8 +364,9 @@ All this is done in the 3D viewport using the Hotkeys:
 
 **Offset Time:** 
     * *Alt + LMB drag*
+    * *(Only available when 'Auto Interpolation' is OFF)*
 
-**Deselect All:** 
+**Deselect All keys:** 
     * *Alt + A*
 
 **Fine-tune Drag:** 
@@ -383,19 +384,13 @@ Speed Segments Settings
 In the settings you can alter the way the Speed Segments are shown and how they work.
 
 
-..  figure:: img/IMG_SpeedSegmentSettings.png
+..  figure:: img/IMG_SpeedSegmentSettings.jpg
     :alt: Physics Baking
     :class: with-shadow
-    :width: 500px
+    :width: 300px
     :align: center
 
     *Exposed Speed Segment Settings* 
-
-**Controls**
-   * **Max G-Force:** *The tool estimates G-Forces. The tool will automatically increase the time inbetween 2 Speed Keyframes to make sure accelerations are not exeeding the Max G-Force. This only affects the time inbetween keyframes, not the distance*
-
-
-   * **Auto-fit Range:** *When enabled, the Speed Segments will automatically fit the scene frame range to the total length of the speed keyframe animation*
 
 
 **Graph**
@@ -419,7 +414,8 @@ In the settings you can alter the way the Speed Segments are shown and how they 
 
 
 **Expert Settings**
-   * **Auto Interpolation:** *Is ON by default. Turn on to avoid the Speed Segment Tool changing the keyframe tangents automatically. For more customizability of the animation interpolation turn this feature off and set the tangents like desired manually in the Graph Editor.*
+   * **Auto-fit Range:** *When enabled, the Speed Segments will automatically fit the scene frame range to the total length of the speed keyframe animation*
+   * **Auto Interpolation:** *Is ON by default. Turn on to avoid the Speed Segment Tool changing the keyframe tangents automatically. For more customizability of the animation interpolation turn this feature off and set the tangents and offset time like desired manually in the Graph Editor.*
 
 |
 
@@ -493,7 +489,7 @@ When the Physics are LIVE, they are simulated in real-time when Blender is playi
 Baked Physics
 ^^^^^^
 
-When the Physics are BAKED, changes to the animation will not affect the physics. The Physics are locked and are ready to be rendered.
+When the Physics are BAKED, changes to the animation will not affect the physics. The Physics are locked and are ready to be rendered. The range of frames which has the physics baked will be displayed in the Physics panel.
 
 ..  image:: img/IMG_BakedPhysics.jpg
     :alt: Enable Physics
@@ -502,9 +498,6 @@ When the Physics are BAKED, changes to the animation will not affect the physics
     :align: center
 
 |
-
-.. warning::
-    Due to a bug in Blender, BAKED physics do not load correctly when re-opening the file. After reopening, you would need to bake the physics again.
 
 To bake the physics, click "Bake Physics!". This will take you to the baking menu, where you can add :ref:`physics-warm-up` and start the bake with "Confirm Bake!".
 LC will mark the area which will be baked in the timeline.

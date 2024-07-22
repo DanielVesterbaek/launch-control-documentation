@@ -43,7 +43,7 @@ View
 
 The View Panel has options for what will be shown in the 3D View over and around the Vehicle.
 
-..  figure:: img/IMG_View_02.jpg
+..  figure:: img/IMG_View_03.png
     :alt: View
     :class: with-shadow
     :width: 350px
@@ -53,11 +53,11 @@ The View Panel has options for what will be shown in the 3D View over and around
 
 |
 .. _enable_extra_handles:
-Extra Animation Handles
+Expanded UI
 ^^^^^^^^
 Enables extra :ref:`animation-handles` and Sliders in the 3D view above and around the vehicle.
 
-..  figure:: img/IMG_ExtraAnimHandlesOn.jpg
+..  figure:: img/IMG_ExtraAnimationHandles02.jpg
     :alt: View
     :class: with-shadow
     :width: 350px

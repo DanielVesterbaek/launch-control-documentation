@@ -17,11 +17,14 @@ Go into "Pose-Mode", Select the top "Switch Handle" and move it toward the Gear 
     
     *Setup Sliders shown in the 3D View above the vehicle* 
 
-Single Rear Axle
-  Turn the rear axle into a "solid" single axle. Also called "live axle". This is seen on some offroad cars. 
+Steering Wheel Factor
+  LC automatically turns the steering wheel bone inside the vehicle (see more here :ref:`garage-mode`). Use the Steering Wheel Factor slider to determine how much the steering wheels should rotate based on the steering of the car.
 
 Turn Limit
   Determines the maximum turning angle of the front wheels. Default is 45deg. When drifting or steering normally, the front wheels will "lock" when they reach the turn limit.
+
+.. note::
+    The maximum turn that can be locked is 135 degs of turn. Anything above that, will not be locked correctly. Consider using :ref:`simple-steering` to avoid this problem.
 
 Camber and Toe
   Changes the camber angle of the wheels (up/down) and the toe angle of the wheels (left/right).
@@ -39,6 +42,11 @@ Max Suspension Travel
 Bottom-out Height (Suspension Clamp)
      Alters the height at which the spring will be fully compressed, making the wheels and the body unable to come closer to each other. "Clipping Warning Icons" will appear at the wheels of the vehicle when the spring is fully compressed.
 
+Single Front/Rear Axle
+  Turn the front/rear axle into a "solid" single axle. Also called "live axle". This is seen on some offroad cars. 
+
+Ackermann Accuracy (Only visible with Expanded UI)
+   Adjust the accuracy of the Ackermann calculation in the rig. The more accurate, the more 'wobble'/'flicker' would be visible in the steering during smooth turns. 
 
 |
 .. _animation_handles:
@@ -99,7 +107,7 @@ Airbourne Mode
 
 |
 .. _extra_animation_handles:
-Extra Animation Controls
+Expanded UI
 ------
 
 Extra Animation Handles can be revealed giving the user more flexibility when animating. Inside the Manual Gearbox, the :ref:`enable_extra_handles` can be enabled.
@@ -125,7 +133,7 @@ Wheel Turn (Individual)
 
 .. _wheel-spin:
 Wheel Spin
-    Make the wheels spin by adding extra rotation to the handle or make the wheel lock-up by counter-rotating it. Individual control for each wheel.
+    Make the wheels spin by adding extra rotation to the handle or make the wheel lock-up by counter-rotating it. Individual control for each wheel. 
 
 .. _wheel-z-offset:
 Wheel Z-Offset
@@ -168,7 +176,7 @@ Sliders:
 Auto Drift Roll
     The amount of influence car drift has on the roll of the body. The bigger the drift amount, the mode the body roll.
 
-.. _simple-steering_
+.. _simple-steering:
 Simple Steering
      If the automatic Ackermann steering does not perform well in certain frames or animations, a traditional track-to-bone steering can be used either for the full shot or for a small part of it by animating the slider.
 
