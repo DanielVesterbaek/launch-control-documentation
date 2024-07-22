@@ -110,7 +110,7 @@ Airbourne Mode
 Expanded UI
 ------
 
-Extra Animation Handles can be revealed giving the user more flexibility when animating. Inside the Manual Gearbox, the :ref:`enable_extra_handles` can be enabled.
+Extra Animation Handles are visible when "Expanded UI" is selected in in the View settings. The handles can be revealed giving the user more flexibility when animating. Inside the Manual Gearbox, the :ref:`enable_extra_handles` can be enabled.
 
 
 |
