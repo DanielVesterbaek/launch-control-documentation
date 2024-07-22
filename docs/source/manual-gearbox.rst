@@ -43,7 +43,7 @@ View
 
 The View Panel has options for what will be shown in the 3D View over and around the Vehicle.
 
-..  figure:: img/IMG_View_03.png
+..  figure:: img/IMG_View_02.png
     :alt: View
     :class: with-shadow
     :width: 350px
