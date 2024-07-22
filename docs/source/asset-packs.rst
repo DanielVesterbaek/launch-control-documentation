@@ -51,13 +51,7 @@ For GumRoad, locate Launch Control in your Library to access the .lcl files.
           :target: https://blendermarket.com/account/orders_search?utf8=✓&orders_search%5Bq%5D=launch+control&button=
 
 
-     - .. image:: img/TMF_Vehicles_01.webp
-          :width: 100%
-          :target: https://blendermarket.com/account/orders_search?utf8=✓&orders_search%5Bq%5D=launch+control&button=
-
    * - 4 Launch Control models ready to rig
-     - 4 models sponsored by The Mega Fleet
     
    * - Download from BlenderMarket or GumRoad page
-     - Download from BlenderMarket or GumRoad page
      
