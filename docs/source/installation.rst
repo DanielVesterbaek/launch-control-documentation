@@ -12,7 +12,9 @@ Step 1: Inside Blender head to "Edit -> Preferences -> Get Extensions -> Install
 
 Step 2: Locate the downloaded .zip and click "Install from Disk"
 
-(Step 3:) Óptionally, go to "Add-ons" and search for "Launch Control" to alter the add-on preferences
+(Step 3:) Optionally, go to "Add-ons" and search for "Launch Control" to alter the add-on preferences
+
+
 |
 |
 

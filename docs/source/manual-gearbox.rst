@@ -231,6 +231,13 @@ Use the actual objects inside the collection 'GroundDetection', instead of a pro
     Will generally give a visually worse result and can introduce 'flickering' in the detection on 'layered' surfaces.
 
 |
+.. _legacy-ground-detection:
+Legacy Ground Detection
+^^^^^^^^
+By default LC will use an updated model for the ground detection. This model works better with banked surfaces and erratically bumpy surfaces. Disable to get the old ground detection back.
+
+
+|
 .. _limit-sliders:
 Limit Animation Sliders
 ^^^^^^^^
