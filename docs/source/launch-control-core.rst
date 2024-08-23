@@ -364,7 +364,7 @@ All this is done in the 3D viewport using the Hotkeys:
 
 **Offset Time:** 
     * *Alt + LMB drag*
-    * *(Only available when 'Auto Interpolation' is OFF)*
+    * *(Not available when 'Automatic' Interpolation is used)*
 
 **Deselect All keys:** 
     * *Alt + A*
@@ -415,7 +415,7 @@ In the settings you can alter the way the Speed Segments are shown and how they 
 
 **Expert Settings**
    * **Auto-fit Range:** *When enabled, the Speed Segments will automatically fit the scene frame range to the total length of the speed keyframe animation*
-   * **Auto Interpolation:** *Is ON by default. Turn on to avoid the Speed Segment Tool changing the keyframe tangents automatically. For more customizability of the animation interpolation turn this feature off and set the tangents and offset time like desired manually in the Graph Editor.*
+   * **Interpolation:** *For ease of use, keep Interopation on 'Automatic' and let LC do all interpolation for you. For more customizability of the interpolation and accelerations pick 'Offset Time' and use the shortcut to change the Offset time between Speed Keyframes manually. Pick 'Free' to avoid the Speed Segment Tool changing the keyframe tangents automatically. *
 
 |
 
