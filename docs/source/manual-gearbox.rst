@@ -277,18 +277,20 @@ The Quick Export handles export of the animation to other DCCs such a Unreal Eng
     :width: 350px
     :align: center
     
-    *Quick Export Panel in the Manual Gearbox UI* 
+    *Quick Export Panel in the Manual Gearbox UI (Datasmith Export is no longer available)* 
 
 Export Path:
     * Set the path as desired. Leaving it blank will export the file as "Launch_Control_Export.FORMAT" relative to the saved .blend file.
 
-Include Ground Colliders:
-    * Includes all the ground detection meshes in each of the exported file.
+Animation Subframes:
+    * LC exports the amount of subframes per frame of animation indicated here. The fewer subframes, the faster. Too few subframes can cause reverse-spinning wheels.
+
+
 
 FBX Exclusive Settings:
 
-Animation Subframes:
-    * LC exports the amount of subframes per frame of animation indicated here. The fewer subframes, the faster. Too few subframes can cause reverse-spinning wheels.
+Include Ground Colliders:
+    * Includes all the ground detection meshes in each of the exported file.
 
 Include Animations:
     * When checked, LC will export the meshes, the rig and animations. When unchecked, LC will only export the meshes and the rig.
@@ -297,16 +299,9 @@ Only Animations:
     * When checked, LC will NOT export the meshes, which results in much faster export speeds. However, it will still export the rig and the animations. 
 This is especially useful when importing to Unreal Engine, where the "Only Animation FBX files" will be read as animation assets, which fit a previously exported "skeletal mesh" (an FBX with the meshes and the rig)
 
-.. note::
-    For Datasmoth Scene Export, the free "Blender Datasmith add-on" is needed: https://github.com/0xafbf/blender-datasmith-export 
-
 
 .. note::
     "Rebase bones" are exported with the rig, which can be used inside UE5 to bind static meshes to the exported LC rig.
-
-
-.. note::
-    When exporting "Blend File", LC will bake the motion to keyframes for each frame of the animation. Be aware that this can cause backward-spinning if the wheels are spinning too fast and the fps is too low.
 
 
 .. warning::
