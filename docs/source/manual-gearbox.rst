@@ -325,9 +325,29 @@ When working with manufacturers datasets, performance can suffer a lot. It can b
 Depending on which software the animation will be rendered in, this process will be slightly different.
 
 For Cinema4D, 3Ds Max, Houdini or Maya:
-Export using the .abc format from the ":ref:`_dcc-bridge`"
+Export a proxy (LP) version of the vehicle using the .abc format from the ":ref:`_dcc-bridge`". If rigging was done using the ":ref:`cad-data-setup`", the origins should stay consistent and you can parent the nulls containing the HP wheels, HP brake calipers and HP body to the corrosponding LP wheels, brake calipers and body.
 
 
+For Unreal Engine 5:
+Export a proxy (LP) version of the vehicle using the "UE5 Skeletal Mesh (FBX)" format from the ":ref:`_dcc-bridge`". Thanks to "Rebase bones" inside the Launch Control rig, it's possible to connect Static Meshes from inside UE5 to the imported LP Skeletal Mesh.
+
+
+
+|
+.. _proxy-tool:
+Proxy Tool (Pro Feature)
+------
+
+The Proxy tool is used to automatically create a proxy of the vehicle model for faster playback in the viewport.
+
+Proxy:
+    * Show only the Generated Proxy model in the viewport
+
+Full Mesh:
+    * Show only the full Mesh in the viewport
+
+Overlay:
+    * Show both the Proxy and the Full Mesh in the viewport
 
 
 |
