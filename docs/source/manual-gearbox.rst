@@ -264,6 +264,72 @@ Wheel Shake Rate
 ^^^^^^^^
 How fast the wheel shake is. Higher value produces faster shake.
 
+
+
+|
+.. _dcc-bridge:
+DCC Bridge (Pro Feature)
+------
+
+The DCC Bridge streamlines the exporting workflow for studios and manufacturers when needing to pipe the Launch Control animation data into other 3D software.
+Set the Export Path and select the File Format you need from the dropdown and LC is ready to export. The vehicle will be exported with animation subframes by default. This can be altered by expanding the "Settings".
+
+..  figure:: img/IMG_DccBridge.jpg
+    :alt: DCC Bridge
+    :class: with-shadow
+    :width: 350px
+    :align: center
+    
+    *DCC Bridge Panel in the Manual Gearbox UI* 
+
+Export Path:
+    * Set the path as desired. Leaving it blank will export the file as "Launch_Control_Export.FORMAT" relative to the saved .blend file.
+
+File Format:
+    * Export to Alembic, FBX, USD, glTF, UE5 Skeletal Mesh (FBX), Datasmith or a Baked Blend File
+
+Settings:
+    * Check to show the extra export settings
+
+Animation Subframes:
+    * LC exports the amount of subframes per frame of animation indicated here. The fewer subframes, the faster. Too few subframes can cause reverse-spinning wheels. For some file formats this is not supported and the animation will instead be exported in slow motion to avoid issues.
+
+Quality:
+    * Export either the Full Mesh in the scene or the Generated Proxy. This can be useful for working with a :ref:`lp-hp-workflow`
+
+Apply Transforms:
+    * Applying Transforms can fix transform issues in the exported data. It's always best to manually apply all scales and rotations before attempting to export.
+
+Include:
+    * Whether to include on the Active Vehicle or the Full Scene in the exported data.
+
+
+
+UE5 Skeletal Mesh Exclusive Settings:
+
+Create Unreal Asset:
+    * Select to export both the Mesh data and Animations to the FBX or only the Animation data. This is useful when importing to UE, "Animation Only" will add just the animation assets, reducing import time compared to "Mesh and Animation".
+
+
+.. note::
+    "Rebase bones" are exported with the rig, which can be used inside UE5 to bind static meshes to the exported LC rig.
+
+
+
+|
+.. _lp-hp-workflow:
+LP to HP Workflow
+------
+
+When working with manufacturers datasets, performance can suffer a lot. It can be next to impossible to handle all the data during animation, so it's often better to use a proxy model for the animation and then relink the High Quality data in the end before rendering.
+Depending on which software the animation will be rendered in, this process will be slightly different.
+
+For Cinema4D, 3Ds Max, Houdini or Maya:
+Export using the .abc format from the ":ref:`_dcc-bridge`"
+
+
+
+
 |
 .. _quick-export:
 Quick Export
@@ -395,22 +461,17 @@ Cinematographer
 
 The Cinematographer Panel will help you quickly set up Cameras for your Animation.
 
-..  |pic13| image:: img/IMG_CamSetup.jpg
-    :alt: Cam
+..  figure:: img/IMG_CamSetup.jpg
+    :alt: View
     :class: with-shadow
-    :width: 48%
+    :width: 350px
+    :align: center
+    
+    *Using the Cinematographer panel to quickly create cameras*
 
-..  |pic14| image:: img/IMG_Cam.jpg
-    :alt: Cam
-    :class: with-shadow
-    :width: 48%
 
-|pic13| |pic14|
-
-*Cinematographer Panel in the Manual Gearbox UI* 
-
-Click the "Create Hooked Cameras" to generate two cameras from the 3D view hooked to the active vehicle.
-The "Follow Cam" will track the general motion of the vehicle without taking the suspension into account, while the "Mounted Cam" will be attached to the body of the vehicle, following its every move
+Click the "Follow Camera" or "Mounted Camera" to generate a camera from the 3D view hooked to the active vehicle.
+The "Follow Camera" will track the general motion of the vehicle without taking the suspension into account, while the "Mounted Camera" will be attached to the body of the vehicle, following its every move
 
 
 |
