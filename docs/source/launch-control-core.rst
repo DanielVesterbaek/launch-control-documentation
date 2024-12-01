@@ -67,28 +67,6 @@ When the Version Control is active, LC will check the selected appended vehicle 
     Avoid Copy/Pasting Vehicles that are rigged using Launch Control. If you want to move a vehicle to a new file, unrig the vehicle and rig it again in the destination file or use the :ref:`append-vehicles` function when selecting your vehicle.
 
 |
-
-.. _linking-vehicle:
-Linking Vehicle (Pro Feature)
-^^^^^^^^^^
-
-Linked Vehicles are vehicles that exist inside another .blend file on your harddrive and are linked into your animation file. The vehicles inside that file needs to be already rigged with Launch Control. Locate the file you want to link LC rigged vehicles from and hit "Search in Blend File".
-If any compatible rigged LC vehicles were found in the file they will be available in a drop-down and can be added directly into your scene with the rig and animation set up already.
-
-When the Version Control is active, LC will check the selected linked vehicle for any version incompatability before adding it to your scene. Linking LC vehicles that were rigged in a version of LC that alters from your installed version can cause problems, so be careful when doing so.
-
-When the Vehicle is succesfully linked, make sure to hit the "Connect to LC (Library Override)" button to make the vehicle editable inside the current Blend file.
-You can now start animating. If you want to edit the Driving Path, select it and click the "Library Override" button inside the Object Tab on the right hand side. (Little link icon with arrow over the link)
-
-.. warning::
-    Rigging vehicles across Blender Scenes is not supported. Please only use 1 scene for rigged Launch Control Vehicles in each file.
-
-.. note::
-    Avoid Copy/Pasting Vehicles that are rigged using Launch Control. If you want to move a vehicle to a new file, unrig the vehicle and rig it again in the destination file or use the :ref:`append-vehicles` function when selecting your vehicle.
-
-|
-
-
 .. _rigging:
 Rigging
 ------
@@ -212,6 +190,13 @@ Some Asset Packs that are natively supported are:
     * `Traffiq Car <https://blendermarket.com/products/car-library-traffiq-vehicles-for-blender>`_
 
 
+|
+.. _library-override:
+Linked Vehicles with Library Override
+^^^^^^^^^^
+
+In Launch Control, you can rig a vehicle linked from another file. To do so, add a Library Override to all the objects you have added :ref:`rigging-tags` to and hit "Rig Vehicle!"
+
 
 |
 .. _troubleshoot_rigging:
@@ -259,17 +244,6 @@ The "Select Driving Path" button next to "Animate Vehicle" will select the Drivi
 Animation Presets
 ^^^^^^
 To quickly try out animations use the presets. Select a Preset from the Gallery and hit "Animate Vehicle".
-
-|
-.. _custom-animation-presets:
-Custom/Local Animation Presets
-^^^^^^
-You can also change the dropdown on the right hand side above the Animation Gallery to "Custom"/"Local" and then be able to save your own Custom Presets into the Animation Gallery.
-If you have the Pro Version of LC, you can also save these Custom Prests to an external disk for shared access using the "Library" option from the dropdown.
-
-To save a new Preset, click the Animation Gallery and locate the "+ icon" and click it. Now you can write the name of your new Custom Animation Preset and hit the "save icon" to save it. This will save your current animation from the file to a new Custom Preset.
-
-If you want to delete a Custom Preset, navigate to the Preset and hit the "Trash icon". You can also overwrite/update a preset by clicking the little "pencil/edit icon".
 
 |
 .. _user-path:
