@@ -39,19 +39,7 @@ The installation process might take up to few minutes depending on the size of t
 Download Vehicle Packs
 ===========
 
-Click one of the pack images to head to the BlenderMarket orders page. Please make sure you are logged into an account which owns Launch Control.
-For GumRoad, locate Launch Control in your Library to access the .lcl files.
+Vehicle Packs can be downloaded from the Asset Store on our website: https://launch-control.org/product-category/asset-packs/
 
-.. list-table::
-   :width: 100%
-   :class: borderless
+If you bought Launch Control on BlenderMarket or GumRoad, you can also access the 3 included Vehicle Models from the Order/Download page on the platform you are using.
 
-   * - .. image:: img/LC_Vehicles_01.webp
-          :width: 100%
-          :target: https://blendermarket.com/account/orders_search?utf8=✓&orders_search%5Bq%5D=launch+control&button=
-
-
-   * - 4 Launch Control models ready to rig
-    
-   * - Download from BlenderMarket or GumRoad page
-     
