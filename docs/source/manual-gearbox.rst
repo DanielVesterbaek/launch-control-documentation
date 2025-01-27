@@ -283,7 +283,7 @@ Set the Export Path and select the File Format you need from the dropdown and LC
     *DCC Bridge Panel in the Manual Gearbox UI* 
 
 Export Path:
-    * Set the path as desired. Leaving it blank will export the file as "Launch_Control_Export.FORMAT" relative to the saved .blend file.
+    * Set the path as desired. Leaving it blank will export the file as "*vehicle_name*.FORMAT" relative to the saved .blend file.
 
 File Format:
     * Export to Alembic, FBX, USD, glTF, UE5 Skeletal Mesh (FBX), Datasmith or a Baked Blend File
@@ -291,23 +291,23 @@ File Format:
 Settings:
     * Check to show the extra export settings
 
-Animation Subframes:
+Animation Subframes (inside Settings):
     * LC exports the amount of subframes per frame of animation indicated here. The fewer subframes, the faster. Too few subframes can cause reverse-spinning wheels. For some file formats this is not supported and the animation will instead be exported in slow motion to avoid issues.
 
-Quality:
+Quality (inside Settings):
     * Export either the Full Mesh in the scene or the Generated Proxy. This can be useful for working with a :ref:`lp-hp-workflow`
 
-Apply Transforms:
+Apply Transforms (inside Settings):
     * Applying Transforms can fix transform issues in the exported data. It's always best to manually apply all scales and rotations before attempting to export.
 
-Include:
+Include (inside Settings):
     * Whether to include on the Active Vehicle or the Full Scene in the exported data.
 
 
 
 UE5 Skeletal Mesh Exclusive Settings:
 
-Create Unreal Asset:
+Create Unreal Asset (inside Settings):
     * Select to export both the Mesh data and Animations to the FBX or only the Animation data. This is useful when importing to UE, "Animation Only" will add just the animation assets, reducing import time compared to "Mesh and Animation".
 
 
@@ -366,7 +366,7 @@ The Quick Export handles export of the animation to other DCCs such a Unreal Eng
     *Quick Export Panel in the Manual Gearbox UI (Datasmith Export is no longer available)* 
 
 Export Path:
-    * Set the path as desired. Leaving it blank will export the file as "Launch_Control_Export.FORMAT" relative to the saved .blend file.
+    * Set the path as desired. Leaving it blank will export the file as "*vehicle_name*.FORMAT" relative to the saved .blend file.
 
 Animation Subframes:
     * LC exports the amount of subframes per frame of animation indicated here. The fewer subframes, the faster. Too few subframes can cause reverse-spinning wheels.
