@@ -81,24 +81,3 @@ Export to Datasmith works the same way for Multi-Car as for Single-Car. The file
 
 For FBX exports, the vehicles are split into separate files.
 Ground Colliders can be exported with each file or only once in the fbx-file of the active vehicle.
-
-
-|
-.. _multi-rigging:
-Multi-Rigging [Experimental]
-------
-
-It is possible to rig all Vehicles in the scene at once using the experimental "Multi-Rigging" function. 
-
-.. warning::
-    This only works if the scene has collections with LC-ready car models in them. If any other collections exist in the scene, the rigging will fail.
-
-.. figure:: gif/DOC_MultiRigging.gif
-    :alt: Multi Rig Gif
-    :class: with-shadow
-    :width: 800px
-    :align: center
-
-    Rigging multiple vehicles at ones using Multi-Rigging
-
-To succesfully rig all the cars make sure they all have the required :ref:`rigging-tags`.
