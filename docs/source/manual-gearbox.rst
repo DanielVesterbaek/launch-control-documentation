@@ -325,11 +325,11 @@ When working with manufacturers datasets, performance can suffer a lot. It can b
 Depending on which software the animation will be rendered in, this process will be slightly different.
 
 For Cinema4D, 3Ds Max, Houdini or Maya:
-Export a proxy (LP) version of the vehicle using the .abc format from the ":ref:`_dcc-bridge`". If rigging was done using the ":ref:`cad-data-setup`", the origins should stay consistent and you can parent the nulls containing the HP wheels, HP brake calipers and HP body to the corrosponding LP wheels, brake calipers and body.
+Export a proxy (LP) version of the vehicle using the .abc format from the ":ref:`dcc-bridge`". If rigging was done using the ":ref:`cad-data-setup`", the origins should stay consistent and you can parent the nulls containing the HP wheels, HP brake calipers and HP body to the corrosponding LP wheels, brake calipers and body.
 
 
-For Unreal Engine 5:
-Export a proxy (LP) version of the vehicle using the "UE5 Skeletal Mesh (FBX)" format from the ":ref:`_dcc-bridge`". Thanks to "Rebase bones" inside the Launch Control rig, it's possible to connect Static Meshes from inside UE5 to the imported LP Skeletal Mesh.
+For Unreal Engine 5.2:
+Export a proxy (LP) version of the vehicle using the "UE5 Skeletal Mesh (FBX)" format from the ":ref:`dcc-bridge`". Thanks to "Rebase bones" inside the Launch Control rig, it's possible to connect Static Meshes from inside UE5 to the imported LP Skeletal Mesh.
 
 
 
@@ -387,11 +387,11 @@ This is especially useful when importing to Unreal Engine, where the "Only Anima
 
 
 .. note::
-    "Rebase bones" are exported with the rig, which can be used inside UE5 to bind static meshes to the exported LC rig.
+    "Rebase bones" are exported with the rig, which can be used inside UE 5.3 to bind static meshes to the exported LC rig.
 
 
 .. warning::
-    UE 5.4 seems to import the FBX animation with jitter. The visual impact is small, but visible. Please stick to UE 5.3 if possible. We are working on a solution.
+    UE 5.4+ causes animation jitter on imported FBX skeletal meshes due to Bone Compression. This can be fixed by changing the "Bone Compression Settings" inside the "Animation Sequence Object -> Asset Details -> Compression -> Bone Compression Settings" to the "DefaultRecorderBoneCompression".
 
 |
 .. _headlights:
