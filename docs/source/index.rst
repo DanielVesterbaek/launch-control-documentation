@@ -16,9 +16,6 @@ The Interface is split into two sections making it both easy to use and fully cu
         <iframe src="https://www.youtube.com/embed/7IMdpqP5TEc" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
     </div>
 
-|
-
-
 
 Launch Control Core
 ---------
@@ -62,7 +59,7 @@ Outside the Add-in Interface, you will find interactive handles to control the a
 
 The floating UI keeps track of adjustments to the rig of the car. Here you can adjust the maximum steering angle, suspension length, shock "bottom-out" distance, and adjust the rig to use a "single rear axle" or 4-wheel steering if you so desire.
 
-Check out: :doc:`animation-handles`
+Check out: :doc:`animation_handles`
 
 ..  figure:: img/IMG_VIEWPORT_HANDLES.jpg
     :alt: Viewport Handles

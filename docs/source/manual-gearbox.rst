@@ -26,14 +26,22 @@ Garage Mode
 Changing the mode to Garage Mode will get your vehicle ready for new tires, change track width or other model changes.
 In the "Garage" all animations will be disabled temporarily and the vehicle is moved to the center of the scene. Blender also enters "Local View", so all other objects will be temporarily hidden until you go to "Race Mode" again.
 
-Body, Wheel, Brake, Headlight and Steering Wheel attachment bones and setup controls for wheel-base length, track-width length, wheel radii, and roll center can be found in this mode. Enter "Pose Mode" and select and move the handles to start adjusting.
+Body, Wheel, Brake, Headlight and Steering Wheel attachment bones and setup controls for wheel-base length, track-width length, wheel radii, ground clearance, and roll center can be found in this mode. Enter "Pose Mode" and select and move the handles to start adjusting.
 You can manually parent meshes, nulls and armatures to the body or wheels. 
 
+.. _garage-mode-transforms:
+Garage Mode Transforms
+^^^^^^^^
+Select which "Garage Mode Transforms" LC should use in the Add-On Prefernces. 
+Pick "Scene Center" to have the Vehicle placed in the Scene Center facing y- whenever it's in Garage Mode.
+Pick "Unrigged State/Import Data" to use the position and rotation the vehicle was in before it was rigged. This can be helpful when needing to update geometry later. Do expect a small offset due to rounding (Precision of 4 decimal places)
+
 .. note::
-    The vehicle will temporarily be put into the center of the scene and all animations disabled. All animations will be restored when "Race Mode" is entered again.  
+    The vehicle will temporarily be put into the center of the scene (or the unrigged/import location if selected in add-on preferences) and all animations disabled. All animations will be restored when "Race Mode" is entered again.  
 
 |
-*Reset all!*
+Reset all!
+-----
 Will reset all LC properties for the active vehicle to their default value.
 
 |
@@ -55,7 +63,7 @@ The View Panel has options for what will be shown in the 3D View over and around
 .. _enable_extra_handles:
 Expanded UI
 ^^^^^^^^
-Enables extra :ref:`animation-handles` and Sliders in the 3D view above and around the vehicle.
+Enables extra :ref:`animation_handles` and Sliders in the 3D view above and around the vehicle.
 
 ..  figure:: img/IMG_ExtraAnimationHandles02.jpg
     :alt: View
@@ -129,7 +137,7 @@ Enable a Velocity Visualizer in the viewport to see the velocity calculated and 
 Settings
 -----
 
-The Settings Panel controls how the :ref:`ground-detection`, :ref:`animation-handles`, Driving Path behave. You can also enter ":ref:`rig-setup-mode` here to adjust the vehicle and add new meshes to it.
+The Settings Panel controls how the :ref:`ground-detection`, :ref:`animation_handles`, Driving Path behave. You can also enter :ref:`rig-setup-mode` here to adjust the vehicle and add new meshes to it.
 
 ..  figure:: img/IMG_Settings.jpg
     :alt: Settings
@@ -238,35 +246,6 @@ By default LC will use an updated model for the ground detection. This model wor
 
 
 |
-.. _limit-sliders:
-Limit Animation Sliders
-^^^^^^^^
-To allow full control all the Viewport UI sliders can be "unlocked" so you can over-crank them and get whatever craziness you want.
-
-..  |pic5| image:: img/IMG_LimitOn.jpg
-    :alt: View
-    :class: with-shadow
-    :width: 48%
-    
-
-..  |pic6| image:: img/IMG_LimitOff.jpg
-    :alt: View
-    :class: with-shadow
-    :width: 48%
-
-|pic5| |pic6|
-    
-*Default: Locks the sliders inside the best range, check to unlocks the sliders* 
-
-|
-.. _wheel-shake-rate:
-Wheel Shake Rate
-^^^^^^^^
-How fast the wheel shake is. Higher value produces faster shake.
-
-
-
-|
 .. _dcc-bridge:
 DCC Bridge (Pro Feature)
 ------
@@ -291,30 +270,39 @@ File Format:
 Settings:
     * Check to show the extra export settings
 
-Animation Subframes (inside Settings):
+.. _bridge-settings:
+Settings
+^^^^^^^^
+
+Animation Subframes:
     * LC exports the amount of subframes per frame of animation indicated here. The fewer subframes, the faster. Too few subframes can cause reverse-spinning wheels. For some file formats this is not supported and the animation will instead be exported in slow motion to avoid issues.
 
-Quality (inside Settings):
+Quality:
     * Export either the Full Mesh in the scene or the Generated Proxy. This can be useful for working with a :ref:`lp-hp-workflow`
 
-Apply Transforms (inside Settings):
-    * Applying Transforms can fix transform issues in the exported data. It's always best to manually apply all scales and rotations before attempting to export.
+Apply Transforms:
+    * Applying Transforms can fix transform issues in the exported data. It's always best to manually apply all scales and rotations before attempting to export. For negative scaled objects, please apply scale manually and flip normals before export.
 
-Include (inside Settings):
+Include:
     * Whether to include on the Active Vehicle or the Full Scene in the exported data.
 
 
 
-UE5 Skeletal Mesh Exclusive Settings:
+UE5 FBX Exclusive Settings:
 
-Create Unreal Asset (inside Settings):
-    * Select to export both the Mesh data and Animations to the FBX or only the Animation data. This is useful when importing to UE, "Animation Only" will add just the animation assets, reducing import time compared to "Mesh and Animation".
+Create Unreal Asset:
+    * Select to export "Animated Skeletal Mesh", "Animation Only", or "Static Mesh". This is useful when importing to UE, "Animation Only" will add just the animation assets, reducing import time compared to "Animated Skeletal Mesh". "Static Mesh" is great for importing highly dense data, which does not import well as Skeletal Meshes.
 
+When using the UE5 FBX Format a "Bind Pose" will be created at frame 0 of the animation. This Bind Pose ensures that all future exports (Static Meshes for a LP to HP Workflow or Extra Animation Assets) will bind correctly to the exported Skeletal Mesh. The Bind Pose will always be the same Pose as the ":ref:`garage-mode-transforms`". You can set your preference for the :ref:`garage-mode-transforms` in the Add-on Prefernces.
 
 .. note::
-    "Rebase bones" are exported with the rig, which can be used inside UE5 to bind static meshes to the exported LC rig.
+    "Rebase bones" are exported with the rig, which can be used inside UE5 to bind Static Meshes to the exported LC rig. See more about this here: :ref:`lp-hp-workflow`
 
+.. warning::
+    UE 5.3+ causes animation jitter with imported FBX skeletal meshes due to Bone Compression. This can be fixed by changing the "Bone Compression Settings" inside the "Animation Sequence Object -> Asset Details -> Compression -> Bone Compression Settings" to the "DefaultRecorderBoneCompression". Watch the Video Guide for :ref:`lp-hp-workflow` for more info.
 
+.. warning::
+    The Datasmith Format imports global animations with Euler Rotations to UE. To avoid Gimbal Locks, please use "Quternion Rotation Interpolation" in UE. This can be found by right clicking the "Transform Channels" of the wheels in the Sequencer. Then go to "Edit Selection -> Rotation -> Use Quaternion Interpolation".
 
 |
 .. _lp-hp-workflow:
@@ -328,8 +316,17 @@ For Cinema4D, 3Ds Max, Houdini or Maya:
 Export a proxy (LP) version of the vehicle using the .abc format from the ":ref:`dcc-bridge`". If rigging was done using the ":ref:`cad-data-setup`", the origins should stay consistent and you can parent the nulls containing the HP wheels, HP brake calipers and HP body to the corrosponding LP wheels, brake calipers and body.
 
 
-For Unreal Engine 5.2:
+For Unreal Engine 5:
 Export a proxy (LP) version of the vehicle using the "UE5 Skeletal Mesh (FBX)" format from the ":ref:`dcc-bridge`". Thanks to "Rebase bones" inside the Launch Control rig, it's possible to connect Static Meshes from inside UE5 to the imported LP Skeletal Mesh.
+Workflow Tested in UE 5.5.
+
+Check out the Video Guide for how to use the LP to HP Workflow for UE5 here:
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+    <iframe src="|https://www.youtube.com/watch?v=p0_nozBjRSw" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+</div>
+
+.. warning::
+    To reconnect the HP Static Mesh inside UE a Bind Pose is needed. Read more about this in the :ref:`bridge-settings` under UE5 FBX Exclusive Settings.
 
 
 
@@ -387,11 +384,10 @@ This is especially useful when importing to Unreal Engine, where the "Only Anima
 
 
 .. note::
-    "Rebase bones" are exported with the rig, which can be used inside UE 5.3 to bind static meshes to the exported LC rig.
-
+    "Rebase bones" are exported with the rig, which can be used inside UE5 to bind Static Meshes to the exported LC rig. See more about this here: :ref:`lp-hp-workflow`
 
 .. warning::
-    UE 5.4+ causes animation jitter on imported FBX skeletal meshes due to Bone Compression. This can be fixed by changing the "Bone Compression Settings" inside the "Animation Sequence Object -> Asset Details -> Compression -> Bone Compression Settings" to the "DefaultRecorderBoneCompression".
+    UE 5.3+ causes animation jitter with imported FBX skeletal meshes due to Bone Compression. This can be fixed by changing the "Bone Compression Settings" inside the "Animation Sequence Object -> Asset Details -> Compression -> Bone Compression Settings" to the "DefaultRecorderBoneCompression".
 
 |
 .. _headlights:
@@ -421,6 +417,7 @@ Headlights will automatically be rigged if detected in the model. If not, you ca
 
 Different texture presets can be picked for the light beam. Low Beam and High Beam can be toggled and more settings can be dialed in.
 
+Use the "Reload Headlight Textures" button if the headlights are showing Pink - Meaning the Textures have been lost. 
 
 |
 .. _skidmarks:
