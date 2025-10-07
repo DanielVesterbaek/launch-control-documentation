@@ -371,6 +371,14 @@ The Speed Segments are still compatible with - and can be used in combination wi
 .. warning::
     Auto-save in Blender will be temporarily blocked while the Speed Segment Tool is active. Make sure to turn off the tool when you don't need it anymore.
 
+.. warning::
+    To use a Tablet/Cintiq with the Speed Segment Tool, you might need to adjust some settings in your Tablet Driver Software or Blender. 
+    Make sure "Windows Ink" is Disabled in the Driver Software and the "Tablet API" inside "Edit -> Preferences" in Blender is set to "Windows Ink".
+    If you still have issues, please reach out to us with info about your Tablet Model and Driver Software and we will look into it.
+    
+    This was tested with Wacom and Huion Tablets.
+    
+
 The Speed Keyframes can be moved along the Driving Path, the speed of each key can be changed. When "Auto Interpolation" is ON, LC will automatically calculate the offset in time between keyframes and set the keyframe tangents. Turn this OFF to get full control over the animation.
 
 All this is done in the 3D viewport using the Hotkeys:
