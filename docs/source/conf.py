@@ -7,7 +7,7 @@ copyright = '2025, Daniel Vesterbaek'
 author = 'Daniel Vesterbaek Jensen'
 
 release = '1.0'
-version = '1.9.6'
+version = '1.9.5'
 
 # -- General configuration
 
