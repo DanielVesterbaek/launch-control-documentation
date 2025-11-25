@@ -303,6 +303,15 @@ Click "Update Driving Path" button in the LC interface. - This will resolve any 
     *Update Driving Path Message in 3D View* 
 
 |
+.. _nurbs-smoothing:
+Nurbs Smoothing
+^^^^^^
+When using a Curve Object of the Type "Nurbs" as Driving Path, this option will appear. Increasing it, will use a higher order of Nurbs interpolation, giving you are smoother Driving Path as a result. 
+This is the same setting as "Order U" in the Spline (Curve Data) settings.
+
+When using a high level of smoothing, the Speed Segment setting "Use Precise Nurbs" should be checked to get a better visual representation of the Nurbs shape in the Speed Segment Graph.
+
+|
 .. _user-animation:
 User Animation
 ^^^^^^
@@ -359,6 +368,7 @@ Speed Segments
 Using the Speed Segment tool can speed up the animation workflow by allowing you to adjust visual "Speed Keyframes" inside the 3D view instead of the postition keyframes inside the graph editor.
 
 The Speed Segments are still compatible with - and can be used in combination with - traditional keyframe animation. 
+The Speed Segments are compatible with Bezier Curves as well as Nurbs Curves, but some features will change depending on the curve type.
 
 ..  figure:: gif/DOC_SpeedSegments_GIF.gif
     :alt: Animating with Speed Segments
@@ -374,20 +384,20 @@ The Speed Segments are still compatible with - and can be used in combination wi
 
 The Speed Keyframes can be moved along the Driving Path, the speed of each key can be changed. When "Auto Interpolation" is ON, LC will automatically calculate the offset in time between keyframes and set the keyframe tangents. Turn this OFF to get full control over the animation.
 
-All this is done in the 3D viewport using the Hotkeys:
-
 **Add Key:** 
-    * *Ctrl + Alt + LMB on a Key*
-    * (Will add a key between the pressed key and the previous key) *
+    * *Click the Plus Icon*
 
 **Delete Key:** 
-    * *RMB on the Key*
+    * *X or DEL key*
 
 **Move Key:** 
     * *LMB drag*
+    * *G*
 
 **Adjust Speed:** 
+    * *Drag Arrow next to key Up/Down*
     * *Ctrl + LMB drag*
+    * *S*
 
 **Offset Time:** 
     * *Alt + LMB drag*
@@ -421,6 +431,8 @@ In the settings you can alter the way the Speed Segments are shown and how they 
 
 
 **Graph**
+   * **Use Precise Nurbs:** *Enable/Disable De Boor algorithm instead of simple SubD to calculate the Graph. This only affects the visual Graph in the viewport, it does not affect the actual animation. (Disabling will improve viewport performance)*
+
    * **Visible:** *Enable/Disable the graph in the 3D view. (Disabling will improve viewport performance)*
 
 
@@ -431,6 +443,15 @@ In the settings you can alter the way the Speed Segments are shown and how they 
 
 
    * **Color:** *Change the Color of the Graph to make it more visible*
+
+   * **Add Speed Key:** *Hide/Unhide the "Plus Icons" in the viewport for adding Speed Keys*
+
+
+**Key Editing**
+   * **Overlap Threshold:** *The threshold of how close two Keys need to be each other for them to snap together*
+
+
+   * **Slide Speed:** *The sliding speed of the keyframes when moved along the Driving Path. The base speed depends on the "2D distance" in the Graph Editor between 2 keyframes*
 
 
 **Units**
@@ -443,6 +464,7 @@ In the settings you can alter the way the Speed Segments are shown and how they 
 **Expert Settings**
    * **Auto-fit Range:** *When enabled, the Speed Segments will automatically fit the scene frame range to the total length of the speed keyframe animation*
    * **Interpolation:** *For ease of use, keep Interopation on 'Automatic' and let LC do all interpolation for you. For more customizability of the interpolation and accelerations pick 'Offset Time' and use the shortcut to change the Offset time between Speed Keyframes manually. Pick 'Free' to avoid the Speed Segment Tool changing the keyframe tangents automatically. *
+   * **Enable Hotkeys:** *Hotkeys will overrule 'G' and 'S' hotkeys for the entire Blender Interface. Disable this if you prefer.*
 
 |
 

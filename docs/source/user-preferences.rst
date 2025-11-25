@@ -4,22 +4,17 @@ User Preferences
 
 The Launch Control User Preferences can be used to alter certain behaviour in the Add-on.
 
-..  figure:: img/IMG_UserPref.jpg
-    :alt: User Pref
-    :class: with-shadow
-    :width: 600px
-    :align: center
-    
-    *Launch Control Preferences inside Add-ons Preferences* 
-
 
 Interface
 -------------
 
-Show Animation Gallery
+Vehicle Gallery
+  Shows or Hides the Gallery with the preset vehicles in the Add-on UI.
+
+Animation Gallery
   Shows or Hides the Gallery with the preset animations in the Add-on UI.
 
-Show Slider Labels
+Slider Labels
   Shows or Hides Labels above all the Animation and Setup Sliders above the Vehicle inside the 3D View.
 
 
@@ -27,15 +22,49 @@ Show Slider Labels
 Animation
 -------------
 
+.. _custom_library:
+Custom Library (LC Pro Only)
+  Add a path to a Custom Animation Preset Library on your System or Network. Animation Presets can then be saved and loaded from this location.
+
 .. _use-impertial-units:
 Use Imperial Units
   Uses "MPH" instead of "KMH" for the :ref:`speedometer` and the :ref:`jump-trajectories`.
 
-Override Animation Data
-  Remove current animation data when a new 'User Path' is picked in the interface and 'Animate Vehicle' is pressed. Animation will be replaced by an automatically calculated offset animation.
 
-Colorize Driving Paths 
-  Automatically color the Driving Paths the color of the collection which the corrosponding vehicle exists in when clicking 'Animate Vehicle'
+
+Speed Segments
+-------------
+.. _show-hotkeys:
+Show Hotkeys
+   Show the Hotkey table in the 3D Viewport
+
+.. _auto-convert-timeline:
+Auto Convert Timeline into Graph Editor
+   Allow LC to automatically turn your timeline into a graph editor when the Speed Segment Tool is activated. This makes sure that you can preview and debug the animation curve while using the Speed Segments in the viewport
+
+.. _max-frames:
+Max Frames
+  Limit the max amount of frames the Speed Segments will allow animating across. Increasing this might drastically decrease performance!
+
+.. _key-movement-increments:
+Key Movement Increments
+   Performance Optimization: Move Speed Keyframes in the 3D viewport in increments of this value. Higher values increase performance but decrease precision
+
+.. _target-fps:
+Target FPS
+   Performance Optimization: Throttle FPS to allow smooth updates when moving the Speed Keys
+
+.. _handle-undo:
+Handle Undo
+   Performance Optimization: Disabled undos for Speed Segment operations to improve performance.
+
+
+
+Physics
+-------------
+.. _show-postfx-with-live-physics:
+Show PostFX (Physics Overdrive) with Live Physics
+  Allow PostFX (Physics Overdrive) to be changed while using the Live Physics in LC
 
 
 
@@ -45,35 +74,34 @@ Rigging
 Automatic Tire Pivot
   Let LC automatically create new pivots for the tire meshes used for rigging. The new pivots will override any user set pivots. Uncheck to keep user pivots.
 
+.. _garage_transform:
+Garage Transform
+   Set the vehicle Transforms you want LC to use when entering 'Garage Mode'
+
 .. _custom-tags:
 Custom Tags
   Allow the user to define custom search tags that LC will search for when rigging the car.
 
-.. _cad-workflow_toggle:
-CAD Workflow in UI
-  Reveal a checkbox during the rigging process that optimizes the rigging process for manufactureres data-sets.
+.. _rig_brakes:
+Rig Brakes
+  Force, Skip or Rig only if possible. Set this to "Force" if the brake calipers do not get rigged!
+
+.. _rig_headlights:
+Rig Headlights
+  Rig only if possible or Never.
+
+.. _rig_wheel-covers:
+Rig Wheel Covers (Fenders for F1 Vehicles)
+  Force, Skip or Rig only if possible. Set this to "Force" if the objects do not get rigged!
+
+.. _quick_tag_rename:
+Quick Tag Rename
+   Select what the Quick Tag Tool should rename when using before rigging
+
+
 
 
 .. note::
     Remember to "Save Preferences" before exiting. 
-
-
-
-Updates
--------------
-
-Inside the Updates section, you can stay updated with the latest version of Launch Control. 
-
-.. _update_platform:
-Platform
-  Pick the platform you have bought Launch Control from. Make sure you are logged into the platform before going to the clicking any of the "To Download Page" buttons.
-
-.. _update_check_interval:
-Uppdate Check Interval
-  Enable auto check for updates and set the desired interval here. A notification will appear in the "Rig Info" section of the Launch Control UI and a pop up whenever a new version is found after a check.
-
-.. _update_button:
-Check for Updates/Go to Product Page
-  Run a check for any updates to Launch Control.
 
 
