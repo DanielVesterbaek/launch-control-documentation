@@ -55,8 +55,6 @@ Animation Controls
 
 The Animation handles and sliders are made to be animated. Go into "Pose-Mode", Select a handle and hit "I"-> Location or Rotation to add a keyframe to it.
 
-Hello 
-
 |
 Handles:
 ^^^^^^^^
