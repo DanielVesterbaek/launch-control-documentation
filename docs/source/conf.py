@@ -3,11 +3,11 @@
 # -- Project information
 
 project = 'Launch Control - Auto Car Rig'
-copyright = '2025, Daniel Vesterbaek'
+copyright = '2026, Daniel Vesterbaek'
 author = 'Daniel Vesterbaek Jensen'
 
 release = '1.0'
-version = '1.9.5'
+version = '1.9.7'
 
 # -- General configuration
 
